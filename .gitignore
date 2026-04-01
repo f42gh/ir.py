@@ -7,3 +7,4 @@ venv/
 COMPANIES.json
 .claude
 .hideout
+hand_app.py
