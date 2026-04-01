@@ -1,0 +1,74 @@
+{
+  "9468.T": {
+    "name": "KADOKAWA（ドワンゴ親会社）",
+    "tier": "1",
+    "avg_salary_man": 840,
+    "note": "ドワンゴはKADOKAWA子会社。N高・ニコニコ運営"
+  },
+  "2432.T": {
+    "name": "DeNA",
+    "tier": "1",
+    "avg_salary_man": 850,
+    "note": "AI Generalist Course（28卒新設）"
+  },
+  "6098.T": {
+    "name": "リクルートHD",
+    "tier": "1",
+    "avg_salary_man": 1139,
+    "note": "DSコース。StudySapuri配属ならEdTech直結"
+  },
+  "3092.T": {
+    "name": "ZOZO",
+    "tier": 1,
+    "avg_salary_man": 621,
+    "note": "ML/DEジョブ型採用。ZOZO ResearchはICLR採択レベル"
+  },
+  "4165.T": {
+    "name": "プレイド",
+    "tier": "2",
+    "avg_salary_man": 976,
+    "note": "CX Platform KARTE。Google出資。Mizchi在籍歴"
+  },
+  "4478.T": {
+    "name": "フリー (freee)",
+    "tier": "2",
+    "avg_salary_man": 716,
+    "note": "クラウド会計SaaS。DS配属可能性あり"
+  },
+  "4751.T": {
+    "name": "サイバーエージェント",
+    "tier": "2",
+    "avg_salary_man": 817,
+    "note": "AbemaTV、広告AI、新卒文化が強い"
+  },
+  "4755.T": {
+    "name": "楽天グループ",
+    "tier": "2",
+    "avg_salary_man": 794,
+    "note": "DS/DE枠あり。TOEIC 800+推奨"
+  },
+  "4385.T": {
+    "name": "メルカリ",
+    "tier": "2",
+    "avg_salary_man": 968,
+    "note": "ML推薦基盤。中途中心だが新卒枠あり"
+  },
+  "4722.T": {
+    "name": "フューチャー",
+    "tier": "2",
+    "avg_salary_man": 798,
+    "note": "ベンダーフリーITコンサル。Go/OSS文化。AtCoder活用採用"
+  },
+  "3626.T": {
+    "name": "TIS",
+    "tier": "2",
+    "avg_salary_man": 744,
+    "note": "独立系SIer最大手級。DS組織あり"
+  },
+  "4373.T": {
+    "name": "シンプレクスHD",
+    "tier": "2",
+    "avg_salary_man": 816,
+    "note": "金融AI特化。新卒初任給600万コースあり"
+  }
+}
