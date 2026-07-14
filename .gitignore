@@ -1,10 +1,29 @@
+# OS / editor files
+.DS_Store
+.idea/
+.agents/
+.claude/
+
+# Python
 __pycache__/
-*.pyc
-.streamlit/secrets.toml
-.env
+*.py[cod]
+.pytest_cache/
 venv/
 .venv/
-COMPANIES.json
-.claude
-.hideout
-hand_app.py
+python
+
+# Secrets and local application data
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+.42/
+data/
+*.db
+*.sqlite3
+
+# Next.js / Node.js
+node_modules/
+.next/
+out/
+coverage/
