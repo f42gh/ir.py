@@ -1,0 +1,107 @@
+:root {
+  --bg: #f6f7f1;
+  --surface: #ffffff;
+  --surface-2: #eef2e5;
+  --text: #1f2a1f;
+  --muted: #647067;
+  --accent: #4a7c59;
+  --border: #d6decf;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+  background:
+    radial-gradient(circle at top right, #dbe8cb 0%, transparent 35%),
+    linear-gradient(180deg, #f9faf5 0%, var(--bg) 60%);
+  color: var(--text);
+}
+
+.page {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 28px 20px 44px;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(1.8rem, 2.6vw, 2.4rem);
+  letter-spacing: 0.02em;
+}
+
+.hero p {
+  margin: 8px 0 0;
+  color: var(--muted);
+}
+
+.board {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 14px;
+}
+
+.column {
+  background: color-mix(in srgb, var(--surface-2) 60%, white 40%);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 12px;
+}
+
+.column h2 {
+  margin: 2px 4px 10px;
+  font-size: 1rem;
+  color: var(--accent);
+}
+
+.cards {
+  display: grid;
+  gap: 10px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.card h3 {
+  margin: 4px 0 10px;
+  font-size: 1rem;
+}
+
+.ticker {
+  margin: 0;
+  font-family: "JetBrains Mono", "SFMono-Regular", ui-monospace, monospace;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.card dl {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.card dt {
+  font-size: 0.73rem;
+  color: var(--muted);
+}
+
+.card dd {
+  margin: 2px 0 0;
+  font-weight: 600;
+}
+
+.note {
+  margin: 10px 0 0;
+  font-size: 0.82rem;
+  color: #334438;
+  line-height: 1.35;
+}

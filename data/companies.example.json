@@ -1,0 +1,32 @@
+{
+  "3092.T": {
+    "name": "ZOZO",
+    "tier": "1",
+    "avg_salary_man": 621,
+    "note": "Phase 2の最初の取得対象"
+  },
+  "2432.T": {
+    "name": "DeNA",
+    "tier": "1",
+    "avg_salary_man": 850,
+    "note": "MVP分析対象"
+  },
+  "4751.T": {
+    "name": "サイバーエージェント",
+    "tier": "2",
+    "avg_salary_man": 817,
+    "note": "MVP分析対象"
+  },
+  "3626.T": {
+    "name": "TIS",
+    "tier": "2",
+    "avg_salary_man": 744,
+    "note": "MVP分析対象"
+  },
+  "4478.T": {
+    "name": "freee",
+    "tier": "2",
+    "avg_salary_man": 716,
+    "note": "MVP分析対象"
+  }
+}

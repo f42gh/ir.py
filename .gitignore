@@ -1,29 +1,29 @@
 # OS / editor files
 .DS_Store
 .idea/
-.agents/
-.claude/
+.vscode/
 
 # Python
 __pycache__/
 *.py[cod]
-.pytest_cache/
 venv/
 .venv/
-python
 
 # Secrets and local application data
 .env
 .env.*
 !.env.example
-.streamlit/secrets.toml
-.42/
-data/
+data/*
+!data/companies.example.json
+!data/raw/
+data/raw/*
+!data/raw/.gitkeep
 *.db
 *.sqlite3
 
 # Next.js / Node.js
 node_modules/
+.pnpm-store/
 .next/
 out/
 coverage/
