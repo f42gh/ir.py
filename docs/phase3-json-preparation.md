@@ -6,6 +6,8 @@ Phase 2で保存したZOZOの財務rawを入力し、`frontend/data/financials.j
 
 Phase 3の変換処理はEDINET DB APIを呼ばない。入力ファイルを明示指定し、同じrawから常に同じJSONを生成する。
 
+実装は `src/build_financials.py`、自動テストは `tests/test_build_financials.py` に置く。
+
 想定する実行形式:
 
 ```bash
@@ -79,6 +81,7 @@ uv run python src/build_financials.py \
 
 - rawトップレベルが `data` 配列と `meta` オブジェクトを持つことを確認する
 - `meta.period == "annual"`、EDINETコード、5年度、年度重複なしを確認する
+- rawの年度行は入力順に依存せず、重複確認後に `fiscal_year` 昇順へ並べる
 - 入力rawは一切変更しない
 - 全期間の変換と計算が成功してから一時ファイルへ書き、最後に出力を置き換える。失敗時は既存の `financials.json` を壊さない
 - JSONはUTF-8、インデント2、末尾改行ありで保存する
@@ -95,7 +98,7 @@ uv run python src/build_financials.py \
 5. `roe_official` の小数からパーセントポイントへの変換
 6. `JP` から `JGAAP` への変換と未知の会計基準の `UNKNOWN` 化
 7. `doc_id`、提出日、URL、取得日時を追跡できる
-8. 重複年度、不正な順序、異なるEDINETコード、不正JSONで既存出力を変更しない
+8. シャッフルされた年度を昇順化し、重複年度、異なるEDINETコード、不正JSONでは既存出力を変更しない
 9. 同じ入力から生成した2ファイルが完全一致する
 
 ## 実装前の確認結果

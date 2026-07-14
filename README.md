@@ -59,6 +59,18 @@ data/raw/zozo__financials__YYYYMMDDTHHMMSSZ.json
 
 Phase 2では分析指標やフロントエンド用JSONは生成しません。
 
+## Phase 3分析用JSON生成
+
+保存済みrawを明示指定し、ZOZOの5年度分を画面用JSONへ変換します。この処理はEDINET DB APIを呼びません。
+
+```bash
+uv run python src/build_financials.py \
+  --input data/raw/zozo__financials__20260714T050058Z.json \
+  --output frontend/data/financials.json
+```
+
+同じrawからは同じJSONが生成されます。入力ファイルは変更せず、変換に失敗した場合も既存の画面用JSONを壊しません。
+
 ## 確認
 
 Pythonの取得処理は実APIを呼ばずに確認できます。

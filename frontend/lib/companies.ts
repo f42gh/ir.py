@@ -16,6 +16,8 @@ export type Company = {
   note: string;
 };
 
+const MVP_TICKERS = ["3092.T", "2432.T", "4751.T", "3626.T", "4478.T"] as const;
+
 export async function loadCompanies(): Promise<Company[]> {
   const candidates = [
     path.resolve(process.cwd(), "..", "data", "COMPANIES.json"),
@@ -36,13 +38,20 @@ export async function loadCompanies(): Promise<Company[]> {
     }
   }
 
-  return Object.entries(parsed)
-    .map(([ticker, meta]) => ({
-      ticker,
-      name: meta.name,
-      tier: String(meta.tier),
-      avgSalaryMan: meta.avg_salary_man,
-      note: meta.note ?? "",
-    }))
-    .sort((a, b) => a.tier.localeCompare(b.tier) || a.ticker.localeCompare(b.ticker));
+  return MVP_TICKERS.flatMap((ticker) => {
+    const meta = parsed[ticker];
+    if (!meta) {
+      return [];
+    }
+
+    return [
+      {
+        ticker,
+        name: meta.name,
+        tier: String(meta.tier),
+        avgSalaryMan: meta.avg_salary_man,
+        note: meta.note ?? "",
+      },
+    ];
+  });
 }
