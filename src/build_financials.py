@@ -10,6 +10,7 @@ import re
 import sys
 import tempfile
 from collections.abc import Mapping, Sequence
+from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -19,7 +20,7 @@ EXPECTED_EDINET_CODE = "E05725"
 EXPECTED_PERIOD = "annual"
 EXPECTED_YEAR_COUNT = 5
 INPUT_NAME_PATTERN = re.compile(
-    r"^zozo__financials__(?P<timestamp>\d{8}T\d{6}Z)\.json$"
+    r"^(?P<slug>[a-z0-9_]+)__financials__(?P<timestamp>\d{8}T\d{6}Z)\.json$"
 )
 
 MONEY_FIELDS = {
@@ -45,6 +46,17 @@ class BuildError(Exception):
     """An expected, user-facing Phase 3 build failure."""
 
 
+@dataclass(frozen=True)
+class CompanySpec:
+    """Metadata needed to validate and identify one company's raw data."""
+
+    ticker: str
+    name: str
+    edinet_code: str
+    slug: str
+    order: int
+
+
 def parse_fetched_at(input_path: Path) -> str:
     """Extract and validate the UTC fetch timestamp encoded in a raw filename."""
 
@@ -52,7 +64,7 @@ def parse_fetched_at(input_path: Path) -> str:
     if match is None:
         raise BuildError(
             "入力ファイル名は "
-            "zozo__financials__YYYYMMDDTHHMMSSZ.json 形式にしてください。"
+            "<企業slug>__financials__YYYYMMDDTHHMMSSZ.json 形式にしてください。"
         )
     timestamp = match.group("timestamp")
     try:
@@ -62,6 +74,66 @@ def parse_fetched_at(input_path: Path) -> str:
     except ValueError as exc:
         raise BuildError("入力ファイル名の取得日時が不正です。") from exc
     return parsed.isoformat(timespec="seconds").replace("+00:00", "Z")
+
+
+def parse_input_slug(input_path: Path) -> str:
+    """Extract the stable company slug encoded in a raw filename."""
+
+    match = INPUT_NAME_PATTERN.fullmatch(input_path.name)
+    if match is None:
+        raise BuildError(
+            "入力ファイル名は "
+            "<企業slug>__financials__YYYYMMDDTHHMMSSZ.json 形式にしてください。"
+        )
+    return match.group("slug")
+
+
+def ticker_slug(ticker: str) -> str:
+    """Convert a ticker to the same stable slug used by the fetch CLI."""
+
+    slug = re.sub(r"[^a-z0-9]+", "_", ticker.lower()).strip("_")
+    if not slug:
+        raise BuildError(f"ティッカーをファイル名へ変換できません: {ticker}")
+    return slug
+
+
+def load_company_specs(path: Path) -> tuple[CompanySpec, ...]:
+    """Load ordered company identities from the local metadata JSON."""
+
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError, UnicodeDecodeError) as exc:
+        raise BuildError(f"企業メタデータを読み込めません: {path}") from exc
+    if not isinstance(payload, dict):
+        raise BuildError("企業メタデータのトップレベルがオブジェクトではありません。")
+
+    specs: list[CompanySpec] = []
+    seen_codes: set[str] = set()
+    for order, (ticker, meta) in enumerate(payload.items()):
+        if not isinstance(ticker, str) or not isinstance(meta, dict):
+            raise BuildError("企業メタデータに不正な項目があります。")
+        name = meta.get("name")
+        edinet_code = meta.get("edinet_code")
+        if not isinstance(name, str) or not name.strip():
+            raise BuildError(f"{ticker} の企業名が不正です。")
+        if not isinstance(edinet_code, str) or not re.fullmatch(r"E\d{5}", edinet_code):
+            raise BuildError(f"{ticker} のEDINETコードが不正です。")
+        if edinet_code in seen_codes:
+            raise BuildError(f"EDINETコードが重複しています: {edinet_code}")
+        seen_codes.add(edinet_code)
+        specs.append(
+            CompanySpec(
+                ticker=ticker,
+                name=name.strip(),
+                edinet_code=edinet_code,
+                slug=ticker_slug(ticker),
+                order=order,
+            )
+        )
+
+    if not specs:
+        raise BuildError("企業メタデータが空です。")
+    return tuple(specs)
 
 
 def load_raw(input_path: Path) -> dict[str, Any]:
@@ -166,13 +238,18 @@ def calculate_revenue_cagr_3y(
     return round_percentage(((current_revenue / starting_revenue) ** (1 / 3) - 1) * 100)
 
 
-def _validated_rows(payload: Mapping[str, Any]) -> list[dict[str, Any]]:
+def _validated_rows(
+    payload: Mapping[str, Any], *, expected_edinet_code: str = EXPECTED_EDINET_CODE
+) -> list[dict[str, Any]]:
     meta = payload.get("meta")
     rows = payload.get("data")
     if not isinstance(meta, dict) or not isinstance(rows, list):
         raise BuildError("rawにはdata配列とmetaオブジェクトが必要です。")
-    if meta.get("edinet_code") != EXPECTED_EDINET_CODE:
-        raise BuildError("rawのEDINETコードがE05725ではありません。")
+    if meta.get("edinet_code") != expected_edinet_code:
+        raise BuildError(
+            "rawのEDINETコードが企業メタデータと一致しません: "
+            f"expected={expected_edinet_code}, actual={meta.get('edinet_code')}"
+        )
     if meta.get("period") != EXPECTED_PERIOD:
         raise BuildError("rawが年次財務データではありません。")
     if len(rows) != EXPECTED_YEAR_COUNT:
@@ -275,6 +352,111 @@ def build_document(payload: Mapping[str, Any], *, input_path: Path) -> dict[str,
     }
 
 
+def build_company(
+    payload: Mapping[str, Any], *, input_path: Path, company: CompanySpec
+) -> tuple[dict[str, Any], str]:
+    """Build one normalized company object and return its fetch timestamp."""
+
+    input_slug = parse_input_slug(input_path)
+    if input_slug != company.slug:
+        raise BuildError(
+            f"rawファイル名の企業slugが一致しません: {input_slug} != {company.slug}"
+        )
+    fetched_at = parse_fetched_at(input_path)
+    periods = [
+        _transform_period(row, fetched_at=fetched_at)
+        for row in _validated_rows(
+            payload, expected_edinet_code=company.edinet_code
+        )
+    ]
+    _add_calculated_metrics(periods)
+    return (
+        {
+            "ticker": company.ticker,
+            "name": company.name,
+            "edinet_code": company.edinet_code,
+            "currency": "JPY",
+            "periods": periods,
+        },
+        fetched_at,
+    )
+
+
+def build_multi_document(
+    inputs: Sequence[tuple[CompanySpec, Path, Mapping[str, Any]]],
+) -> dict[str, Any]:
+    """Build one deterministic frontend document from multiple company raws."""
+
+    if not inputs:
+        raise BuildError("分析用JSONへ変換するrawがありません。")
+
+    companies: list[dict[str, Any]] = []
+    fetched_at_values: list[str] = []
+    seen_tickers: set[str] = set()
+    for company, input_path, payload in sorted(inputs, key=lambda item: item[0].order):
+        if company.ticker in seen_tickers:
+            raise BuildError(f"同じ企業のrawが重複しています: {company.ticker}")
+        built_company, fetched_at = build_company(
+            payload, input_path=input_path, company=company
+        )
+        seen_tickers.add(company.ticker)
+        companies.append(built_company)
+        fetched_at_values.append(fetched_at)
+
+    return {
+        "schema_version": "1.0",
+        "generated_at": max(fetched_at_values),
+        "companies": companies,
+    }
+
+
+def resolve_inputs(
+    *,
+    input_paths: Sequence[Path] | None,
+    input_dir: Path | None,
+    company_specs: Sequence[CompanySpec],
+) -> list[tuple[CompanySpec, Path, dict[str, Any]]]:
+    """Resolve explicit or latest-per-company raw paths against company metadata."""
+
+    specs_by_slug = {company.slug: company for company in company_specs}
+    if len(specs_by_slug) != len(company_specs):
+        raise BuildError("企業メタデータのslugが重複しています。")
+
+    if input_dir is not None:
+        try:
+            candidates = sorted(input_dir.glob("*__financials__*.json"))
+        except OSError as exc:
+            raise BuildError(f"rawディレクトリを読み込めません: {input_dir}") from exc
+        latest_by_slug: dict[str, Path] = {}
+        for candidate in candidates:
+            try:
+                slug = parse_input_slug(candidate)
+                parse_fetched_at(candidate)
+            except BuildError:
+                continue
+            if slug in specs_by_slug:
+                latest_by_slug[slug] = candidate
+        paths = list(latest_by_slug.values())
+    else:
+        paths = list(input_paths or ())
+
+    if not paths:
+        raise BuildError("企業メタデータに対応する財務rawが見つかりません。")
+
+    resolved: list[tuple[CompanySpec, Path, dict[str, Any]]] = []
+    seen_slugs: set[str] = set()
+    for path in paths:
+        slug = parse_input_slug(path)
+        company = specs_by_slug.get(slug)
+        if company is None:
+            raise BuildError(f"rawに対応する企業メタデータがありません: {path.name}")
+        if slug in seen_slugs:
+            raise BuildError(f"同じ企業のrawが複数指定されています: {company.ticker}")
+        seen_slugs.add(slug)
+        resolved.append((company, path, load_raw(path)))
+    return resolved
+
+
 def write_json_atomic(document: Mapping[str, Any], output_path: Path) -> None:
     """Write deterministic UTF-8 JSON without exposing a partial output file."""
 
@@ -322,7 +504,23 @@ def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         description="保存済みEDINET DBレスポンスから画面用JSONを生成します。"
     )
-    parser.add_argument("--input", required=True, type=Path, help="財務raw JSON")
+    source = parser.add_mutually_exclusive_group(required=True)
+    source.add_argument(
+        "--input",
+        action="append",
+        type=Path,
+        help="財務raw JSON。複数社はオプションを繰り返して指定",
+    )
+    source.add_argument(
+        "--input-dir",
+        type=Path,
+        help="企業ごとに最新の財務rawを選ぶディレクトリ",
+    )
+    parser.add_argument(
+        "--companies",
+        type=Path,
+        help="複数社ビルド用の企業メタデータJSON",
+    )
     parser.add_argument("--output", required=True, type=Path, help="画面用JSON")
     return parser
 
@@ -330,20 +528,39 @@ def build_parser() -> argparse.ArgumentParser:
 def main(argv: Sequence[str] | None = None) -> int:
     args = build_parser().parse_args(argv)
     try:
-        if args.input.resolve() == args.output.resolve():
+        input_paths = args.input or []
+        if any(path.resolve() == args.output.resolve() for path in input_paths):
             raise BuildError("入力ファイルと出力ファイルには別のパスを指定してください。")
-        payload = load_raw(args.input)
-        document = build_document(payload, input_path=args.input)
+        if args.input_dir is not None and args.companies is None:
+            raise BuildError("--input-dir には --companies の指定が必要です。")
+        if len(input_paths) > 1 and args.companies is None:
+            raise BuildError("複数の --input には --companies の指定が必要です。")
+
+        if args.companies is None:
+            input_path = input_paths[0]
+            payload = load_raw(input_path)
+            document = build_document(payload, input_path=input_path)
+        else:
+            company_specs = load_company_specs(args.companies)
+            inputs = resolve_inputs(
+                input_paths=input_paths,
+                input_dir=args.input_dir,
+                company_specs=company_specs,
+            )
+            document = build_multi_document(inputs)
         write_json_atomic(document, args.output)
     except BuildError as exc:
         print(f"エラー: {exc}", file=sys.stderr)
         return 1
 
-    periods = document["companies"][0]["periods"]
-    years = ", ".join(str(period["fiscal_year"]) for period in periods)
     print(f"生成: {args.output}")
-    print(f"企業: ZOZO ({EXPECTED_EDINET_CODE})")
-    print(f"対象年度: {years}")
+    for company in document["companies"]:
+        years = ", ".join(str(period["fiscal_year"]) for period in company["periods"])
+        print(
+            f"企業: {company['ticker']} {company['name']} "
+            f"({company['edinet_code']}) [{years}]"
+        )
+    print(f"企業数: {len(document['companies'])}")
     print(f"取得日時: {document['generated_at']}")
     return 0
 
