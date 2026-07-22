@@ -1,32 +1,20 @@
 {
-  "3092.T": {
-    "name": "ZOZO",
+  "1234.T": {
+    "name": "サンプル上場会社A",
     "tier": "1",
-    "avg_salary_man": 621,
-    "note": "Phase 2の最初の取得対象"
+    "status": "direct",
+    "edinet_code": "E00001",
+    "avg_salary_man": 800,
+    "targets": ["サンプル上場会社A"],
+    "note": "直接取得のサンプル"
   },
-  "2432.T": {
-    "name": "DeNA",
-    "tier": "1",
-    "avg_salary_man": 850,
-    "note": "MVP分析対象"
-  },
-  "4751.T": {
-    "name": "サイバーエージェント",
+  "5678.T": {
+    "name": "サンプル上場会社B",
     "tier": "2",
-    "avg_salary_man": 817,
-    "note": "MVP分析対象"
-  },
-  "3626.T": {
-    "name": "TIS",
-    "tier": "2",
-    "avg_salary_man": 744,
-    "note": "MVP分析対象"
-  },
-  "4478.T": {
-    "name": "freee",
-    "tier": "2",
-    "avg_salary_man": 716,
-    "note": "MVP分析対象"
+    "status": "indirect",
+    "edinet_code": "E00002",
+    "avg_salary_man": 750,
+    "targets": ["サンプル子会社"],
+    "note": "親会社を参照する間接取得のサンプル"
   }
 }

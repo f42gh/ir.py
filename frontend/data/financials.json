@@ -1,7 +1,1537 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-14T05:00:58Z",
+  "generated_at": "2026-07-21T23:40:06Z",
   "companies": [
+    {
+      "ticker": "3655.T",
+      "name": "BrainPad",
+      "edinet_code": "E25817",
+      "currency": "JPY",
+      "periods": [
+        {
+          "fiscal_year": 2021,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 7101347000,
+            "operating_income": 851296000,
+            "net_income": 601443000,
+            "total_assets": 5778683000,
+            "equity": 4674187000,
+            "operating_cash_flow": 779789000,
+            "investing_cash_flow": -378031000,
+            "roe_pct": 13.8
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": null,
+            "operating_margin_pct": 11.9878,
+            "free_cash_flow": 401758000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100MI7C",
+            "document_type": "annual_securities_report",
+            "filed_at": "2021-09-29",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100MI7C"
+          },
+          "fetched_at": "2026-07-21T23:40:04Z"
+        },
+        {
+          "fiscal_year": 2022,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 8561311000,
+            "operating_income": null,
+            "net_income": 803246000,
+            "total_assets": 6148543000,
+            "equity": 4834510000,
+            "operating_cash_flow": 1125414000,
+            "investing_cash_flow": -948969000,
+            "roe_pct": 16.9
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 20.559,
+            "operating_margin_pct": null,
+            "free_cash_flow": 176445000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100P8SL",
+            "document_type": "annual_securities_report",
+            "filed_at": "2022-09-29",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100P8SL"
+          },
+          "fetched_at": "2026-07-21T23:40:04Z"
+        },
+        {
+          "fiscal_year": 2023,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 9797938000,
+            "operating_income": 680650000,
+            "net_income": 515083000,
+            "total_assets": 6516266000,
+            "equity": 4894950000,
+            "operating_cash_flow": 889693000,
+            "investing_cash_flow": -788121000,
+            "roe_pct": 10.6
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 14.4444,
+            "operating_margin_pct": 6.9469,
+            "free_cash_flow": 101572000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100RWRR",
+            "document_type": "annual_securities_report",
+            "filed_at": "2023-09-27",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100RWRR"
+          },
+          "fetched_at": "2026-07-21T23:40:04Z"
+        },
+        {
+          "fiscal_year": 2024,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 10561125000,
+            "operating_income": 1348933000,
+            "net_income": 909477000,
+            "total_assets": 7257719000,
+            "equity": 5531863000,
+            "operating_cash_flow": 1538326000,
+            "investing_cash_flow": -317660000,
+            "roe_pct": 17.4
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 7.7893,
+            "operating_margin_pct": 12.7726,
+            "free_cash_flow": 1220666000,
+            "revenue_cagr_3y_pct": 14.1449
+          },
+          "source_document": {
+            "document_id": "S100UFA2",
+            "document_type": "annual_securities_report",
+            "filed_at": "2024-09-26",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100UFA2"
+          },
+          "fetched_at": "2026-07-21T23:40:04Z"
+        },
+        {
+          "fiscal_year": 2025,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 11772254000,
+            "operating_income": 1575749000,
+            "net_income": 1063952000,
+            "total_assets": 7518783000,
+            "equity": 5758265000,
+            "operating_cash_flow": 1350975000,
+            "investing_cash_flow": -439890000,
+            "roe_pct": 18.8
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 11.4678,
+            "operating_margin_pct": 13.3853,
+            "free_cash_flow": 911085000,
+            "revenue_cagr_3y_pct": 11.2004
+          },
+          "source_document": {
+            "document_id": "S100WQYI",
+            "document_type": "annual_securities_report",
+            "filed_at": "2025-09-25",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100WQYI"
+          },
+          "fetched_at": "2026-07-21T23:40:04Z"
+        }
+      ]
+    },
+    {
+      "ticker": "4443.T",
+      "name": "Sansan",
+      "edinet_code": "E34960",
+      "currency": "JPY",
+      "periods": [
+        {
+          "fiscal_year": 2021,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 16184000000,
+            "operating_income": 736000000,
+            "net_income": 182000000,
+            "total_assets": 24310000000,
+            "equity": 10892000000,
+            "operating_cash_flow": 3011000000,
+            "investing_cash_flow": -551000000,
+            "roe_pct": 1.6
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": null,
+            "operating_margin_pct": 4.5477,
+            "free_cash_flow": 2460000000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100MD8G",
+            "document_type": "annual_securities_report",
+            "filed_at": "2021-08-31",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100MD8G"
+          },
+          "fetched_at": "2026-07-21T23:40:04Z"
+        },
+        {
+          "fiscal_year": 2022,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 20420000000,
+            "operating_income": 631000000,
+            "net_income": 857000000,
+            "total_assets": 26292000000,
+            "equity": 11832000000,
+            "operating_cash_flow": 3123000000,
+            "investing_cash_flow": -1014000000,
+            "roe_pct": 7.0
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 26.174,
+            "operating_margin_pct": 3.0901,
+            "free_cash_flow": 2109000000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100P3V8",
+            "document_type": "annual_securities_report",
+            "filed_at": "2022-08-31",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100P3V8"
+          },
+          "fetched_at": "2026-07-21T23:40:04Z"
+        },
+        {
+          "fiscal_year": 2023,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 25510000000,
+            "operating_income": 199000000,
+            "net_income": -141000000,
+            "total_assets": 31200000000,
+            "equity": 12454000000,
+            "operating_cash_flow": 3848000000,
+            "investing_cash_flow": 1364000000,
+            "roe_pct": null
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 24.9265,
+            "operating_margin_pct": 0.7801,
+            "free_cash_flow": 5212000000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100RRXW",
+            "document_type": "annual_securities_report",
+            "filed_at": "2023-08-30",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100RRXW"
+          },
+          "fetched_at": "2026-07-21T23:40:04Z"
+        },
+        {
+          "fiscal_year": 2024,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 33878000000,
+            "operating_income": 1337000000,
+            "net_income": 953000000,
+            "total_assets": 37592000000,
+            "equity": 13792000000,
+            "operating_cash_flow": 5483000000,
+            "investing_cash_flow": -3180000000,
+            "roe_pct": 7.1
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 32.8028,
+            "operating_margin_pct": 3.9465,
+            "free_cash_flow": 2303000000,
+            "revenue_cagr_3y_pct": 27.9216
+          },
+          "source_document": {
+            "document_id": "S100UAF3",
+            "document_type": "annual_securities_report",
+            "filed_at": "2024-08-28",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100UAF3"
+          },
+          "fetched_at": "2026-07-21T23:40:04Z"
+        },
+        {
+          "fiscal_year": 2025,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 43202000000,
+            "operating_income": 2800000000,
+            "net_income": 424000000,
+            "total_assets": 47984000000,
+            "equity": 14775000000,
+            "operating_cash_flow": 9651000000,
+            "investing_cash_flow": -2550000000,
+            "roe_pct": 2.9
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 27.5223,
+            "operating_margin_pct": 6.4812,
+            "free_cash_flow": 7101000000,
+            "revenue_cagr_3y_pct": 28.3757
+          },
+          "source_document": {
+            "document_id": "S100WKZJ",
+            "document_type": "annual_securities_report",
+            "filed_at": "2025-08-25",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100WKZJ"
+          },
+          "fetched_at": "2026-07-21T23:40:04Z"
+        }
+      ]
+    },
+    {
+      "ticker": "2121.T",
+      "name": "MIXI",
+      "edinet_code": "E05617",
+      "currency": "JPY",
+      "periods": [
+        {
+          "fiscal_year": 2022,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 122030000000,
+            "operating_income": 17808000000,
+            "net_income": 10262000000,
+            "total_assets": 218056000000,
+            "equity": 182385000000,
+            "operating_cash_flow": 2647000000,
+            "investing_cash_flow": -17436000000,
+            "roe_pct": 5.5
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": null,
+            "operating_margin_pct": 14.5931,
+            "free_cash_flow": -14789000000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100O6A1",
+            "document_type": "annual_securities_report",
+            "filed_at": "2022-06-29",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100O6A1"
+          },
+          "fetched_at": "2026-07-21T23:40:04Z"
+        },
+        {
+          "fiscal_year": 2023,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 146867000000,
+            "operating_income": 24820000000,
+            "net_income": 5161000000,
+            "total_assets": 222321000000,
+            "equity": 180116000000,
+            "operating_cash_flow": 15751000000,
+            "investing_cash_flow": -7350000000,
+            "roe_pct": 2.8
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 20.3532,
+            "operating_margin_pct": 16.8996,
+            "free_cash_flow": 8401000000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100QX1Y",
+            "document_type": "annual_securities_report",
+            "filed_at": "2023-06-22",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100QX1Y"
+          },
+          "fetched_at": "2026-07-21T23:40:04Z"
+        },
+        {
+          "fiscal_year": 2024,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 146868000000,
+            "operating_income": 19177000000,
+            "net_income": 7082000000,
+            "total_assets": 207342000000,
+            "equity": 172240000000,
+            "operating_cash_flow": 9181000000,
+            "investing_cash_flow": -6852000000,
+            "roe_pct": 4.0
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 0.0007,
+            "operating_margin_pct": 13.0573,
+            "free_cash_flow": 2329000000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100TR2T",
+            "document_type": "annual_securities_report",
+            "filed_at": "2024-06-27",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100TR2T"
+          },
+          "fetched_at": "2026-07-21T23:40:04Z"
+        },
+        {
+          "fiscal_year": 2025,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 154847000000,
+            "operating_income": 26600000000,
+            "net_income": 17601000000,
+            "total_assets": 225544000000,
+            "equity": 175026000000,
+            "operating_cash_flow": 27476000000,
+            "investing_cash_flow": -14490000000,
+            "roe_pct": 10.0
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 5.4328,
+            "operating_margin_pct": 17.1782,
+            "free_cash_flow": 12986000000,
+            "revenue_cagr_3y_pct": 8.2627
+          },
+          "source_document": {
+            "document_id": "S100W37Z",
+            "document_type": "annual_securities_report",
+            "filed_at": "2025-06-27",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100W37Z"
+          },
+          "fetched_at": "2026-07-21T23:40:04Z"
+        },
+        {
+          "fiscal_year": 2026,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 171369000000,
+            "operating_income": 22256000000,
+            "net_income": 17270000000,
+            "total_assets": 280405000000,
+            "equity": 175070000000,
+            "operating_cash_flow": 19287000000,
+            "investing_cash_flow": -31552000000,
+            "roe_pct": 9.6
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 10.6699,
+            "operating_margin_pct": 12.9872,
+            "free_cash_flow": -12265000000,
+            "revenue_cagr_3y_pct": 5.2776
+          },
+          "source_document": {
+            "document_id": "S100YE1D",
+            "document_type": "annual_securities_report",
+            "filed_at": "2026-06-19",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YE1D"
+          },
+          "fetched_at": "2026-07-21T23:40:04Z"
+        }
+      ]
+    },
+    {
+      "ticker": "4751.T",
+      "name": "サイバーエージェント",
+      "edinet_code": "E05072",
+      "currency": "JPY",
+      "periods": [
+        {
+          "fiscal_year": 2021,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 666149000000,
+            "operating_income": 104381000000,
+            "net_income": 41242000000,
+            "total_assets": 382225000000,
+            "equity": 119128000000,
+            "operating_cash_flow": 109609000000,
+            "investing_cash_flow": -28537000000,
+            "roe_pct": 37.8
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": null,
+            "operating_margin_pct": 15.6693,
+            "free_cash_flow": 81072000000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100N0OD",
+            "document_type": "annual_securities_report",
+            "filed_at": "2021-12-10",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100N0OD"
+          },
+          "fetched_at": "2026-07-21T23:40:04Z"
+        },
+        {
+          "fiscal_year": 2022,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 709923000000,
+            "operating_income": 69114000000,
+            "net_income": 22901000000,
+            "total_assets": 381933000000,
+            "equity": 138079000000,
+            "operating_cash_flow": 17946000000,
+            "investing_cash_flow": -31412000000,
+            "roe_pct": 16.9
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 6.5712,
+            "operating_margin_pct": 9.7354,
+            "free_cash_flow": -13466000000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100PRZU",
+            "document_type": "annual_securities_report",
+            "filed_at": "2022-12-09",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100PRZU"
+          },
+          "fetched_at": "2026-07-21T23:40:04Z"
+        },
+        {
+          "fiscal_year": 2023,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 719451000000,
+            "operating_income": 24557000000,
+            "net_income": 3540000000,
+            "total_assets": 475222000000,
+            "equity": 137034000000,
+            "operating_cash_flow": 20822000000,
+            "investing_cash_flow": -40290000000,
+            "roe_pct": 2.5
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 1.3421,
+            "operating_margin_pct": 3.4133,
+            "free_cash_flow": -19468000000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100SFQ1",
+            "document_type": "annual_securities_report",
+            "filed_at": "2023-12-08",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100SFQ1"
+          },
+          "fetched_at": "2026-07-21T23:40:04Z"
+        },
+        {
+          "fiscal_year": 2024,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 801236000000,
+            "operating_income": 40083000000,
+            "net_income": 15977000000,
+            "total_assets": 516686000000,
+            "equity": 142439000000,
+            "operating_cash_flow": 53231000000,
+            "investing_cash_flow": -38331000000,
+            "roe_pct": 10.8
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 11.3677,
+            "operating_margin_pct": 5.0026,
+            "free_cash_flow": 14900000000,
+            "revenue_cagr_3y_pct": 6.3481
+          },
+          "source_document": {
+            "document_id": "S100UXZA",
+            "document_type": "annual_securities_report",
+            "filed_at": "2024-12-13",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100UXZA"
+          },
+          "fetched_at": "2026-07-21T23:40:04Z"
+        },
+        {
+          "fiscal_year": 2025,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 874030000000,
+            "operating_income": 71702000000,
+            "net_income": 31667000000,
+            "total_assets": 557162000000,
+            "equity": 166285000000,
+            "operating_cash_flow": 79518000000,
+            "investing_cash_flow": -30825000000,
+            "roe_pct": 18.9
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 9.0852,
+            "operating_margin_pct": 8.2036,
+            "free_cash_flow": 48693000000,
+            "revenue_cagr_3y_pct": 7.1778
+          },
+          "source_document": {
+            "document_id": "S100XCU9",
+            "document_type": "annual_securities_report",
+            "filed_at": "2025-12-24",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XCU9"
+          },
+          "fetched_at": "2026-07-21T23:40:04Z"
+        }
+      ]
+    },
+    {
+      "ticker": "4384.T",
+      "name": "ラクスル",
+      "edinet_code": "E33966",
+      "currency": "JPY",
+      "periods": [
+        {
+          "fiscal_year": 2021,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 25523000000,
+            "operating_income": null,
+            "net_income": 160000000,
+            "total_assets": 21916000000,
+            "equity": 7463000000,
+            "operating_cash_flow": 1539000000,
+            "investing_cash_flow": -3618000000,
+            "roe_pct": 2.3
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": null,
+            "operating_margin_pct": null,
+            "free_cash_flow": -2079000000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100MNBZ",
+            "document_type": "annual_securities_report",
+            "filed_at": "2021-10-22",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100MNBZ"
+          },
+          "fetched_at": "2026-07-21T23:40:04Z"
+        },
+        {
+          "fiscal_year": 2022,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 33980000000,
+            "operating_income": 462000000,
+            "net_income": 1021000000,
+            "total_assets": 28633000000,
+            "equity": 8360000000,
+            "operating_cash_flow": 837000000,
+            "investing_cash_flow": -2808000000,
+            "roe_pct": 12.2
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 33.1348,
+            "operating_margin_pct": 1.3596,
+            "free_cash_flow": -1971000000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100PEZ1",
+            "document_type": "annual_securities_report",
+            "filed_at": "2022-10-28",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100PEZ1"
+          },
+          "fetched_at": "2026-07-21T23:40:04Z"
+        },
+        {
+          "fiscal_year": 2023,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 41018000000,
+            "operating_income": 1765000000,
+            "net_income": 1329000000,
+            "total_assets": 32665000000,
+            "equity": 9531000000,
+            "operating_cash_flow": 2902000000,
+            "investing_cash_flow": 297000000,
+            "roe_pct": 12.7
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 20.7122,
+            "operating_margin_pct": 4.303,
+            "free_cash_flow": 3199000000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100S1UH",
+            "document_type": "annual_securities_report",
+            "filed_at": "2023-10-27",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100S1UH"
+          },
+          "fetched_at": "2026-07-21T23:40:04Z"
+        },
+        {
+          "fiscal_year": 2024,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 51121000000,
+            "operating_income": 2523000000,
+            "net_income": 2118000000,
+            "total_assets": 43863000000,
+            "equity": 11062000000,
+            "operating_cash_flow": 2705000000,
+            "investing_cash_flow": -6930000000,
+            "roe_pct": 15.8
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 24.6306,
+            "operating_margin_pct": 4.9353,
+            "free_cash_flow": -4225000000,
+            "revenue_cagr_3y_pct": 26.0538
+          },
+          "source_document": {
+            "document_id": "S100UK9Z",
+            "document_type": "annual_securities_report",
+            "filed_at": "2024-10-25",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100UK9Z"
+          },
+          "fetched_at": "2026-07-21T23:40:04Z"
+        },
+        {
+          "fiscal_year": 2025,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 61950000000,
+            "operating_income": 3819000000,
+            "net_income": 2702000000,
+            "total_assets": 44299000000,
+            "equity": 11322000000,
+            "operating_cash_flow": 4992000000,
+            "investing_cash_flow": -2184000000,
+            "roe_pct": 18.9
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 21.1831,
+            "operating_margin_pct": 6.1646,
+            "free_cash_flow": 2808000000,
+            "revenue_cagr_3y_pct": 22.1629
+          },
+          "source_document": {
+            "document_id": "S100WW0E",
+            "document_type": "annual_securities_report",
+            "filed_at": "2025-10-22",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100WW0E"
+          },
+          "fetched_at": "2026-07-21T23:40:04Z"
+        }
+      ]
+    },
+    {
+      "ticker": "4418.T",
+      "name": "JDSC",
+      "edinet_code": "E37175",
+      "currency": "JPY",
+      "periods": [
+        {
+          "fiscal_year": 2021,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 1089424000,
+            "operating_income": null,
+            "net_income": 27719000,
+            "total_assets": 3188388000,
+            "equity": 3051881000,
+            "operating_cash_flow": 150315000,
+            "investing_cash_flow": -14451000,
+            "roe_pct": 1.61
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": null,
+            "operating_margin_pct": null,
+            "free_cash_flow": 135864000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": null,
+            "document_type": "annual_securities_report",
+            "filed_at": null,
+            "url": null
+          },
+          "fetched_at": "2026-07-21T23:40:04Z"
+        },
+        {
+          "fiscal_year": 2022,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 1413332000,
+            "operating_income": null,
+            "net_income": -82931000,
+            "total_assets": 3729464000,
+            "equity": 3587190000,
+            "operating_cash_flow": -147100000,
+            "investing_cash_flow": -129613000,
+            "roe_pct": null
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 29.732,
+            "operating_margin_pct": null,
+            "free_cash_flow": -276713000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100P9MA",
+            "document_type": "annual_securities_report",
+            "filed_at": "2022-09-29",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100P9MA"
+          },
+          "fetched_at": "2026-07-21T23:40:04Z"
+        },
+        {
+          "fiscal_year": 2023,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 1939668000,
+            "operating_income": 68627000,
+            "net_income": null,
+            "total_assets": 4221108000,
+            "equity": 3559679000,
+            "operating_cash_flow": 341587000,
+            "investing_cash_flow": -517943000,
+            "roe_pct": 0.04
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 37.2408,
+            "operating_margin_pct": 3.5381,
+            "free_cash_flow": -176356000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100RX7J",
+            "document_type": "annual_securities_report",
+            "filed_at": "2023-09-27",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100RX7J"
+          },
+          "fetched_at": "2026-07-21T23:40:04Z"
+        },
+        {
+          "fiscal_year": 2024,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 16457876000,
+            "operating_income": 50684000,
+            "net_income": -278397000,
+            "total_assets": 7605353000,
+            "equity": 3289865000,
+            "operating_cash_flow": -713590000,
+            "investing_cash_flow": -1752744000,
+            "roe_pct": null
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 748.4893,
+            "operating_margin_pct": 0.308,
+            "free_cash_flow": -2466334000,
+            "revenue_cagr_3y_pct": 147.206
+          },
+          "source_document": {
+            "document_id": "S100UFQ4",
+            "document_type": "annual_securities_report",
+            "filed_at": "2024-09-26",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100UFQ4"
+          },
+          "fetched_at": "2026-07-21T23:40:04Z"
+        },
+        {
+          "fiscal_year": 2025,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 23055669000,
+            "operating_income": 581552000,
+            "net_income": 345677000,
+            "total_assets": 7987078000,
+            "equity": 3784335000,
+            "operating_cash_flow": 893477000,
+            "investing_cash_flow": -114435000,
+            "roe_pct": 9.77
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 40.089,
+            "operating_margin_pct": 2.5224,
+            "free_cash_flow": 779042000,
+            "revenue_cagr_3y_pct": 153.6167
+          },
+          "source_document": {
+            "document_id": "S100WQTJ",
+            "document_type": "annual_securities_report",
+            "filed_at": "2025-09-24",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100WQTJ"
+          },
+          "fetched_at": "2026-07-21T23:40:04Z"
+        }
+      ]
+    },
+    {
+      "ticker": "3993.T",
+      "name": "PKSHA Technology",
+      "edinet_code": "E33391",
+      "currency": "JPY",
+      "periods": [
+        {
+          "fiscal_year": 2021,
+          "fiscal_year_end": null,
+          "accounting_standard": "IFRS",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 8727071000,
+            "operating_income": 650311000,
+            "net_income": 139431000,
+            "total_assets": 35975078000,
+            "equity": 28717432000,
+            "operating_cash_flow": 168230000,
+            "investing_cash_flow": -13476394000,
+            "roe_pct": 0.5
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": null,
+            "operating_margin_pct": 7.4517,
+            "free_cash_flow": -13308164000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100N53X",
+            "document_type": "annual_securities_report",
+            "filed_at": "2021-12-27",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100N53X"
+          },
+          "fetched_at": "2026-07-21T23:40:05Z"
+        },
+        {
+          "fiscal_year": 2022,
+          "fiscal_year_end": null,
+          "accounting_standard": "IFRS",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 11509927000,
+            "operating_income": 1565906000,
+            "net_income": 836612000,
+            "total_assets": 38492999000,
+            "equity": 28559813000,
+            "operating_cash_flow": 2695397000,
+            "investing_cash_flow": -2323050000,
+            "roe_pct": 2.9
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 31.8876,
+            "operating_margin_pct": 13.6048,
+            "free_cash_flow": 372347000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100PVNM",
+            "document_type": "annual_securities_report",
+            "filed_at": "2022-12-26",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100PVNM"
+          },
+          "fetched_at": "2026-07-21T23:40:05Z"
+        },
+        {
+          "fiscal_year": 2023,
+          "fiscal_year_end": null,
+          "accounting_standard": "IFRS",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 13908918000,
+            "operating_income": 771146000,
+            "net_income": null,
+            "total_assets": 38874674000,
+            "equity": 29422752000,
+            "operating_cash_flow": 3084975000,
+            "investing_cash_flow": 2927364000,
+            "roe_pct": 0.0
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 20.8428,
+            "operating_margin_pct": 5.5443,
+            "free_cash_flow": 6012339000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100SJ2N",
+            "document_type": "annual_securities_report",
+            "filed_at": "2023-12-25",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100SJ2N"
+          },
+          "fetched_at": "2026-07-21T23:40:05Z"
+        },
+        {
+          "fiscal_year": 2024,
+          "fiscal_year_end": null,
+          "accounting_standard": "IFRS",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 16893185000,
+            "operating_income": 3209225000,
+            "net_income": 2082791000,
+            "total_assets": 41785267000,
+            "equity": 32228163000,
+            "operating_cash_flow": 3013338000,
+            "investing_cash_flow": -3077715000,
+            "roe_pct": 6.8
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 21.4558,
+            "operating_margin_pct": 18.9972,
+            "free_cash_flow": -64377000,
+            "revenue_cagr_3y_pct": 24.6276
+          },
+          "source_document": {
+            "document_id": "S100UYWD",
+            "document_type": "annual_securities_report",
+            "filed_at": "2024-12-23",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100UYWD"
+          },
+          "fetched_at": "2026-07-21T23:40:05Z"
+        },
+        {
+          "fiscal_year": 2025,
+          "fiscal_year_end": null,
+          "accounting_standard": "IFRS",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 21771392000,
+            "operating_income": 5288742000,
+            "net_income": 2683075000,
+            "total_assets": 54368529000,
+            "equity": 34483425000,
+            "operating_cash_flow": 5176949000,
+            "investing_cash_flow": -6198358000,
+            "roe_pct": 8.0
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 28.8768,
+            "operating_margin_pct": 24.2922,
+            "free_cash_flow": -1021409000,
+            "revenue_cagr_3y_pct": 23.672
+          },
+          "source_document": {
+            "document_id": "S100XC4P",
+            "document_type": "annual_securities_report",
+            "filed_at": "2025-12-22",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XC4P"
+          },
+          "fetched_at": "2026-07-21T23:40:05Z"
+        }
+      ]
+    },
+    {
+      "ticker": "4165.T",
+      "name": "プレイド",
+      "edinet_code": "E34973",
+      "currency": "JPY",
+      "periods": [
+        {
+          "fiscal_year": 2021,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 5444810000,
+            "operating_income": 170616000,
+            "net_income": -106650000,
+            "total_assets": 6983950000,
+            "equity": 4859926000,
+            "operating_cash_flow": 410902000,
+            "investing_cash_flow": -1330001000,
+            "roe_pct": null
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": null,
+            "operating_margin_pct": 3.1336,
+            "free_cash_flow": -919099000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100N4IA",
+            "document_type": "annual_securities_report",
+            "filed_at": "2021-12-23",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100N4IA"
+          },
+          "fetched_at": "2026-07-21T23:40:05Z"
+        },
+        {
+          "fiscal_year": 2022,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 7295234000,
+            "operating_income": -882541000,
+            "net_income": -930777000,
+            "total_assets": 7091301000,
+            "equity": 4023850000,
+            "operating_cash_flow": -809233000,
+            "investing_cash_flow": -135108000,
+            "roe_pct": null
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 33.9851,
+            "operating_margin_pct": -12.0975,
+            "free_cash_flow": -944341000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100PUIT",
+            "document_type": "annual_securities_report",
+            "filed_at": "2022-12-21",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100PUIT"
+          },
+          "fetched_at": "2026-07-21T23:40:05Z"
+        },
+        {
+          "fiscal_year": 2023,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 8633638000,
+            "operating_income": -881423000,
+            "net_income": -2108610000,
+            "total_assets": 6219394000,
+            "equity": 2550391000,
+            "operating_cash_flow": -325088000,
+            "investing_cash_flow": -89033000,
+            "roe_pct": null
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 18.3463,
+            "operating_margin_pct": -10.2092,
+            "free_cash_flow": -414121000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100SILW",
+            "document_type": "annual_securities_report",
+            "filed_at": "2023-12-22",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100SILW"
+          },
+          "fetched_at": "2026-07-21T23:40:05Z"
+        },
+        {
+          "fiscal_year": 2024,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 10992713000,
+            "operating_income": 260915000,
+            "net_income": 320732000,
+            "total_assets": 7299930000,
+            "equity": 3161646000,
+            "operating_cash_flow": 900478000,
+            "investing_cash_flow": -49686000,
+            "roe_pct": 11.2
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 27.3242,
+            "operating_margin_pct": 2.3735,
+            "free_cash_flow": 850792000,
+            "revenue_cagr_3y_pct": 26.3884
+          },
+          "source_document": {
+            "document_id": "S100UZ8M",
+            "document_type": "annual_securities_report",
+            "filed_at": "2024-12-20",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100UZ8M"
+          },
+          "fetched_at": "2026-07-21T23:40:05Z"
+        },
+        {
+          "fiscal_year": 2025,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 13396474000,
+            "operating_income": 1431874000,
+            "net_income": 1099057000,
+            "total_assets": 9648973000,
+            "equity": 4727369000,
+            "operating_cash_flow": 1376503000,
+            "investing_cash_flow": -384700000,
+            "roe_pct": 27.8
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 21.8669,
+            "operating_margin_pct": 10.6884,
+            "free_cash_flow": 991803000,
+            "revenue_cagr_3y_pct": 22.457
+          },
+          "source_document": {
+            "document_id": "S100XAX3",
+            "document_type": "annual_securities_report",
+            "filed_at": "2025-12-17",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100XAX3"
+          },
+          "fetched_at": "2026-07-21T23:40:05Z"
+        }
+      ]
+    },
+    {
+      "ticker": "4828.T",
+      "name": "B-EN-G",
+      "edinet_code": "E05167",
+      "currency": "JPY",
+      "periods": [
+        {
+          "fiscal_year": 2022,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 17760122000,
+            "operating_income": 2412945000,
+            "net_income": 1643667000,
+            "total_assets": 11491757000,
+            "equity": 7475423000,
+            "operating_cash_flow": 2287124000,
+            "investing_cash_flow": -713174000,
+            "roe_pct": 23.8
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": null,
+            "operating_margin_pct": 13.5863,
+            "free_cash_flow": 1573950000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100OC4W",
+            "document_type": "annual_securities_report",
+            "filed_at": "2022-06-27",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100OC4W"
+          },
+          "fetched_at": "2026-07-21T23:40:05Z"
+        },
+        {
+          "fiscal_year": 2023,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 18506410000,
+            "operating_income": 3246402000,
+            "net_income": 2328244000,
+            "total_assets": 13408665000,
+            "equity": 9287242000,
+            "operating_cash_flow": 3278602000,
+            "investing_cash_flow": -696626000,
+            "roe_pct": 27.8
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 4.202,
+            "operating_margin_pct": 17.542,
+            "free_cash_flow": 2581976000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100R1D4",
+            "document_type": "annual_securities_report",
+            "filed_at": "2023-06-27",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100R1D4"
+          },
+          "fetched_at": "2026-07-21T23:40:05Z"
+        },
+        {
+          "fiscal_year": 2024,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 19493075000,
+            "operating_income": 3885403000,
+            "net_income": 2625796000,
+            "total_assets": 15718321000,
+            "equity": 10941208000,
+            "operating_cash_flow": 3553549000,
+            "investing_cash_flow": -1127778000,
+            "roe_pct": 25.9
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 5.3315,
+            "operating_margin_pct": 19.9322,
+            "free_cash_flow": 2425771000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100TQCO",
+            "document_type": "annual_securities_report",
+            "filed_at": "2024-06-27",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100TQCO"
+          },
+          "fetched_at": "2026-07-21T23:40:05Z"
+        },
+        {
+          "fiscal_year": 2025,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 20776900000,
+            "operating_income": 4676353000,
+            "net_income": 3330791000,
+            "total_assets": 18451536000,
+            "equity": 13215919000,
+            "operating_cash_flow": 3522977000,
+            "investing_cash_flow": -1476116000,
+            "roe_pct": 27.4
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 6.5861,
+            "operating_margin_pct": 22.5075,
+            "free_cash_flow": 2046861000,
+            "revenue_cagr_3y_pct": 5.3687
+          },
+          "source_document": {
+            "document_id": "S100VZ8I",
+            "document_type": "annual_securities_report",
+            "filed_at": "2025-06-19",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100VZ8I"
+          },
+          "fetched_at": "2026-07-21T23:40:05Z"
+        },
+        {
+          "fiscal_year": 2026,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 24442721000,
+            "operating_income": 6411787000,
+            "net_income": 4890788000,
+            "total_assets": 21526134000,
+            "equity": 16071360000,
+            "operating_cash_flow": 5906985000,
+            "investing_cash_flow": -1116774000,
+            "roe_pct": 33.2
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 17.6437,
+            "operating_margin_pct": 26.2319,
+            "free_cash_flow": 4790211000,
+            "revenue_cagr_3y_pct": 9.7175
+          },
+          "source_document": {
+            "document_id": "S100YD7D",
+            "document_type": "annual_securities_report",
+            "filed_at": "2026-06-18",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YD7D"
+          },
+          "fetched_at": "2026-07-21T23:40:05Z"
+        }
+      ]
+    },
+    {
+      "ticker": "2432.T",
+      "name": "DeNA",
+      "edinet_code": "E05460",
+      "currency": "JPY",
+      "periods": [
+        {
+          "fiscal_year": 2022,
+          "fiscal_year_end": null,
+          "accounting_standard": "IFRS",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 130868000000,
+            "operating_income": 11462000000,
+            "net_income": 30532000000,
+            "total_assets": 340570000000,
+            "equity": 177857000000,
+            "operating_cash_flow": 18375000000,
+            "investing_cash_flow": -19924000000,
+            "roe_pct": 13.2
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": null,
+            "operating_margin_pct": 8.7584,
+            "free_cash_flow": -1549000000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100OGEE",
+            "document_type": "annual_securities_report",
+            "filed_at": "2022-06-27",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100OGEE"
+          },
+          "fetched_at": "2026-07-21T23:40:05Z"
+        },
+        {
+          "fiscal_year": 2023,
+          "fiscal_year_end": null,
+          "accounting_standard": "IFRS",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 134914000000,
+            "operating_income": 4202000000,
+            "net_income": 8857000000,
+            "total_assets": 348942000000,
+            "equity": 158113000000,
+            "operating_cash_flow": 10808000000,
+            "investing_cash_flow": 12451000000,
+            "roe_pct": 3.8
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 3.0917,
+            "operating_margin_pct": 3.1146,
+            "free_cash_flow": 23259000000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100R3HZ",
+            "document_type": "annual_securities_report",
+            "filed_at": "2023-06-26",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100R3HZ"
+          },
+          "fetched_at": "2026-07-21T23:40:05Z"
+        },
+        {
+          "fiscal_year": 2024,
+          "fiscal_year_end": null,
+          "accounting_standard": "IFRS",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 136733000000,
+            "operating_income": -28270000000,
+            "net_income": -28682000000,
+            "total_assets": 335708000000,
+            "equity": 157119000000,
+            "operating_cash_flow": -10839000000,
+            "investing_cash_flow": -12629000000,
+            "roe_pct": -13.3
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 1.3483,
+            "operating_margin_pct": -20.6753,
+            "free_cash_flow": -23468000000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100TQ8O",
+            "document_type": "annual_securities_report",
+            "filed_at": "2024-06-24",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100TQ8O"
+          },
+          "fetched_at": "2026-07-21T23:40:05Z"
+        },
+        {
+          "fiscal_year": 2025,
+          "fiscal_year_end": null,
+          "accounting_standard": "IFRS",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 163997000000,
+            "operating_income": 28973000000,
+            "net_income": 24193000000,
+            "total_assets": 394188000000,
+            "equity": 187913000000,
+            "operating_cash_flow": 38999000000,
+            "investing_cash_flow": -12280000000,
+            "roe_pct": 10.7
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 19.9396,
+            "operating_margin_pct": 17.6668,
+            "free_cash_flow": 26719000000,
+            "revenue_cagr_3y_pct": 7.8121
+          },
+          "source_document": {
+            "document_id": "S100VZE0",
+            "document_type": "annual_securities_report",
+            "filed_at": "2025-06-20",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100VZE0"
+          },
+          "fetched_at": "2026-07-21T23:40:05Z"
+        },
+        {
+          "fiscal_year": 2026,
+          "fiscal_year_end": null,
+          "accounting_standard": "IFRS",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 147700000000,
+            "operating_income": 18694000000,
+            "net_income": 19048000000,
+            "total_assets": 333244000000,
+            "equity": 170929000000,
+            "operating_cash_flow": 33431000000,
+            "investing_cash_flow": 34820000000,
+            "roe_pct": 8.0
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": -9.9374,
+            "operating_margin_pct": 12.6567,
+            "free_cash_flow": 68251000000,
+            "revenue_cagr_3y_pct": 3.0642
+          },
+          "source_document": {
+            "document_id": "S100YLDV",
+            "document_type": "annual_securities_report",
+            "filed_at": "2026-06-26",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YLDV"
+          },
+          "fetched_at": "2026-07-21T23:40:05Z"
+        }
+      ]
+    },
     {
       "ticker": "3092.T",
       "name": "ZOZO",
@@ -35,7 +1565,7 @@
             "filed_at": "2022-06-14",
             "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100O8T2"
           },
-          "fetched_at": "2026-07-14T05:00:58Z"
+          "fetched_at": "2026-07-21T23:40:05Z"
         },
         {
           "fiscal_year": 2023,
@@ -64,7 +1594,7 @@
             "filed_at": "2023-06-14",
             "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100QX95"
           },
-          "fetched_at": "2026-07-14T05:00:58Z"
+          "fetched_at": "2026-07-21T23:40:05Z"
         },
         {
           "fiscal_year": 2024,
@@ -93,7 +1623,7 @@
             "filed_at": "2024-06-14",
             "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100TLK2"
           },
-          "fetched_at": "2026-07-14T05:00:58Z"
+          "fetched_at": "2026-07-21T23:40:05Z"
         },
         {
           "fiscal_year": 2025,
@@ -122,7 +1652,7 @@
             "filed_at": "2025-06-13",
             "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100VXJF"
           },
-          "fetched_at": "2026-07-14T05:00:58Z"
+          "fetched_at": "2026-07-21T23:40:05Z"
         },
         {
           "fiscal_year": 2026,
@@ -151,7 +1681,1231 @@
             "filed_at": "2026-06-08",
             "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100Y951"
           },
-          "fetched_at": "2026-07-14T05:00:58Z"
+          "fetched_at": "2026-07-21T23:40:05Z"
+        }
+      ]
+    },
+    {
+      "ticker": "4478.T",
+      "name": "freee",
+      "edinet_code": "E35325",
+      "currency": "JPY",
+      "periods": [
+        {
+          "fiscal_year": 2021,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 10258082000,
+            "operating_income": -2441937000,
+            "net_income": -2756177000,
+            "total_assets": 55286315000,
+            "equity": 46562867000,
+            "operating_cash_flow": -192533000,
+            "investing_cash_flow": -3180839000,
+            "roe_pct": null
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": null,
+            "operating_margin_pct": -23.805,
+            "free_cash_flow": -3373372000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100MI56",
+            "document_type": "annual_securities_report",
+            "filed_at": "2021-09-29",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100MI56"
+          },
+          "fetched_at": "2026-07-21T23:40:05Z"
+        },
+        {
+          "fiscal_year": 2022,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 14380373000,
+            "operating_income": -3042681000,
+            "net_income": -11609024000,
+            "total_assets": 47413069000,
+            "equity": 36086413000,
+            "operating_cash_flow": -1069658000,
+            "investing_cash_flow": -4483968000,
+            "roe_pct": null
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 40.1858,
+            "operating_margin_pct": -21.1586,
+            "free_cash_flow": -5553626000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100P90B",
+            "document_type": "annual_securities_report",
+            "filed_at": "2022-09-29",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100P90B"
+          },
+          "fetched_at": "2026-07-21T23:40:05Z"
+        },
+        {
+          "fiscal_year": 2023,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 19219994000,
+            "operating_income": -7919419000,
+            "net_income": -12338435000,
+            "total_assets": 42786885000,
+            "equity": 25589608000,
+            "operating_cash_flow": -4753626000,
+            "investing_cash_flow": -1935418000,
+            "roe_pct": null
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 33.6543,
+            "operating_margin_pct": -41.2041,
+            "free_cash_flow": -6689044000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100RX5A",
+            "document_type": "annual_securities_report",
+            "filed_at": "2023-09-28",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100RX5A"
+          },
+          "fetched_at": "2026-07-21T23:40:05Z"
+        },
+        {
+          "fiscal_year": 2024,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 25430756000,
+            "operating_income": -8386675000,
+            "net_income": -10150671000,
+            "total_assets": 39953073000,
+            "equity": 16723673000,
+            "operating_cash_flow": -6767571000,
+            "investing_cash_flow": -1088016000,
+            "roe_pct": null
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 32.3141,
+            "operating_margin_pct": -32.9785,
+            "free_cash_flow": -7855587000,
+            "revenue_cagr_3y_pct": 35.3415
+          },
+          "source_document": {
+            "document_id": "S100UFI8",
+            "document_type": "annual_securities_report",
+            "filed_at": "2024-09-27",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100UFI8"
+          },
+          "fetched_at": "2026-07-21T23:40:05Z"
+        },
+        {
+          "fiscal_year": 2025,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 33270601000,
+            "operating_income": 610972000,
+            "net_income": 1370024000,
+            "total_assets": 52595683000,
+            "equity": 19483989000,
+            "operating_cash_flow": 3661980000,
+            "investing_cash_flow": -4601221000,
+            "roe_pct": 7.6
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 30.8282,
+            "operating_margin_pct": 1.8364,
+            "free_cash_flow": -939241000,
+            "revenue_cagr_3y_pct": 32.2605
+          },
+          "source_document": {
+            "document_id": "S100WQR3",
+            "document_type": "annual_securities_report",
+            "filed_at": "2025-09-25",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100WQR3"
+          },
+          "fetched_at": "2026-07-21T23:40:05Z"
+        }
+      ]
+    },
+    {
+      "ticker": "3626.T",
+      "name": "TISI",
+      "edinet_code": "E05739",
+      "currency": "JPY",
+      "periods": [
+        {
+          "fiscal_year": 2022,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 482547000000,
+            "operating_income": 54739000000,
+            "net_income": 39462000000,
+            "total_assets": 476642000000,
+            "equity": 275100000000,
+            "operating_cash_flow": 56126000000,
+            "investing_cash_flow": -3424000000,
+            "roe_pct": 14.0
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": null,
+            "operating_margin_pct": 11.3438,
+            "free_cash_flow": 52702000000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100OG7A",
+            "document_type": "annual_securities_report",
+            "filed_at": "2022-06-27",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100OG7A"
+          },
+          "fetched_at": "2026-07-21T23:40:05Z"
+        },
+        {
+          "fiscal_year": 2023,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 508400000000,
+            "operating_income": 62328000000,
+            "net_income": 55461000000,
+            "total_assets": 462320000000,
+            "equity": 290120000000,
+            "operating_cash_flow": 33634000000,
+            "investing_cash_flow": 11300000000,
+            "roe_pct": 18.8
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 5.3576,
+            "operating_margin_pct": 12.2596,
+            "free_cash_flow": 44934000000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100R3YD",
+            "document_type": "annual_securities_report",
+            "filed_at": "2023-06-26",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100R3YD"
+          },
+          "fetched_at": "2026-07-21T23:40:05Z"
+        },
+        {
+          "fiscal_year": 2024,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 549004000000,
+            "operating_income": 64568000000,
+            "net_income": 48873000000,
+            "total_assets": 525456000000,
+            "equity": 299453000000,
+            "operating_cash_flow": 62578000000,
+            "investing_cash_flow": -32817000000,
+            "roe_pct": 16.0
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 7.9866,
+            "operating_margin_pct": 11.7609,
+            "free_cash_flow": 29761000000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100TU5W",
+            "document_type": "annual_securities_report",
+            "filed_at": "2024-06-26",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100TU5W"
+          },
+          "fetched_at": "2026-07-21T23:40:05Z"
+        },
+        {
+          "fiscal_year": 2025,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 571687000000,
+            "operating_income": 69047000000,
+            "net_income": 50012000000,
+            "total_assets": 558051000000,
+            "equity": 326709000000,
+            "operating_cash_flow": 63748000000,
+            "investing_cash_flow": -17741000000,
+            "roe_pct": 15.3
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 4.1317,
+            "operating_margin_pct": 12.0778,
+            "free_cash_flow": 46007000000,
+            "revenue_cagr_3y_pct": 5.8131
+          },
+          "source_document": {
+            "document_id": "S100W24K",
+            "document_type": "annual_securities_report",
+            "filed_at": "2025-06-23",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100W24K"
+          },
+          "fetched_at": "2026-07-21T23:40:05Z"
+        },
+        {
+          "fiscal_year": 2026,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 596479000000,
+            "operating_income": 76229000000,
+            "net_income": 46624000000,
+            "total_assets": 551507000000,
+            "equity": 300304000000,
+            "operating_cash_flow": 81447000000,
+            "investing_cash_flow": -30920000000,
+            "roe_pct": 14.0
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 4.3366,
+            "operating_margin_pct": 12.7798,
+            "free_cash_flow": 50527000000,
+            "revenue_cagr_3y_pct": 5.4702
+          },
+          "source_document": {
+            "document_id": "S100YH5C",
+            "document_type": "annual_securities_report",
+            "filed_at": "2026-06-22",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YH5C"
+          },
+          "fetched_at": "2026-07-21T23:40:05Z"
+        }
+      ]
+    },
+    {
+      "ticker": "6367.T",
+      "name": "ダイキン工業",
+      "edinet_code": "E01570",
+      "currency": "JPY",
+      "periods": [
+        {
+          "fiscal_year": 2022,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 3109106000000,
+            "operating_income": 316350000000,
+            "net_income": 217709000000,
+            "total_assets": 3823038000000,
+            "equity": 1696167000000,
+            "operating_cash_flow": 245071000000,
+            "investing_cash_flow": -180789000000,
+            "roe_pct": 12.0
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": null,
+            "operating_margin_pct": 10.175,
+            "free_cash_flow": 64282000000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100OG1V",
+            "document_type": "annual_securities_report",
+            "filed_at": "2022-06-29",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100OG1V"
+          },
+          "fetched_at": "2026-07-21T23:40:05Z"
+        },
+        {
+          "fiscal_year": 2023,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 3981578000000,
+            "operating_income": 377032000000,
+            "net_income": 257754000000,
+            "total_assets": 4303682000000,
+            "equity": 1874999000000,
+            "operating_cash_flow": 158896000000,
+            "investing_cash_flow": -229793000000,
+            "roe_pct": 12.3
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 28.0618,
+            "operating_margin_pct": 9.4694,
+            "free_cash_flow": -70897000000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100R5QK",
+            "document_type": "annual_securities_report",
+            "filed_at": "2023-06-29",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100R5QK"
+          },
+          "fetched_at": "2026-07-21T23:40:05Z"
+        },
+        {
+          "fiscal_year": 2024,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 4395317000000,
+            "operating_income": 392137000000,
+            "net_income": 260311000000,
+            "total_assets": 4880230000000,
+            "equity": 2057695000000,
+            "operating_cash_flow": 399567000000,
+            "investing_cash_flow": -227188000000,
+            "roe_pct": 10.7
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 10.3913,
+            "operating_margin_pct": 8.9217,
+            "free_cash_flow": 172379000000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100TS9K",
+            "document_type": "annual_securities_report",
+            "filed_at": "2024-06-27",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100TS9K"
+          },
+          "fetched_at": "2026-07-21T23:40:05Z"
+        },
+        {
+          "fiscal_year": 2025,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 4752335000000,
+            "operating_income": 401669000000,
+            "net_income": 264757000000,
+            "total_assets": 5133416000000,
+            "equity": 2239296000000,
+            "operating_cash_flow": 514450000000,
+            "investing_cash_flow": -337406000000,
+            "roe_pct": 9.7
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 8.1227,
+            "operating_margin_pct": 8.452,
+            "free_cash_flow": 177044000000,
+            "revenue_cagr_3y_pct": 15.1924
+          },
+          "source_document": {
+            "document_id": "S100W3XO",
+            "document_type": "annual_securities_report",
+            "filed_at": "2025-06-25",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100W3XO"
+          },
+          "fetched_at": "2026-07-21T23:40:05Z"
+        },
+        {
+          "fiscal_year": 2026,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 5015036000000,
+            "operating_income": 414991000000,
+            "net_income": 275229000000,
+            "total_assets": 5809240000000,
+            "equity": 2405138000000,
+            "operating_cash_flow": 465848000000,
+            "investing_cash_flow": -322239000000,
+            "roe_pct": 9.1
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 5.5278,
+            "operating_margin_pct": 8.2749,
+            "free_cash_flow": 143609000000,
+            "revenue_cagr_3y_pct": 7.9957
+          },
+          "source_document": {
+            "document_id": "S100YFQL",
+            "document_type": "annual_securities_report",
+            "filed_at": "2026-06-24",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YFQL"
+          },
+          "fetched_at": "2026-07-21T23:40:05Z"
+        }
+      ]
+    },
+    {
+      "ticker": "6645.T",
+      "name": "オムロン",
+      "edinet_code": "E01755",
+      "currency": "JPY",
+      "periods": [
+        {
+          "fiscal_year": 2022,
+          "fiscal_year_end": null,
+          "accounting_standard": "UNKNOWN",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 762927000000,
+            "operating_income": null,
+            "net_income": 61400000000,
+            "total_assets": 930629000000,
+            "equity": 665227000000,
+            "operating_cash_flow": 67428000000,
+            "investing_cash_flow": -150163000000,
+            "roe_pct": 9.7
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": null,
+            "operating_margin_pct": null,
+            "free_cash_flow": -82735000000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100OEI0",
+            "document_type": "annual_securities_report",
+            "filed_at": "2022-06-24",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100OEI0"
+          },
+          "fetched_at": "2026-07-21T23:40:06Z"
+        },
+        {
+          "fiscal_year": 2023,
+          "fiscal_year_end": null,
+          "accounting_standard": "UNKNOWN",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 876082000000,
+            "operating_income": null,
+            "net_income": 73861000000,
+            "total_assets": 998160000000,
+            "equity": 728473000000,
+            "operating_cash_flow": 53456000000,
+            "investing_cash_flow": -55533000000,
+            "roe_pct": 10.6
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 14.8317,
+            "operating_margin_pct": null,
+            "free_cash_flow": -2077000000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100R207",
+            "document_type": "annual_securities_report",
+            "filed_at": "2023-06-23",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100R207"
+          },
+          "fetched_at": "2026-07-21T23:40:06Z"
+        },
+        {
+          "fiscal_year": 2024,
+          "fiscal_year_end": null,
+          "accounting_standard": "UNKNOWN",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 818761000000,
+            "operating_income": null,
+            "net_income": 8105000000,
+            "total_assets": 1354729000000,
+            "equity": 786686000000,
+            "operating_cash_flow": 44875000000,
+            "investing_cash_flow": -107096000000,
+            "roe_pct": 1.1
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": -6.5429,
+            "operating_margin_pct": null,
+            "free_cash_flow": -62221000000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100TOYL",
+            "document_type": "annual_securities_report",
+            "filed_at": "2024-06-21",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100TOYL"
+          },
+          "fetched_at": "2026-07-21T23:40:06Z"
+        },
+        {
+          "fiscal_year": 2025,
+          "fiscal_year_end": null,
+          "accounting_standard": "UNKNOWN",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 715379000000,
+            "operating_income": null,
+            "net_income": 16271000000,
+            "total_assets": 1362459000000,
+            "equity": 771885000000,
+            "operating_cash_flow": 55784000000,
+            "investing_cash_flow": -47889000000,
+            "roe_pct": 2.1
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": -12.6266,
+            "operating_margin_pct": null,
+            "free_cash_flow": 7895000000,
+            "revenue_cagr_3y_pct": -2.1222
+          },
+          "source_document": {
+            "document_id": "S100W20H",
+            "document_type": "annual_securities_report",
+            "filed_at": "2025-06-23",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100W20H"
+          },
+          "fetched_at": "2026-07-21T23:40:06Z"
+        },
+        {
+          "fiscal_year": 2026,
+          "fiscal_year_end": null,
+          "accounting_standard": "UNKNOWN",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 767351000000,
+            "operating_income": null,
+            "net_income": 28487000000,
+            "total_assets": 1516263000000,
+            "equity": 835885000000,
+            "operating_cash_flow": 60919000000,
+            "investing_cash_flow": -70071000000,
+            "roe_pct": 3.5
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 7.265,
+            "operating_margin_pct": null,
+            "free_cash_flow": -9152000000,
+            "revenue_cagr_3y_pct": -4.321
+          },
+          "source_document": {
+            "document_id": "S100YG81",
+            "document_type": "annual_securities_report",
+            "filed_at": "2026-06-22",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YG81"
+          },
+          "fetched_at": "2026-07-21T23:40:06Z"
+        }
+      ]
+    },
+    {
+      "ticker": "6981.T",
+      "name": "村田製作所",
+      "edinet_code": "E01914",
+      "currency": "JPY",
+      "periods": [
+        {
+          "fiscal_year": 2022,
+          "fiscal_year_end": null,
+          "accounting_standard": "UNKNOWN",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 1812521000000,
+            "operating_income": null,
+            "net_income": 314124000000,
+            "total_assets": 2809171000000,
+            "equity": 2263596000000,
+            "operating_cash_flow": 421458000000,
+            "investing_cash_flow": -212300000000,
+            "roe_pct": 15.0
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": null,
+            "operating_margin_pct": null,
+            "free_cash_flow": 209158000000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100OJOR",
+            "document_type": "annual_securities_report",
+            "filed_at": "2022-06-29",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100OJOR"
+          },
+          "fetched_at": "2026-07-21T23:40:06Z"
+        },
+        {
+          "fiscal_year": 2023,
+          "fiscal_year_end": null,
+          "accounting_standard": "UNKNOWN",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 1686796000000,
+            "operating_income": 298231000000,
+            "net_income": 253690000000,
+            "total_assets": 2872763000000,
+            "equity": 2402511000000,
+            "operating_cash_flow": 276278000000,
+            "investing_cash_flow": -157850000000,
+            "roe_pct": 10.9
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": -6.9365,
+            "operating_margin_pct": 17.6803,
+            "free_cash_flow": 118428000000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100R773",
+            "document_type": "annual_securities_report",
+            "filed_at": "2023-06-29",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100R773"
+          },
+          "fetched_at": "2026-07-21T23:40:06Z"
+        },
+        {
+          "fiscal_year": 2024,
+          "fiscal_year_end": null,
+          "accounting_standard": "UNKNOWN",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 1640158000000,
+            "operating_income": 215447000000,
+            "net_income": 180838000000,
+            "total_assets": 3037895000000,
+            "equity": 2556147000000,
+            "operating_cash_flow": 489637000000,
+            "investing_cash_flow": -201571000000,
+            "roe_pct": 7.4
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": -2.7649,
+            "operating_margin_pct": 13.1357,
+            "free_cash_flow": 288066000000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100TSIJ",
+            "document_type": "annual_securities_report",
+            "filed_at": "2024-06-27",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100TSIJ"
+          },
+          "fetched_at": "2026-07-21T23:40:06Z"
+        },
+        {
+          "fiscal_year": 2025,
+          "fiscal_year_end": null,
+          "accounting_standard": "UNKNOWN",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 1743352000000,
+            "operating_income": 279702000000,
+            "net_income": 233818000000,
+            "total_assets": 3028194000000,
+            "equity": 2580805000000,
+            "operating_cash_flow": 451905000000,
+            "investing_cash_flow": -208070000000,
+            "roe_pct": 9.1
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 6.2917,
+            "operating_margin_pct": 16.0439,
+            "free_cash_flow": 243835000000,
+            "revenue_cagr_3y_pct": -1.2886
+          },
+          "source_document": {
+            "document_id": "S100W2ZR",
+            "document_type": "annual_securities_report",
+            "filed_at": "2025-06-24",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100W2ZR"
+          },
+          "fetched_at": "2026-07-21T23:40:06Z"
+        },
+        {
+          "fiscal_year": 2026,
+          "fiscal_year_end": null,
+          "accounting_standard": "UNKNOWN",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 1830856000000,
+            "operating_income": 281835000000,
+            "net_income": 233920000000,
+            "total_assets": 3199099000000,
+            "equity": 2718743000000,
+            "operating_cash_flow": 425222000000,
+            "investing_cash_flow": -193814000000,
+            "roe_pct": 8.8
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 5.0193,
+            "operating_margin_pct": 15.3936,
+            "free_cash_flow": 231408000000,
+            "revenue_cagr_3y_pct": 2.7694
+          },
+          "source_document": {
+            "document_id": "S100YHPY",
+            "document_type": "annual_securities_report",
+            "filed_at": "2026-06-24",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YHPY"
+          },
+          "fetched_at": "2026-07-21T23:40:06Z"
+        }
+      ]
+    },
+    {
+      "ticker": "7701.T",
+      "name": "島津製作所",
+      "edinet_code": "E02265",
+      "currency": "JPY",
+      "periods": [
+        {
+          "fiscal_year": 2022,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 428175000000,
+            "operating_income": 63806000000,
+            "net_income": 47289000000,
+            "total_assets": 560528000000,
+            "equity": 359073000000,
+            "operating_cash_flow": 63367000000,
+            "investing_cash_flow": -6044000000,
+            "roe_pct": 13.2
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": null,
+            "operating_margin_pct": 14.9019,
+            "free_cash_flow": 57323000000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100OJLQ",
+            "document_type": "annual_securities_report",
+            "filed_at": "2022-06-29",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100OJLQ"
+          },
+          "fetched_at": "2026-07-21T23:40:06Z"
+        },
+        {
+          "fiscal_year": 2023,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 482240000000,
+            "operating_income": 68219000000,
+            "net_income": 52048000000,
+            "total_assets": 618869000000,
+            "equity": 396415000000,
+            "operating_cash_flow": 48303000000,
+            "investing_cash_flow": -34509000000,
+            "roe_pct": 12.9
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 12.6268,
+            "operating_margin_pct": 14.1463,
+            "free_cash_flow": 13794000000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100R8AR",
+            "document_type": "annual_securities_report",
+            "filed_at": "2023-06-29",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100R8AR"
+          },
+          "fetched_at": "2026-07-21T23:40:06Z"
+        },
+        {
+          "fiscal_year": 2024,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 511895000000,
+            "operating_income": 72753000000,
+            "net_income": 57037000000,
+            "total_assets": 673962000000,
+            "equity": 436850000000,
+            "operating_cash_flow": 30127000000,
+            "investing_cash_flow": -15998000000,
+            "roe_pct": 12.5
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 6.1494,
+            "operating_margin_pct": 14.2125,
+            "free_cash_flow": 14129000000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100TU9A",
+            "document_type": "annual_securities_report",
+            "filed_at": "2024-06-27",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100TU9A"
+          },
+          "fetched_at": "2026-07-21T23:40:06Z"
+        },
+        {
+          "fiscal_year": 2025,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 539047000000,
+            "operating_income": 71720000000,
+            "net_income": 53776000000,
+            "total_assets": 672177000000,
+            "equity": 447163000000,
+            "operating_cash_flow": 52002000000,
+            "investing_cash_flow": -23173000000,
+            "roe_pct": 10.9
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 5.3042,
+            "operating_margin_pct": 13.305,
+            "free_cash_flow": 28829000000,
+            "revenue_cagr_3y_pct": 7.978
+          },
+          "source_document": {
+            "document_id": "S100W5IM",
+            "document_type": "annual_securities_report",
+            "filed_at": "2025-06-25",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100W5IM"
+          },
+          "fetched_at": "2026-07-21T23:40:06Z"
+        },
+        {
+          "fiscal_year": 2026,
+          "fiscal_year_end": null,
+          "accounting_standard": "JGAAP",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 560728000000,
+            "operating_income": 73702000000,
+            "net_income": 60499000000,
+            "total_assets": 737978000000,
+            "equity": 488108000000,
+            "operating_cash_flow": 54679000000,
+            "investing_cash_flow": -15907000000,
+            "roe_pct": 11.4
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 4.0221,
+            "operating_margin_pct": 13.144,
+            "free_cash_flow": 38772000000,
+            "revenue_cagr_3y_pct": 5.1549
+          },
+          "source_document": {
+            "document_id": "S100YGJF",
+            "document_type": "annual_securities_report",
+            "filed_at": "2026-06-23",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YGJF"
+          },
+          "fetched_at": "2026-07-21T23:40:06Z"
+        }
+      ]
+    },
+    {
+      "ticker": "3774.T",
+      "name": "インターネットイニシアティブ",
+      "edinet_code": "E05480",
+      "currency": "JPY",
+      "periods": [
+        {
+          "fiscal_year": 2022,
+          "fiscal_year_end": null,
+          "accounting_standard": "UNKNOWN",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 226335000000,
+            "operating_income": 23547000000,
+            "net_income": 15672000000,
+            "total_assets": 231805000000,
+            "equity": 103528000000,
+            "operating_cash_flow": 43573000000,
+            "investing_cash_flow": -11838000000,
+            "roe_pct": 16.2
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": null,
+            "operating_margin_pct": 10.4036,
+            "free_cash_flow": 31735000000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100OFU7",
+            "document_type": "annual_securities_report",
+            "filed_at": "2022-06-30",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100OFU7"
+          },
+          "fetched_at": "2026-07-21T23:40:06Z"
+        },
+        {
+          "fiscal_year": 2023,
+          "fiscal_year_end": null,
+          "accounting_standard": "UNKNOWN",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 252708000000,
+            "operating_income": 27221000000,
+            "net_income": 18852000000,
+            "total_assets": 246318000000,
+            "equity": 118242000000,
+            "operating_cash_flow": 38529000000,
+            "investing_cash_flow": -18386000000,
+            "roe_pct": 17.0
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 11.6522,
+            "operating_margin_pct": 10.7717,
+            "free_cash_flow": 20143000000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100QZG8",
+            "document_type": "annual_securities_report",
+            "filed_at": "2023-06-30",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100QZG8"
+          },
+          "fetched_at": "2026-07-21T23:40:06Z"
+        },
+        {
+          "fiscal_year": 2024,
+          "fiscal_year_end": null,
+          "accounting_standard": "UNKNOWN",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 276080000000,
+            "operating_income": 29029000000,
+            "net_income": 19831000000,
+            "total_assets": 273713000000,
+            "equity": 125751000000,
+            "operating_cash_flow": 40780000000,
+            "investing_cash_flow": -17927000000,
+            "roe_pct": 16.3
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 9.2486,
+            "operating_margin_pct": 10.5147,
+            "free_cash_flow": 22853000000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100TTHB",
+            "document_type": "annual_securities_report",
+            "filed_at": "2024-06-28",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100TTHB"
+          },
+          "fetched_at": "2026-07-21T23:40:06Z"
+        },
+        {
+          "fiscal_year": 2025,
+          "fiscal_year_end": null,
+          "accounting_standard": "UNKNOWN",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 316831000000,
+            "operating_income": 30104000000,
+            "net_income": 19933000000,
+            "total_assets": 312435000000,
+            "equity": 140683000000,
+            "operating_cash_flow": 28528000000,
+            "investing_cash_flow": -21749000000,
+            "roe_pct": 15.0
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 14.7606,
+            "operating_margin_pct": 9.5016,
+            "free_cash_flow": 6779000000,
+            "revenue_cagr_3y_pct": 11.8644
+          },
+          "source_document": {
+            "document_id": "S100W7DL",
+            "document_type": "annual_securities_report",
+            "filed_at": "2025-06-30",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100W7DL"
+          },
+          "fetched_at": "2026-07-21T23:40:06Z"
+        },
+        {
+          "fiscal_year": 2026,
+          "fiscal_year_end": null,
+          "accounting_standard": "UNKNOWN",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 345395000000,
+            "operating_income": 34835000000,
+            "net_income": 24188000000,
+            "total_assets": 346933000000,
+            "equity": 158007000000,
+            "operating_cash_flow": 50460000000,
+            "investing_cash_flow": -26329000000,
+            "roe_pct": 16.2
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 9.0155,
+            "operating_margin_pct": 10.0856,
+            "free_cash_flow": 24131000000,
+            "revenue_cagr_3y_pct": 10.9768
+          },
+          "source_document": {
+            "document_id": "S100YHYH",
+            "document_type": "annual_securities_report",
+            "filed_at": "2026-06-25",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YHYH"
+          },
+          "fetched_at": "2026-07-21T23:40:06Z"
+        }
+      ]
+    },
+    {
+      "ticker": "6701.T",
+      "name": "NEC",
+      "edinet_code": "E01765",
+      "currency": "JPY",
+      "periods": [
+        {
+          "fiscal_year": 2022,
+          "fiscal_year_end": null,
+          "accounting_standard": "IFRS",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 3014095000000,
+            "operating_income": 132525000000,
+            "net_income": 141277000000,
+            "total_assets": 3761733000000,
+            "equity": 1513503000000,
+            "operating_cash_flow": 147517000000,
+            "investing_cash_flow": -63377000000,
+            "roe_pct": 10.0
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": null,
+            "operating_margin_pct": 4.3968,
+            "free_cash_flow": 84140000000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100OAPM",
+            "document_type": "annual_securities_report",
+            "filed_at": "2022-06-22",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100OAPM"
+          },
+          "fetched_at": "2026-07-21T23:40:06Z"
+        },
+        {
+          "fiscal_year": 2023,
+          "fiscal_year_end": null,
+          "accounting_standard": "IFRS",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 3313018000000,
+            "operating_income": 170447000000,
+            "net_income": 114500000000,
+            "total_assets": 3984050000000,
+            "equity": 1623817000000,
+            "operating_cash_flow": 152127000000,
+            "investing_cash_flow": -49591000000,
+            "roe_pct": 7.3
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 9.9175,
+            "operating_margin_pct": 5.1448,
+            "free_cash_flow": 102536000000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100R0D0",
+            "document_type": "annual_securities_report",
+            "filed_at": "2023-06-22",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100R0D0"
+          },
+          "fetched_at": "2026-07-21T23:40:06Z"
+        },
+        {
+          "fiscal_year": 2024,
+          "fiscal_year_end": null,
+          "accounting_standard": "IFRS",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 3477262000000,
+            "operating_income": 188012000000,
+            "net_income": 149521000000,
+            "total_assets": 4227514000000,
+            "equity": 1915613000000,
+            "operating_cash_flow": 271228000000,
+            "investing_cash_flow": -76015000000,
+            "roe_pct": 8.4
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 4.9575,
+            "operating_margin_pct": 5.4069,
+            "free_cash_flow": 195213000000,
+            "revenue_cagr_3y_pct": null
+          },
+          "source_document": {
+            "document_id": "S100TNFD",
+            "document_type": "annual_securities_report",
+            "filed_at": "2024-06-21",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100TNFD"
+          },
+          "fetched_at": "2026-07-21T23:40:06Z"
+        },
+        {
+          "fiscal_year": 2025,
+          "fiscal_year_end": null,
+          "accounting_standard": "IFRS",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 3423431000000,
+            "operating_income": 256497000000,
+            "net_income": 175183000000,
+            "total_assets": 4315368000000,
+            "equity": 1952018000000,
+            "operating_cash_flow": 344408000000,
+            "investing_cash_flow": -131164000000,
+            "roe_pct": 9.1
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": -1.5481,
+            "operating_margin_pct": 7.4924,
+            "free_cash_flow": 213244000000,
+            "revenue_cagr_3y_pct": 4.3362
+          },
+          "source_document": {
+            "document_id": "S100VZ85",
+            "document_type": "annual_securities_report",
+            "filed_at": "2025-06-19",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100VZ85"
+          },
+          "fetched_at": "2026-07-21T23:40:06Z"
+        },
+        {
+          "fiscal_year": 2026,
+          "fiscal_year_end": null,
+          "accounting_standard": "IFRS",
+          "consolidated": true,
+          "metrics": {
+            "revenue": 3582733000000,
+            "operating_income": 359913000000,
+            "net_income": 270228000000,
+            "total_assets": 4466784000000,
+            "equity": 2196578000000,
+            "operating_cash_flow": 438463000000,
+            "investing_cash_flow": 33686000000,
+            "roe_pct": 13.0
+          },
+          "calculated_metrics": {
+            "revenue_yoy_pct": 4.6533,
+            "operating_margin_pct": 10.0458,
+            "free_cash_flow": 472149000000,
+            "revenue_cagr_3y_pct": 2.6432
+          },
+          "source_document": {
+            "document_id": "S100YBFV",
+            "document_type": "annual_securities_report",
+            "filed_at": "2026-06-18",
+            "url": "https://disclosure2.edinet-fsa.go.jp/WZEK0040.aspx?S100YBFV"
+          },
+          "fetched_at": "2026-07-21T23:40:06Z"
         }
       ]
     }

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+import { MetricLineChart } from "../../../components/metric-line-chart";
 import {
   formatDate,
   formatMoneyInMillions,
@@ -22,6 +23,10 @@ type MetricCard = {
   value: string;
   unit?: string;
 };
+
+function toMillions(value: number | null): number | null {
+  return value === null ? null : value / 1_000_000;
+}
 
 export function generateStaticParams() {
   return listFinancialCompanies().map((company) => ({ ticker: company.ticker }));
@@ -85,12 +90,20 @@ export default async function CompanyPage({ params }: CompanyPageProps) {
 
   return (
     <main className="mx-auto min-h-screen w-full max-w-7xl px-4 py-8 sm:px-6 lg:px-8 lg:py-12">
-      <Link
-        href="/"
-        className="inline-flex text-sm text-zinc-600 underline decoration-zinc-300 underline-offset-4 hover:text-zinc-950 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-zinc-950"
-      >
-        ← 企業一覧へ戻る
-      </Link>
+      <nav className="flex items-center justify-between gap-4">
+        <Link
+          href="/"
+          className="inline-flex text-sm text-zinc-600 underline decoration-zinc-300 underline-offset-4 hover:text-zinc-950 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-zinc-950"
+        >
+          ← 企業一覧へ戻る
+        </Link>
+        <Link
+          href={`/compare?left=${encodeURIComponent(company.ticker)}`}
+          className="inline-flex text-sm font-medium text-zinc-950 underline decoration-zinc-300 underline-offset-4 hover:decoration-zinc-950 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-zinc-950"
+        >
+          2社比較 →
+        </Link>
+      </nav>
 
       <header className="mt-8 border-b border-zinc-300 pb-8">
         <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
@@ -137,6 +150,73 @@ export default async function CompanyPage({ params }: CompanyPageProps) {
             </div>
           ))}
         </dl>
+      </section>
+
+      <section className="mt-12" aria-labelledby="charts-heading">
+        <div className="flex flex-wrap items-baseline justify-between gap-3">
+          <h2 id="charts-heading" className="text-lg font-semibold text-zinc-950">
+            5年度グラフ
+          </h2>
+          <p className="text-xs text-zinc-500">金額単位：百万円</p>
+        </div>
+        <div className="mt-4 grid gap-4 lg:grid-cols-2">
+          <MetricLineChart
+            title="売上高・営業利益"
+            years={periods.map((period) => period.fiscal_year)}
+            valueKind="money"
+            series={[
+              {
+                label: "売上高",
+                color: "#18181b",
+                values: periods.map((period) => toMillions(period.metrics.revenue)),
+              },
+              {
+                label: "営業利益",
+                color: "#0f766e",
+                values: periods.map((period) =>
+                  toMillions(period.metrics.operating_income),
+                ),
+              },
+            ]}
+          />
+          <MetricLineChart
+            title="営業利益率"
+            years={periods.map((period) => period.fiscal_year)}
+            valueKind="percent"
+            series={[
+              {
+                label: "営業利益率",
+                color: "#7c3aed",
+                values: periods.map(
+                  (period) => period.calculated_metrics.operating_margin_pct,
+                ),
+              },
+            ]}
+          />
+          <div className="lg:col-span-2">
+            <MetricLineChart
+              title="営業キャッシュフロー・フリーキャッシュフロー"
+              years={periods.map((period) => period.fiscal_year)}
+              valueKind="money"
+              series={[
+                {
+                  label: "営業CF",
+                  color: "#0369a1",
+                  values: periods.map((period) =>
+                    toMillions(period.metrics.operating_cash_flow),
+                  ),
+                },
+                {
+                  label: "FCF",
+                  color: "#c2410c",
+                  values: periods.map((period) =>
+                    toMillions(period.calculated_metrics.free_cash_flow),
+                  ),
+                },
+              ]}
+            />
+          </div>
+        </div>
       </section>
 
       <section className="mt-12" aria-labelledby="trend-heading">

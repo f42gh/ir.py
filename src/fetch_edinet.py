@@ -234,6 +234,7 @@ def save_raw(
     output_dir: Path,
     kind: str,
     fetched_at: datetime,
+    slug: str = "zozo",
 ) -> Path:
     """Save exact response bytes under an exclusive timestamped filename."""
 
@@ -241,7 +242,7 @@ def save_raw(
         raise FetchError("rawファイルの取得日時にはタイムゾーンが必要です。")
     timestamp = fetched_at.astimezone(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     output_dir.mkdir(parents=True, exist_ok=True)
-    path = output_dir / f"zozo__{kind}__{timestamp}.json"
+    path = output_dir / f"{slug}__{kind}__{timestamp}.json"
     try:
         with path.open("xb") as file:
             file.write(body)

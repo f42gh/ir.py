@@ -2,7 +2,7 @@
 
 ## 最初の実装単位
 
-Phase 2で保存したZOZOの財務rawを入力し、`frontend/data/financials.json` を生成する。最初はZOZOの1社だけで変換・計算・追跡性を固め、同じ処理を残り4社へ広げる。
+Phase 2で保存した複数社の財務rawを入力し、`frontend/data/financials.json` を生成する。企業ごとに同じ検証・変換・計算・追跡処理を適用する。
 
 Phase 3の変換処理はEDINET DB APIを呼ばない。入力ファイルを明示指定し、同じrawから常に同じJSONを生成する。
 
@@ -12,21 +12,22 @@ Phase 3の変換処理はEDINET DB APIを呼ばない。入力ファイルを明
 
 ```bash
 uv run python src/build_financials.py \
-  --input data/raw/zozo__financials__20260714T050058Z.json \
+  --input-dir data/raw \
+  --companies data/COMPANIES.json \
   --output frontend/data/financials.json
 ```
 
-`latest` の自動選択は行わない。どのrawから生成したかをコマンドと出力JSONから追跡できるようにする。
+各企業について最新のrawをファイル名のUTC時刻から選択する。再現対象を固定したい場合は `--input` を企業数分繰り返し、入力ファイルを明示する。
 
 ## 入出力契約
 
 トップレベルと期間別の形式は `phase1-financial-data-spec.md` の `schema_version: "1.0"` に従う。
 
 - `generated_at`: rawファイル名のUTC時刻をISO 8601へ変換した値。実行時刻を使わず、再生成結果を決定的にする
-- `companies`: Phase 1の取得順。最初の実装ではZOZOだけ
-- `ticker`: `3092.T`
-- `name`: `ZOZO`
-- `edinet_code`: rawの `meta.edinet_code`。`E05725` と一致しなければ失敗
+- `companies`: 企業メタデータの並び順
+- `ticker`: 企業メタデータに登録したティッカー
+- `name`: 企業メタデータに登録した表示名
+- `edinet_code`: rawの `meta.edinet_code`。企業メタデータと一致しなければ失敗
 - `currency`: `JPY`
 - `periods`: `fiscal_year` の昇順
 - `fetched_at`: 各期間とも入力rawファイル名のUTC時刻
@@ -38,7 +39,7 @@ uv run python src/build_financials.py \
 | `fiscal_year` | `fiscal_year` | 整数のまま |
 | `fiscal_year_end` | 該当フィールドなし | `null`。決算月から推測しない |
 | `accounting_standard` | `accounting_standard` | `JP` / `JP_GAAP` → `JGAAP`、`IFRS` → `IFRS`、`US` / `US_GAAP` → `USGAAP`、その他・欠損 → `UNKNOWN` |
-| `consolidated` | 年次財務APIの取得契約 | ZOZOのPhase 3入力では `true` |
+| `consolidated` | 年次財務APIの取得契約 | 年次連結データでは `true` |
 
 `meta.latest_shares_snapshot.fiscal_year_end` は四半期決算短信の最新スナップショットに属し、年次 `data[]` と直接対応しないため使用しない。
 
@@ -64,7 +65,7 @@ uv run python src/build_financials.py \
 - `revenue_yoy_pct`: 前年度比。最初の年度は `null`
 - `operating_margin_pct`: 営業利益 ÷ 売上高 × 100
 - `free_cash_flow`: 営業CF + 投資CF。投資CFの符号は反転しない
-- `revenue_cagr_3y_pct`: 当年度と3期間前を使用。ZOZOの5年度入力では2025年と2026年だけ計算可能
+- `revenue_cagr_3y_pct`: 当年度と3期間前を使用。5年度入力では後半2年度だけ計算可能
 
 割合は計算途中で丸めず、JSONへ格納するときだけ小数第4位へ丸める。
 
@@ -91,7 +92,7 @@ uv run python src/build_financials.py \
 
 最初の実装では標準ライブラリの `unittest` を継続使用し、最低限次を確認する。
 
-1. ZOZOの実rawから5年度を昇順で生成できる
+1. 各企業の実rawから5年度を昇順で生成できる
 2. 金額の `.0` を整数円へ変換でき、小数円を拒否する
 3. 欠損とゼロ、負の営業利益・投資CFを区別する
 4. 前年比、営業利益率、FCF、3年CAGRの正常系と `null` 条件
@@ -101,10 +102,10 @@ uv run python src/build_financials.py \
 8. シャッフルされた年度を昇順化し、重複年度、異なるEDINETコード、不正JSONでは既存出力を変更しない
 9. 同じ入力から生成した2ファイルが完全一致する
 
-## 実装前の確認結果
+## 実装後の確認結果
 
-- ZOZO rawは2022〜2026年度の5件で、主要8指標と出典3項目に欠損・ゼロはない
-- 金額は円だが、実レスポンスでは `166199000000.0` のようなJSON numberで返る
+- 直接取得対象のrawは企業ごとに5年度あり、企業によって一部指標が欠損する場合がある
+- 金額は円だが、実レスポンスでは `100000000000.0` のようなJSON numberで返る
 - `roe_official` は `0.625` のような小数で、画面の62.5%に対応する
 - `shareholders_equity` と `net_assets` は年度によって異なるため、Phase 1の `equity` には前者だけを使う
 - 現行APIには各年次行の `fiscal_year_end` がないため、Phase 3では `null` を保持する
