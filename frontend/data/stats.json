@@ -1,0 +1,4682 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-21T23:40:06Z",
+  "default_year": 2025,
+  "default_ranking": "revenue",
+  "default_scatter": "growth-profitability",
+  "years": [
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "metrics": {
+    "revenue": {
+      "label": "売上高",
+      "english_label": "Revenue",
+      "unit": "百万円",
+      "value_kind": "money"
+    },
+    "revenue_yoy_pct": {
+      "label": "売上高YoY",
+      "english_label": "Revenue YoY",
+      "unit": "%",
+      "value_kind": "percent"
+    },
+    "operating_income": {
+      "label": "営業利益",
+      "english_label": "Operating income",
+      "unit": "百万円",
+      "value_kind": "money"
+    },
+    "operating_margin_pct": {
+      "label": "営業利益率",
+      "english_label": "Operating margin",
+      "unit": "%",
+      "value_kind": "percent"
+    },
+    "roe_pct": {
+      "label": "ROE",
+      "english_label": "ROE",
+      "unit": "%",
+      "value_kind": "percent"
+    },
+    "free_cash_flow": {
+      "label": "FCF",
+      "english_label": "Free cash flow",
+      "unit": "百万円",
+      "value_kind": "money"
+    }
+  },
+  "scatter_definitions": {
+    "growth-profitability": {
+      "label": "成長率 × 営業利益率",
+      "description": "売上高の前年比成長率と、本業の収益性を比較します。",
+      "x_metric": "revenue_yoy_pct",
+      "y_metric": "operating_margin_pct",
+      "x_scale": "linear"
+    },
+    "margin-return": {
+      "label": "営業利益率 × ROE",
+      "description": "本業の収益性と、株主資本に対する利益効率を比較します。",
+      "x_metric": "operating_margin_pct",
+      "y_metric": "roe_pct",
+      "x_scale": "linear"
+    },
+    "scale-cash": {
+      "label": "売上高 × FCF",
+      "description": "企業規模と、投資後に残るキャッシュフローを比較します。",
+      "x_metric": "revenue",
+      "y_metric": "free_cash_flow",
+      "x_scale": "log"
+    }
+  },
+  "results": {
+    "2022": {
+      "company_count": 19,
+      "descriptive": {
+        "revenue": {
+          "count": 19,
+          "missing": 0,
+          "mean": 583160.3315,
+          "median": 130868.0,
+          "stddev": 977256.7507,
+          "min": 1413.332,
+          "q1": 16070.2475,
+          "q3": 596235.0,
+          "max": 3109106.0
+        },
+        "revenue_yoy_pct": {
+          "count": 8,
+          "missing": 11,
+          "mean": 27.7787,
+          "median": 30.8098,
+          "stddev": 10.3254,
+          "min": 6.5712,
+          "q1": 24.7703,
+          "q3": 33.3474,
+          "max": 40.1858
+        },
+        "operating_income": {
+          "count": 15,
+          "missing": 4,
+          "mean": 49343.5753,
+          "median": 17808.0,
+          "stddev": 83001.8439,
+          "min": -3042.681,
+          "q1": 1098.453,
+          "q3": 59272.5,
+          "max": 316350.0
+        },
+        "operating_margin_pct": {
+          "count": 15,
+          "missing": 4,
+          "mean": 7.5047,
+          "median": 10.175,
+          "stddev": 11.9202,
+          "min": -21.1586,
+          "q1": 3.7435,
+          "q3": 13.5955,
+          "max": 29.8774
+        },
+        "roe_pct": {
+          "count": 16,
+          "missing": 3,
+          "mean": 15.6875,
+          "median": 13.2,
+          "stddev": 13.4483,
+          "min": 2.9,
+          "q1": 9.925,
+          "q3": 16.375,
+          "max": 62.5
+        },
+        "free_cash_flow": {
+          "count": 19,
+          "missing": 0,
+          "mean": 22152.5822,
+          "median": 372.347,
+          "stddev": 58445.8558,
+          "min": -82735.0,
+          "q1": -1760.0,
+          "q3": 45657.0,
+          "max": 209158.0
+        }
+      },
+      "rankings": {
+        "revenue": {
+          "chart": "/charts/stats/fy2022/rankings/revenue.svg",
+          "rows": [
+            {
+              "rank": 1,
+              "ticker": "6367.T",
+              "name": "ダイキン工業",
+              "value": 3109106.0
+            },
+            {
+              "rank": 2,
+              "ticker": "6701.T",
+              "name": "NEC",
+              "value": 3014095.0
+            },
+            {
+              "rank": 3,
+              "ticker": "6981.T",
+              "name": "村田製作所",
+              "value": 1812521.0
+            },
+            {
+              "rank": 4,
+              "ticker": "6645.T",
+              "name": "オムロン",
+              "value": 762927.0
+            },
+            {
+              "rank": 5,
+              "ticker": "4751.T",
+              "name": "サイバーエージェント",
+              "value": 709923.0
+            },
+            {
+              "rank": 6,
+              "ticker": "3626.T",
+              "name": "TISI",
+              "value": 482547.0
+            },
+            {
+              "rank": 7,
+              "ticker": "7701.T",
+              "name": "島津製作所",
+              "value": 428175.0
+            },
+            {
+              "rank": 8,
+              "ticker": "3774.T",
+              "name": "インターネットイニシアティブ",
+              "value": 226335.0
+            },
+            {
+              "rank": 9,
+              "ticker": "3092.T",
+              "name": "ZOZO",
+              "value": 166199.0
+            },
+            {
+              "rank": 10,
+              "ticker": "2432.T",
+              "name": "DeNA",
+              "value": 130868.0
+            },
+            {
+              "rank": 11,
+              "ticker": "2121.T",
+              "name": "MIXI",
+              "value": 122030.0
+            },
+            {
+              "rank": 12,
+              "ticker": "4384.T",
+              "name": "ラクスル",
+              "value": 33980.0
+            },
+            {
+              "rank": 13,
+              "ticker": "4443.T",
+              "name": "Sansan",
+              "value": 20420.0
+            },
+            {
+              "rank": 14,
+              "ticker": "4828.T",
+              "name": "B-EN-G",
+              "value": 17760.122
+            },
+            {
+              "rank": 15,
+              "ticker": "4478.T",
+              "name": "freee",
+              "value": 14380.373
+            },
+            {
+              "rank": 16,
+              "ticker": "3993.T",
+              "name": "PKSHA Technology",
+              "value": 11509.927
+            },
+            {
+              "rank": 17,
+              "ticker": "3655.T",
+              "name": "BrainPad",
+              "value": 8561.311
+            },
+            {
+              "rank": 18,
+              "ticker": "4165.T",
+              "name": "プレイド",
+              "value": 7295.234
+            },
+            {
+              "rank": 19,
+              "ticker": "4418.T",
+              "name": "JDSC",
+              "value": 1413.332
+            }
+          ]
+        },
+        "revenue_yoy_pct": {
+          "chart": "/charts/stats/fy2022/rankings/revenue_yoy_pct.svg",
+          "rows": [
+            {
+              "rank": 1,
+              "ticker": "4478.T",
+              "name": "freee",
+              "value": 40.1858
+            },
+            {
+              "rank": 2,
+              "ticker": "4165.T",
+              "name": "プレイド",
+              "value": 33.9851
+            },
+            {
+              "rank": 3,
+              "ticker": "4384.T",
+              "name": "ラクスル",
+              "value": 33.1348
+            },
+            {
+              "rank": 4,
+              "ticker": "3993.T",
+              "name": "PKSHA Technology",
+              "value": 31.8876
+            },
+            {
+              "rank": 5,
+              "ticker": "4418.T",
+              "name": "JDSC",
+              "value": 29.732
+            },
+            {
+              "rank": 6,
+              "ticker": "4443.T",
+              "name": "Sansan",
+              "value": 26.174
+            },
+            {
+              "rank": 7,
+              "ticker": "3655.T",
+              "name": "BrainPad",
+              "value": 20.559
+            },
+            {
+              "rank": 8,
+              "ticker": "4751.T",
+              "name": "サイバーエージェント",
+              "value": 6.5712
+            },
+            {
+              "rank": null,
+              "ticker": "2121.T",
+              "name": "MIXI",
+              "value": null
+            },
+            {
+              "rank": null,
+              "ticker": "4828.T",
+              "name": "B-EN-G",
+              "value": null
+            },
+            {
+              "rank": null,
+              "ticker": "2432.T",
+              "name": "DeNA",
+              "value": null
+            },
+            {
+              "rank": null,
+              "ticker": "3092.T",
+              "name": "ZOZO",
+              "value": null
+            },
+            {
+              "rank": null,
+              "ticker": "3626.T",
+              "name": "TISI",
+              "value": null
+            },
+            {
+              "rank": null,
+              "ticker": "6367.T",
+              "name": "ダイキン工業",
+              "value": null
+            },
+            {
+              "rank": null,
+              "ticker": "6645.T",
+              "name": "オムロン",
+              "value": null
+            },
+            {
+              "rank": null,
+              "ticker": "6981.T",
+              "name": "村田製作所",
+              "value": null
+            },
+            {
+              "rank": null,
+              "ticker": "7701.T",
+              "name": "島津製作所",
+              "value": null
+            },
+            {
+              "rank": null,
+              "ticker": "3774.T",
+              "name": "インターネットイニシアティブ",
+              "value": null
+            },
+            {
+              "rank": null,
+              "ticker": "6701.T",
+              "name": "NEC",
+              "value": null
+            }
+          ]
+        },
+        "operating_income": {
+          "chart": "/charts/stats/fy2022/rankings/operating_income.svg",
+          "rows": [
+            {
+              "rank": 1,
+              "ticker": "6367.T",
+              "name": "ダイキン工業",
+              "value": 316350.0
+            },
+            {
+              "rank": 2,
+              "ticker": "6701.T",
+              "name": "NEC",
+              "value": 132525.0
+            },
+            {
+              "rank": 3,
+              "ticker": "4751.T",
+              "name": "サイバーエージェント",
+              "value": 69114.0
+            },
+            {
+              "rank": 4,
+              "ticker": "7701.T",
+              "name": "島津製作所",
+              "value": 63806.0
+            },
+            {
+              "rank": 5,
+              "ticker": "3626.T",
+              "name": "TISI",
+              "value": 54739.0
+            },
+            {
+              "rank": 6,
+              "ticker": "3092.T",
+              "name": "ZOZO",
+              "value": 49656.0
+            },
+            {
+              "rank": 7,
+              "ticker": "3774.T",
+              "name": "インターネットイニシアティブ",
+              "value": 23547.0
+            },
+            {
+              "rank": 8,
+              "ticker": "2121.T",
+              "name": "MIXI",
+              "value": 17808.0
+            },
+            {
+              "rank": 9,
+              "ticker": "2432.T",
+              "name": "DeNA",
+              "value": 11462.0
+            },
+            {
+              "rank": 10,
+              "ticker": "4828.T",
+              "name": "B-EN-G",
+              "value": 2412.945
+            },
+            {
+              "rank": 11,
+              "ticker": "3993.T",
+              "name": "PKSHA Technology",
+              "value": 1565.906
+            },
+            {
+              "rank": 12,
+              "ticker": "4443.T",
+              "name": "Sansan",
+              "value": 631.0
+            },
+            {
+              "rank": 13,
+              "ticker": "4384.T",
+              "name": "ラクスル",
+              "value": 462.0
+            },
+            {
+              "rank": 14,
+              "ticker": "4165.T",
+              "name": "プレイド",
+              "value": -882.541
+            },
+            {
+              "rank": 15,
+              "ticker": "4478.T",
+              "name": "freee",
+              "value": -3042.681
+            },
+            {
+              "rank": null,
+              "ticker": "3655.T",
+              "name": "BrainPad",
+              "value": null
+            },
+            {
+              "rank": null,
+              "ticker": "4418.T",
+              "name": "JDSC",
+              "value": null
+            },
+            {
+              "rank": null,
+              "ticker": "6645.T",
+              "name": "オムロン",
+              "value": null
+            },
+            {
+              "rank": null,
+              "ticker": "6981.T",
+              "name": "村田製作所",
+              "value": null
+            }
+          ]
+        },
+        "operating_margin_pct": {
+          "chart": "/charts/stats/fy2022/rankings/operating_margin_pct.svg",
+          "rows": [
+            {
+              "rank": 1,
+              "ticker": "3092.T",
+              "name": "ZOZO",
+              "value": 29.8774
+            },
+            {
+              "rank": 2,
+              "ticker": "7701.T",
+              "name": "島津製作所",
+              "value": 14.9019
+            },
+            {
+              "rank": 3,
+              "ticker": "2121.T",
+              "name": "MIXI",
+              "value": 14.5931
+            },
+            {
+              "rank": 4,
+              "ticker": "3993.T",
+              "name": "PKSHA Technology",
+              "value": 13.6048
+            },
+            {
+              "rank": 5,
+              "ticker": "4828.T",
+              "name": "B-EN-G",
+              "value": 13.5863
+            },
+            {
+              "rank": 6,
+              "ticker": "3626.T",
+              "name": "TISI",
+              "value": 11.3438
+            },
+            {
+              "rank": 7,
+              "ticker": "3774.T",
+              "name": "インターネットイニシアティブ",
+              "value": 10.4036
+            },
+            {
+              "rank": 8,
+              "ticker": "6367.T",
+              "name": "ダイキン工業",
+              "value": 10.175
+            },
+            {
+              "rank": 9,
+              "ticker": "4751.T",
+              "name": "サイバーエージェント",
+              "value": 9.7354
+            },
+            {
+              "rank": 10,
+              "ticker": "2432.T",
+              "name": "DeNA",
+              "value": 8.7584
+            },
+            {
+              "rank": 11,
+              "ticker": "6701.T",
+              "name": "NEC",
+              "value": 4.3968
+            },
+            {
+              "rank": 12,
+              "ticker": "4443.T",
+              "name": "Sansan",
+              "value": 3.0901
+            },
+            {
+              "rank": 13,
+              "ticker": "4384.T",
+              "name": "ラクスル",
+              "value": 1.3596
+            },
+            {
+              "rank": 14,
+              "ticker": "4165.T",
+              "name": "プレイド",
+              "value": -12.0975
+            },
+            {
+              "rank": 15,
+              "ticker": "4478.T",
+              "name": "freee",
+              "value": -21.1586
+            },
+            {
+              "rank": null,
+              "ticker": "3655.T",
+              "name": "BrainPad",
+              "value": null
+            },
+            {
+              "rank": null,
+              "ticker": "4418.T",
+              "name": "JDSC",
+              "value": null
+            },
+            {
+              "rank": null,
+              "ticker": "6645.T",
+              "name": "オムロン",
+              "value": null
+            },
+            {
+              "rank": null,
+              "ticker": "6981.T",
+              "name": "村田製作所",
+              "value": null
+            }
+          ]
+        },
+        "roe_pct": {
+          "chart": "/charts/stats/fy2022/rankings/roe_pct.svg",
+          "rows": [
+            {
+              "rank": 1,
+              "ticker": "3092.T",
+              "name": "ZOZO",
+              "value": 62.5
+            },
+            {
+              "rank": 2,
+              "ticker": "4828.T",
+              "name": "B-EN-G",
+              "value": 23.8
+            },
+            {
+              "rank": 3,
+              "ticker": "3655.T",
+              "name": "BrainPad",
+              "value": 16.9
+            },
+            {
+              "rank": 3,
+              "ticker": "4751.T",
+              "name": "サイバーエージェント",
+              "value": 16.9
+            },
+            {
+              "rank": 5,
+              "ticker": "3774.T",
+              "name": "インターネットイニシアティブ",
+              "value": 16.2
+            },
+            {
+              "rank": 6,
+              "ticker": "6981.T",
+              "name": "村田製作所",
+              "value": 15.0
+            },
+            {
+              "rank": 7,
+              "ticker": "3626.T",
+              "name": "TISI",
+              "value": 14.0
+            },
+            {
+              "rank": 8,
+              "ticker": "2432.T",
+              "name": "DeNA",
+              "value": 13.2
+            },
+            {
+              "rank": 8,
+              "ticker": "7701.T",
+              "name": "島津製作所",
+              "value": 13.2
+            },
+            {
+              "rank": 10,
+              "ticker": "4384.T",
+              "name": "ラクスル",
+              "value": 12.2
+            },
+            {
+              "rank": 11,
+              "ticker": "6367.T",
+              "name": "ダイキン工業",
+              "value": 12.0
+            },
+            {
+              "rank": 12,
+              "ticker": "6701.T",
+              "name": "NEC",
+              "value": 10.0
+            },
+            {
+              "rank": 13,
+              "ticker": "6645.T",
+              "name": "オムロン",
+              "value": 9.7
+            },
+            {
+              "rank": 14,
+              "ticker": "4443.T",
+              "name": "Sansan",
+              "value": 7.0
+            },
+            {
+              "rank": 15,
+              "ticker": "2121.T",
+              "name": "MIXI",
+              "value": 5.5
+            },
+            {
+              "rank": 16,
+              "ticker": "3993.T",
+              "name": "PKSHA Technology",
+              "value": 2.9
+            },
+            {
+              "rank": null,
+              "ticker": "4418.T",
+              "name": "JDSC",
+              "value": null
+            },
+            {
+              "rank": null,
+              "ticker": "4165.T",
+              "name": "プレイド",
+              "value": null
+            },
+            {
+              "rank": null,
+              "ticker": "4478.T",
+              "name": "freee",
+              "value": null
+            }
+          ]
+        },
+        "free_cash_flow": {
+          "chart": "/charts/stats/fy2022/rankings/free_cash_flow.svg",
+          "rows": [
+            {
+              "rank": 1,
+              "ticker": "6981.T",
+              "name": "村田製作所",
+              "value": 209158.0
+            },
+            {
+              "rank": 2,
+              "ticker": "6701.T",
+              "name": "NEC",
+              "value": 84140.0
+            },
+            {
+              "rank": 3,
+              "ticker": "6367.T",
+              "name": "ダイキン工業",
+              "value": 64282.0
+            },
+            {
+              "rank": 4,
+              "ticker": "7701.T",
+              "name": "島津製作所",
+              "value": 57323.0
+            },
+            {
+              "rank": 5,
+              "ticker": "3626.T",
+              "name": "TISI",
+              "value": 52702.0
+            },
+            {
+              "rank": 6,
+              "ticker": "3092.T",
+              "name": "ZOZO",
+              "value": 38612.0
+            },
+            {
+              "rank": 7,
+              "ticker": "3774.T",
+              "name": "インターネットイニシアティブ",
+              "value": 31735.0
+            },
+            {
+              "rank": 8,
+              "ticker": "4443.T",
+              "name": "Sansan",
+              "value": 2109.0
+            },
+            {
+              "rank": 9,
+              "ticker": "4828.T",
+              "name": "B-EN-G",
+              "value": 1573.95
+            },
+            {
+              "rank": 10,
+              "ticker": "3993.T",
+              "name": "PKSHA Technology",
+              "value": 372.347
+            },
+            {
+              "rank": 11,
+              "ticker": "3655.T",
+              "name": "BrainPad",
+              "value": 176.445
+            },
+            {
+              "rank": 12,
+              "ticker": "4418.T",
+              "name": "JDSC",
+              "value": -276.713
+            },
+            {
+              "rank": 13,
+              "ticker": "4165.T",
+              "name": "プレイド",
+              "value": -944.341
+            },
+            {
+              "rank": 14,
+              "ticker": "2432.T",
+              "name": "DeNA",
+              "value": -1549.0
+            },
+            {
+              "rank": 15,
+              "ticker": "4384.T",
+              "name": "ラクスル",
+              "value": -1971.0
+            },
+            {
+              "rank": 16,
+              "ticker": "4478.T",
+              "name": "freee",
+              "value": -5553.626
+            },
+            {
+              "rank": 17,
+              "ticker": "4751.T",
+              "name": "サイバーエージェント",
+              "value": -13466.0
+            },
+            {
+              "rank": 18,
+              "ticker": "2121.T",
+              "name": "MIXI",
+              "value": -14789.0
+            },
+            {
+              "rank": 19,
+              "ticker": "6645.T",
+              "name": "オムロン",
+              "value": -82735.0
+            }
+          ]
+        }
+      },
+      "scatters": {
+        "growth-profitability": {
+          "chart": "/charts/stats/fy2022/scatters/growth-profitability.svg",
+          "included_count": 6,
+          "excluded_tickers": [
+            "3655.T",
+            "2121.T",
+            "4418.T",
+            "4828.T",
+            "2432.T",
+            "3092.T",
+            "3626.T",
+            "6367.T",
+            "6645.T",
+            "6981.T",
+            "7701.T",
+            "3774.T",
+            "6701.T"
+          ],
+          "exclusions": [
+            {
+              "ticker": "3655.T",
+              "reason": "missing_y"
+            },
+            {
+              "ticker": "2121.T",
+              "reason": "missing_x"
+            },
+            {
+              "ticker": "4418.T",
+              "reason": "missing_y"
+            },
+            {
+              "ticker": "4828.T",
+              "reason": "missing_x"
+            },
+            {
+              "ticker": "2432.T",
+              "reason": "missing_x"
+            },
+            {
+              "ticker": "3092.T",
+              "reason": "missing_x"
+            },
+            {
+              "ticker": "3626.T",
+              "reason": "missing_x"
+            },
+            {
+              "ticker": "6367.T",
+              "reason": "missing_x"
+            },
+            {
+              "ticker": "6645.T",
+              "reason": "missing_x_and_y"
+            },
+            {
+              "ticker": "6981.T",
+              "reason": "missing_x_and_y"
+            },
+            {
+              "ticker": "7701.T",
+              "reason": "missing_x"
+            },
+            {
+              "ticker": "3774.T",
+              "reason": "missing_x"
+            },
+            {
+              "ticker": "6701.T",
+              "reason": "missing_x"
+            }
+          ],
+          "rows": [
+            {
+              "ticker": "4443.T",
+              "name": "Sansan",
+              "x": 26.174,
+              "y": 3.0901
+            },
+            {
+              "ticker": "4751.T",
+              "name": "サイバーエージェント",
+              "x": 6.5712,
+              "y": 9.7354
+            },
+            {
+              "ticker": "4384.T",
+              "name": "ラクスル",
+              "x": 33.1348,
+              "y": 1.3596
+            },
+            {
+              "ticker": "3993.T",
+              "name": "PKSHA Technology",
+              "x": 31.8876,
+              "y": 13.6048
+            },
+            {
+              "ticker": "4165.T",
+              "name": "プレイド",
+              "x": 33.9851,
+              "y": -12.0975
+            },
+            {
+              "ticker": "4478.T",
+              "name": "freee",
+              "x": 40.1858,
+              "y": -21.1586
+            }
+          ]
+        },
+        "margin-return": {
+          "chart": "/charts/stats/fy2022/scatters/margin-return.svg",
+          "included_count": 13,
+          "excluded_tickers": [
+            "3655.T",
+            "4418.T",
+            "4165.T",
+            "4478.T",
+            "6645.T",
+            "6981.T"
+          ],
+          "exclusions": [
+            {
+              "ticker": "3655.T",
+              "reason": "missing_x"
+            },
+            {
+              "ticker": "4418.T",
+              "reason": "missing_x_and_y"
+            },
+            {
+              "ticker": "4165.T",
+              "reason": "missing_y"
+            },
+            {
+              "ticker": "4478.T",
+              "reason": "missing_y"
+            },
+            {
+              "ticker": "6645.T",
+              "reason": "missing_x"
+            },
+            {
+              "ticker": "6981.T",
+              "reason": "missing_x"
+            }
+          ],
+          "rows": [
+            {
+              "ticker": "4443.T",
+              "name": "Sansan",
+              "x": 3.0901,
+              "y": 7.0
+            },
+            {
+              "ticker": "2121.T",
+              "name": "MIXI",
+              "x": 14.5931,
+              "y": 5.5
+            },
+            {
+              "ticker": "4751.T",
+              "name": "サイバーエージェント",
+              "x": 9.7354,
+              "y": 16.9
+            },
+            {
+              "ticker": "4384.T",
+              "name": "ラクスル",
+              "x": 1.3596,
+              "y": 12.2
+            },
+            {
+              "ticker": "3993.T",
+              "name": "PKSHA Technology",
+              "x": 13.6048,
+              "y": 2.9
+            },
+            {
+              "ticker": "4828.T",
+              "name": "B-EN-G",
+              "x": 13.5863,
+              "y": 23.8
+            },
+            {
+              "ticker": "2432.T",
+              "name": "DeNA",
+              "x": 8.7584,
+              "y": 13.2
+            },
+            {
+              "ticker": "3092.T",
+              "name": "ZOZO",
+              "x": 29.8774,
+              "y": 62.5
+            },
+            {
+              "ticker": "3626.T",
+              "name": "TISI",
+              "x": 11.3438,
+              "y": 14.0
+            },
+            {
+              "ticker": "6367.T",
+              "name": "ダイキン工業",
+              "x": 10.175,
+              "y": 12.0
+            },
+            {
+              "ticker": "7701.T",
+              "name": "島津製作所",
+              "x": 14.9019,
+              "y": 13.2
+            },
+            {
+              "ticker": "3774.T",
+              "name": "インターネットイニシアティブ",
+              "x": 10.4036,
+              "y": 16.2
+            },
+            {
+              "ticker": "6701.T",
+              "name": "NEC",
+              "x": 4.3968,
+              "y": 10.0
+            }
+          ]
+        },
+        "scale-cash": {
+          "chart": "/charts/stats/fy2022/scatters/scale-cash.svg",
+          "included_count": 19,
+          "excluded_tickers": [],
+          "exclusions": [],
+          "rows": [
+            {
+              "ticker": "3655.T",
+              "name": "BrainPad",
+              "x": 8561.311,
+              "y": 176.445
+            },
+            {
+              "ticker": "4443.T",
+              "name": "Sansan",
+              "x": 20420.0,
+              "y": 2109.0
+            },
+            {
+              "ticker": "2121.T",
+              "name": "MIXI",
+              "x": 122030.0,
+              "y": -14789.0
+            },
+            {
+              "ticker": "4751.T",
+              "name": "サイバーエージェント",
+              "x": 709923.0,
+              "y": -13466.0
+            },
+            {
+              "ticker": "4384.T",
+              "name": "ラクスル",
+              "x": 33980.0,
+              "y": -1971.0
+            },
+            {
+              "ticker": "4418.T",
+              "name": "JDSC",
+              "x": 1413.332,
+              "y": -276.713
+            },
+            {
+              "ticker": "3993.T",
+              "name": "PKSHA Technology",
+              "x": 11509.927,
+              "y": 372.347
+            },
+            {
+              "ticker": "4165.T",
+              "name": "プレイド",
+              "x": 7295.234,
+              "y": -944.341
+            },
+            {
+              "ticker": "4828.T",
+              "name": "B-EN-G",
+              "x": 17760.122,
+              "y": 1573.95
+            },
+            {
+              "ticker": "2432.T",
+              "name": "DeNA",
+              "x": 130868.0,
+              "y": -1549.0
+            },
+            {
+              "ticker": "3092.T",
+              "name": "ZOZO",
+              "x": 166199.0,
+              "y": 38612.0
+            },
+            {
+              "ticker": "4478.T",
+              "name": "freee",
+              "x": 14380.373,
+              "y": -5553.626
+            },
+            {
+              "ticker": "3626.T",
+              "name": "TISI",
+              "x": 482547.0,
+              "y": 52702.0
+            },
+            {
+              "ticker": "6367.T",
+              "name": "ダイキン工業",
+              "x": 3109106.0,
+              "y": 64282.0
+            },
+            {
+              "ticker": "6645.T",
+              "name": "オムロン",
+              "x": 762927.0,
+              "y": -82735.0
+            },
+            {
+              "ticker": "6981.T",
+              "name": "村田製作所",
+              "x": 1812521.0,
+              "y": 209158.0
+            },
+            {
+              "ticker": "7701.T",
+              "name": "島津製作所",
+              "x": 428175.0,
+              "y": 57323.0
+            },
+            {
+              "ticker": "3774.T",
+              "name": "インターネットイニシアティブ",
+              "x": 226335.0,
+              "y": 31735.0
+            },
+            {
+              "ticker": "6701.T",
+              "name": "NEC",
+              "x": 3014095.0,
+              "y": 84140.0
+            }
+          ]
+        }
+      }
+    },
+    "2023": {
+      "company_count": 19,
+      "descriptive": {
+        "revenue": {
+          "count": 19,
+          "missing": 0,
+          "mean": 653895.3456,
+          "median": 146867.0,
+          "stddev": 1141810.8026,
+          "min": 1939.668,
+          "q1": 18863.202,
+          "q3": 613925.5,
+          "max": 3981578.0
+        },
+        "revenue_yoy_pct": {
+          "count": 19,
+          "missing": 0,
+          "mean": 15.0016,
+          "median": 14.4444,
+          "stddev": 11.3089,
+          "min": -6.9365,
+          "q1": 7.6376,
+          "q3": 20.7775,
+          "max": 37.2408
+        },
+        "operating_income": {
+          "count": 18,
+          "missing": 1,
+          "mean": 61744.8879,
+          "median": 14379.5,
+          "stddev": 109893.3137,
+          "min": -7919.419,
+          "q1": 703.274,
+          "q3": 60851.25,
+          "max": 377032.0
+        },
+        "operating_margin_pct": {
+          "count": 18,
+          "missing": 1,
+          "mean": 6.1612,
+          "median": 6.2456,
+          "stddev": 14.7237,
+          "min": -41.2041,
+          "q1": 3.4445,
+          "q3": 13.6746,
+          "max": 30.76
+        },
+        "roe_pct": {
+          "count": 16,
+          "missing": 3,
+          "mean": 13.1337,
+          "median": 10.75,
+          "stddev": 14.5412,
+          "min": 0.0,
+          "q1": 3.55,
+          "q3": 13.925,
+          "max": 60.1
+        },
+        "free_cash_flow": {
+          "count": 19,
+          "missing": 0,
+          "mean": 14471.7561,
+          "median": 5212.0,
+          "stddev": 40825.8162,
+          "min": -70897.0,
+          "q1": -295.2385,
+          "q3": 21701.0,
+          "max": 118428.0
+        }
+      },
+      "rankings": {
+        "revenue": {
+          "chart": "/charts/stats/fy2023/rankings/revenue.svg",
+          "rows": [
+            {
+              "rank": 1,
+              "ticker": "6367.T",
+              "name": "ダイキン工業",
+              "value": 3981578.0
+            },
+            {
+              "rank": 2,
+              "ticker": "6701.T",
+              "name": "NEC",
+              "value": 3313018.0
+            },
+            {
+              "rank": 3,
+              "ticker": "6981.T",
+              "name": "村田製作所",
+              "value": 1686796.0
+            },
+            {
+              "rank": 4,
+              "ticker": "6645.T",
+              "name": "オムロン",
+              "value": 876082.0
+            },
+            {
+              "rank": 5,
+              "ticker": "4751.T",
+              "name": "サイバーエージェント",
+              "value": 719451.0
+            },
+            {
+              "rank": 6,
+              "ticker": "3626.T",
+              "name": "TISI",
+              "value": 508400.0
+            },
+            {
+              "rank": 7,
+              "ticker": "7701.T",
+              "name": "島津製作所",
+              "value": 482240.0
+            },
+            {
+              "rank": 8,
+              "ticker": "3774.T",
+              "name": "インターネットイニシアティブ",
+              "value": 252708.0
+            },
+            {
+              "rank": 9,
+              "ticker": "3092.T",
+              "name": "ZOZO",
+              "value": 183423.0
+            },
+            {
+              "rank": 10,
+              "ticker": "2121.T",
+              "name": "MIXI",
+              "value": 146867.0
+            },
+            {
+              "rank": 11,
+              "ticker": "2432.T",
+              "name": "DeNA",
+              "value": 134914.0
+            },
+            {
+              "rank": 12,
+              "ticker": "4384.T",
+              "name": "ラクスル",
+              "value": 41018.0
+            },
+            {
+              "rank": 13,
+              "ticker": "4443.T",
+              "name": "Sansan",
+              "value": 25510.0
+            },
+            {
+              "rank": 14,
+              "ticker": "4478.T",
+              "name": "freee",
+              "value": 19219.994
+            },
+            {
+              "rank": 15,
+              "ticker": "4828.T",
+              "name": "B-EN-G",
+              "value": 18506.41
+            },
+            {
+              "rank": 16,
+              "ticker": "3993.T",
+              "name": "PKSHA Technology",
+              "value": 13908.918
+            },
+            {
+              "rank": 17,
+              "ticker": "3655.T",
+              "name": "BrainPad",
+              "value": 9797.938
+            },
+            {
+              "rank": 18,
+              "ticker": "4165.T",
+              "name": "プレイド",
+              "value": 8633.638
+            },
+            {
+              "rank": 19,
+              "ticker": "4418.T",
+              "name": "JDSC",
+              "value": 1939.668
+            }
+          ]
+        },
+        "revenue_yoy_pct": {
+          "chart": "/charts/stats/fy2023/rankings/revenue_yoy_pct.svg",
+          "rows": [
+            {
+              "rank": 1,
+              "ticker": "4418.T",
+              "name": "JDSC",
+              "value": 37.2408
+            },
+            {
+              "rank": 2,
+              "ticker": "4478.T",
+              "name": "freee",
+              "value": 33.6543
+            },
+            {
+              "rank": 3,
+              "ticker": "6367.T",
+              "name": "ダイキン工業",
+              "value": 28.0618
+            },
+            {
+              "rank": 4,
+              "ticker": "4443.T",
+              "name": "Sansan",
+              "value": 24.9265
+            },
+            {
+              "rank": 5,
+              "ticker": "3993.T",
+              "name": "PKSHA Technology",
+              "value": 20.8428
+            },
+            {
+              "rank": 6,
+              "ticker": "4384.T",
+              "name": "ラクスル",
+              "value": 20.7122
+            },
+            {
+              "rank": 7,
+              "ticker": "2121.T",
+              "name": "MIXI",
+              "value": 20.3532
+            },
+            {
+              "rank": 8,
+              "ticker": "4165.T",
+              "name": "プレイド",
+              "value": 18.3463
+            },
+            {
+              "rank": 9,
+              "ticker": "6645.T",
+              "name": "オムロン",
+              "value": 14.8317
+            },
+            {
+              "rank": 10,
+              "ticker": "3655.T",
+              "name": "BrainPad",
+              "value": 14.4444
+            },
+            {
+              "rank": 11,
+              "ticker": "7701.T",
+              "name": "島津製作所",
+              "value": 12.6268
+            },
+            {
+              "rank": 12,
+              "ticker": "3774.T",
+              "name": "インターネットイニシアティブ",
+              "value": 11.6522
+            },
+            {
+              "rank": 13,
+              "ticker": "3092.T",
+              "name": "ZOZO",
+              "value": 10.3635
+            },
+            {
+              "rank": 14,
+              "ticker": "6701.T",
+              "name": "NEC",
+              "value": 9.9175
+            },
+            {
+              "rank": 15,
+              "ticker": "3626.T",
+              "name": "TISI",
+              "value": 5.3576
+            },
+            {
+              "rank": 16,
+              "ticker": "4828.T",
+              "name": "B-EN-G",
+              "value": 4.202
+            },
+            {
+              "rank": 17,
+              "ticker": "2432.T",
+              "name": "DeNA",
+              "value": 3.0917
+            },
+            {
+              "rank": 18,
+              "ticker": "4751.T",
+              "name": "サイバーエージェント",
+              "value": 1.3421
+            },
+            {
+              "rank": 19,
+              "ticker": "6981.T",
+              "name": "村田製作所",
+              "value": -6.9365
+            }
+          ]
+        },
+        "operating_income": {
+          "chart": "/charts/stats/fy2023/rankings/operating_income.svg",
+          "rows": [
+            {
+              "rank": 1,
+              "ticker": "6367.T",
+              "name": "ダイキン工業",
+              "value": 377032.0
+            },
+            {
+              "rank": 2,
+              "ticker": "6981.T",
+              "name": "村田製作所",
+              "value": 298231.0
+            },
+            {
+              "rank": 3,
+              "ticker": "6701.T",
+              "name": "NEC",
+              "value": 170447.0
+            },
+            {
+              "rank": 4,
+              "ticker": "7701.T",
+              "name": "島津製作所",
+              "value": 68219.0
+            },
+            {
+              "rank": 5,
+              "ticker": "3626.T",
+              "name": "TISI",
+              "value": 62328.0
+            },
+            {
+              "rank": 6,
+              "ticker": "3092.T",
+              "name": "ZOZO",
+              "value": 56421.0
+            },
+            {
+              "rank": 7,
+              "ticker": "3774.T",
+              "name": "インターネットイニシアティブ",
+              "value": 27221.0
+            },
+            {
+              "rank": 8,
+              "ticker": "2121.T",
+              "name": "MIXI",
+              "value": 24820.0
+            },
+            {
+              "rank": 9,
+              "ticker": "4751.T",
+              "name": "サイバーエージェント",
+              "value": 24557.0
+            },
+            {
+              "rank": 10,
+              "ticker": "2432.T",
+              "name": "DeNA",
+              "value": 4202.0
+            },
+            {
+              "rank": 11,
+              "ticker": "4828.T",
+              "name": "B-EN-G",
+              "value": 3246.402
+            },
+            {
+              "rank": 12,
+              "ticker": "4384.T",
+              "name": "ラクスル",
+              "value": 1765.0
+            },
+            {
+              "rank": 13,
+              "ticker": "3993.T",
+              "name": "PKSHA Technology",
+              "value": 771.146
+            },
+            {
+              "rank": 14,
+              "ticker": "3655.T",
+              "name": "BrainPad",
+              "value": 680.65
+            },
+            {
+              "rank": 15,
+              "ticker": "4443.T",
+              "name": "Sansan",
+              "value": 199.0
+            },
+            {
+              "rank": 16,
+              "ticker": "4418.T",
+              "name": "JDSC",
+              "value": 68.627
+            },
+            {
+              "rank": 17,
+              "ticker": "4165.T",
+              "name": "プレイド",
+              "value": -881.423
+            },
+            {
+              "rank": 18,
+              "ticker": "4478.T",
+              "name": "freee",
+              "value": -7919.419
+            },
+            {
+              "rank": null,
+              "ticker": "6645.T",
+              "name": "オムロン",
+              "value": null
+            }
+          ]
+        },
+        "operating_margin_pct": {
+          "chart": "/charts/stats/fy2023/rankings/operating_margin_pct.svg",
+          "rows": [
+            {
+              "rank": 1,
+              "ticker": "3092.T",
+              "name": "ZOZO",
+              "value": 30.76
+            },
+            {
+              "rank": 2,
+              "ticker": "6981.T",
+              "name": "村田製作所",
+              "value": 17.6803
+            },
+            {
+              "rank": 3,
+              "ticker": "4828.T",
+              "name": "B-EN-G",
+              "value": 17.542
+            },
+            {
+              "rank": 4,
+              "ticker": "2121.T",
+              "name": "MIXI",
+              "value": 16.8996
+            },
+            {
+              "rank": 5,
+              "ticker": "7701.T",
+              "name": "島津製作所",
+              "value": 14.1463
+            },
+            {
+              "rank": 6,
+              "ticker": "3626.T",
+              "name": "TISI",
+              "value": 12.2596
+            },
+            {
+              "rank": 7,
+              "ticker": "3774.T",
+              "name": "インターネットイニシアティブ",
+              "value": 10.7717
+            },
+            {
+              "rank": 8,
+              "ticker": "6367.T",
+              "name": "ダイキン工業",
+              "value": 9.4694
+            },
+            {
+              "rank": 9,
+              "ticker": "3655.T",
+              "name": "BrainPad",
+              "value": 6.9469
+            },
+            {
+              "rank": 10,
+              "ticker": "3993.T",
+              "name": "PKSHA Technology",
+              "value": 5.5443
+            },
+            {
+              "rank": 11,
+              "ticker": "6701.T",
+              "name": "NEC",
+              "value": 5.1448
+            },
+            {
+              "rank": 12,
+              "ticker": "4384.T",
+              "name": "ラクスル",
+              "value": 4.303
+            },
+            {
+              "rank": 13,
+              "ticker": "4418.T",
+              "name": "JDSC",
+              "value": 3.5381
+            },
+            {
+              "rank": 14,
+              "ticker": "4751.T",
+              "name": "サイバーエージェント",
+              "value": 3.4133
+            },
+            {
+              "rank": 15,
+              "ticker": "2432.T",
+              "name": "DeNA",
+              "value": 3.1146
+            },
+            {
+              "rank": 16,
+              "ticker": "4443.T",
+              "name": "Sansan",
+              "value": 0.7801
+            },
+            {
+              "rank": 17,
+              "ticker": "4165.T",
+              "name": "プレイド",
+              "value": -10.2092
+            },
+            {
+              "rank": 18,
+              "ticker": "4478.T",
+              "name": "freee",
+              "value": -41.2041
+            },
+            {
+              "rank": null,
+              "ticker": "6645.T",
+              "name": "オムロン",
+              "value": null
+            }
+          ]
+        },
+        "roe_pct": {
+          "chart": "/charts/stats/fy2023/rankings/roe_pct.svg",
+          "rows": [
+            {
+              "rank": 1,
+              "ticker": "3092.T",
+              "name": "ZOZO",
+              "value": 60.1
+            },
+            {
+              "rank": 2,
+              "ticker": "4828.T",
+              "name": "B-EN-G",
+              "value": 27.8
+            },
+            {
+              "rank": 3,
+              "ticker": "3626.T",
+              "name": "TISI",
+              "value": 18.8
+            },
+            {
+              "rank": 4,
+              "ticker": "3774.T",
+              "name": "インターネットイニシアティブ",
+              "value": 17.0
+            },
+            {
+              "rank": 5,
+              "ticker": "7701.T",
+              "name": "島津製作所",
+              "value": 12.9
+            },
+            {
+              "rank": 6,
+              "ticker": "4384.T",
+              "name": "ラクスル",
+              "value": 12.7
+            },
+            {
+              "rank": 7,
+              "ticker": "6367.T",
+              "name": "ダイキン工業",
+              "value": 12.3
+            },
+            {
+              "rank": 8,
+              "ticker": "6981.T",
+              "name": "村田製作所",
+              "value": 10.9
+            },
+            {
+              "rank": 9,
+              "ticker": "3655.T",
+              "name": "BrainPad",
+              "value": 10.6
+            },
+            {
+              "rank": 9,
+              "ticker": "6645.T",
+              "name": "オムロン",
+              "value": 10.6
+            },
+            {
+              "rank": 11,
+              "ticker": "6701.T",
+              "name": "NEC",
+              "value": 7.3
+            },
+            {
+              "rank": 12,
+              "ticker": "2432.T",
+              "name": "DeNA",
+              "value": 3.8
+            },
+            {
+              "rank": 13,
+              "ticker": "2121.T",
+              "name": "MIXI",
+              "value": 2.8
+            },
+            {
+              "rank": 14,
+              "ticker": "4751.T",
+              "name": "サイバーエージェント",
+              "value": 2.5
+            },
+            {
+              "rank": 15,
+              "ticker": "4418.T",
+              "name": "JDSC",
+              "value": 0.04
+            },
+            {
+              "rank": 16,
+              "ticker": "3993.T",
+              "name": "PKSHA Technology",
+              "value": 0.0
+            },
+            {
+              "rank": null,
+              "ticker": "4443.T",
+              "name": "Sansan",
+              "value": null
+            },
+            {
+              "rank": null,
+              "ticker": "4165.T",
+              "name": "プレイド",
+              "value": null
+            },
+            {
+              "rank": null,
+              "ticker": "4478.T",
+              "name": "freee",
+              "value": null
+            }
+          ]
+        },
+        "free_cash_flow": {
+          "chart": "/charts/stats/fy2023/rankings/free_cash_flow.svg",
+          "rows": [
+            {
+              "rank": 1,
+              "ticker": "6981.T",
+              "name": "村田製作所",
+              "value": 118428.0
+            },
+            {
+              "rank": 2,
+              "ticker": "6701.T",
+              "name": "NEC",
+              "value": 102536.0
+            },
+            {
+              "rank": 3,
+              "ticker": "3626.T",
+              "name": "TISI",
+              "value": 44934.0
+            },
+            {
+              "rank": 4,
+              "ticker": "3092.T",
+              "name": "ZOZO",
+              "value": 26083.0
+            },
+            {
+              "rank": 5,
+              "ticker": "2432.T",
+              "name": "DeNA",
+              "value": 23259.0
+            },
+            {
+              "rank": 6,
+              "ticker": "3774.T",
+              "name": "インターネットイニシアティブ",
+              "value": 20143.0
+            },
+            {
+              "rank": 7,
+              "ticker": "7701.T",
+              "name": "島津製作所",
+              "value": 13794.0
+            },
+            {
+              "rank": 8,
+              "ticker": "2121.T",
+              "name": "MIXI",
+              "value": 8401.0
+            },
+            {
+              "rank": 9,
+              "ticker": "3993.T",
+              "name": "PKSHA Technology",
+              "value": 6012.339
+            },
+            {
+              "rank": 10,
+              "ticker": "4443.T",
+              "name": "Sansan",
+              "value": 5212.0
+            },
+            {
+              "rank": 11,
+              "ticker": "4384.T",
+              "name": "ラクスル",
+              "value": 3199.0
+            },
+            {
+              "rank": 12,
+              "ticker": "4828.T",
+              "name": "B-EN-G",
+              "value": 2581.976
+            },
+            {
+              "rank": 13,
+              "ticker": "3655.T",
+              "name": "BrainPad",
+              "value": 101.572
+            },
+            {
+              "rank": 14,
+              "ticker": "4418.T",
+              "name": "JDSC",
+              "value": -176.356
+            },
+            {
+              "rank": 15,
+              "ticker": "4165.T",
+              "name": "プレイド",
+              "value": -414.121
+            },
+            {
+              "rank": 16,
+              "ticker": "6645.T",
+              "name": "オムロン",
+              "value": -2077.0
+            },
+            {
+              "rank": 17,
+              "ticker": "4478.T",
+              "name": "freee",
+              "value": -6689.044
+            },
+            {
+              "rank": 18,
+              "ticker": "4751.T",
+              "name": "サイバーエージェント",
+              "value": -19468.0
+            },
+            {
+              "rank": 19,
+              "ticker": "6367.T",
+              "name": "ダイキン工業",
+              "value": -70897.0
+            }
+          ]
+        }
+      },
+      "scatters": {
+        "growth-profitability": {
+          "chart": "/charts/stats/fy2023/scatters/growth-profitability.svg",
+          "included_count": 18,
+          "excluded_tickers": [
+            "6645.T"
+          ],
+          "exclusions": [
+            {
+              "ticker": "6645.T",
+              "reason": "missing_y"
+            }
+          ],
+          "rows": [
+            {
+              "ticker": "3655.T",
+              "name": "BrainPad",
+              "x": 14.4444,
+              "y": 6.9469
+            },
+            {
+              "ticker": "4443.T",
+              "name": "Sansan",
+              "x": 24.9265,
+              "y": 0.7801
+            },
+            {
+              "ticker": "2121.T",
+              "name": "MIXI",
+              "x": 20.3532,
+              "y": 16.8996
+            },
+            {
+              "ticker": "4751.T",
+              "name": "サイバーエージェント",
+              "x": 1.3421,
+              "y": 3.4133
+            },
+            {
+              "ticker": "4384.T",
+              "name": "ラクスル",
+              "x": 20.7122,
+              "y": 4.303
+            },
+            {
+              "ticker": "4418.T",
+              "name": "JDSC",
+              "x": 37.2408,
+              "y": 3.5381
+            },
+            {
+              "ticker": "3993.T",
+              "name": "PKSHA Technology",
+              "x": 20.8428,
+              "y": 5.5443
+            },
+            {
+              "ticker": "4165.T",
+              "name": "プレイド",
+              "x": 18.3463,
+              "y": -10.2092
+            },
+            {
+              "ticker": "4828.T",
+              "name": "B-EN-G",
+              "x": 4.202,
+              "y": 17.542
+            },
+            {
+              "ticker": "2432.T",
+              "name": "DeNA",
+              "x": 3.0917,
+              "y": 3.1146
+            },
+            {
+              "ticker": "3092.T",
+              "name": "ZOZO",
+              "x": 10.3635,
+              "y": 30.76
+            },
+            {
+              "ticker": "4478.T",
+              "name": "freee",
+              "x": 33.6543,
+              "y": -41.2041
+            },
+            {
+              "ticker": "3626.T",
+              "name": "TISI",
+              "x": 5.3576,
+              "y": 12.2596
+            },
+            {
+              "ticker": "6367.T",
+              "name": "ダイキン工業",
+              "x": 28.0618,
+              "y": 9.4694
+            },
+            {
+              "ticker": "6981.T",
+              "name": "村田製作所",
+              "x": -6.9365,
+              "y": 17.6803
+            },
+            {
+              "ticker": "7701.T",
+              "name": "島津製作所",
+              "x": 12.6268,
+              "y": 14.1463
+            },
+            {
+              "ticker": "3774.T",
+              "name": "インターネットイニシアティブ",
+              "x": 11.6522,
+              "y": 10.7717
+            },
+            {
+              "ticker": "6701.T",
+              "name": "NEC",
+              "x": 9.9175,
+              "y": 5.1448
+            }
+          ]
+        },
+        "margin-return": {
+          "chart": "/charts/stats/fy2023/scatters/margin-return.svg",
+          "included_count": 15,
+          "excluded_tickers": [
+            "4443.T",
+            "4165.T",
+            "4478.T",
+            "6645.T"
+          ],
+          "exclusions": [
+            {
+              "ticker": "4443.T",
+              "reason": "missing_y"
+            },
+            {
+              "ticker": "4165.T",
+              "reason": "missing_y"
+            },
+            {
+              "ticker": "4478.T",
+              "reason": "missing_y"
+            },
+            {
+              "ticker": "6645.T",
+              "reason": "missing_x"
+            }
+          ],
+          "rows": [
+            {
+              "ticker": "3655.T",
+              "name": "BrainPad",
+              "x": 6.9469,
+              "y": 10.6
+            },
+            {
+              "ticker": "2121.T",
+              "name": "MIXI",
+              "x": 16.8996,
+              "y": 2.8
+            },
+            {
+              "ticker": "4751.T",
+              "name": "サイバーエージェント",
+              "x": 3.4133,
+              "y": 2.5
+            },
+            {
+              "ticker": "4384.T",
+              "name": "ラクスル",
+              "x": 4.303,
+              "y": 12.7
+            },
+            {
+              "ticker": "4418.T",
+              "name": "JDSC",
+              "x": 3.5381,
+              "y": 0.04
+            },
+            {
+              "ticker": "3993.T",
+              "name": "PKSHA Technology",
+              "x": 5.5443,
+              "y": 0.0
+            },
+            {
+              "ticker": "4828.T",
+              "name": "B-EN-G",
+              "x": 17.542,
+              "y": 27.8
+            },
+            {
+              "ticker": "2432.T",
+              "name": "DeNA",
+              "x": 3.1146,
+              "y": 3.8
+            },
+            {
+              "ticker": "3092.T",
+              "name": "ZOZO",
+              "x": 30.76,
+              "y": 60.1
+            },
+            {
+              "ticker": "3626.T",
+              "name": "TISI",
+              "x": 12.2596,
+              "y": 18.8
+            },
+            {
+              "ticker": "6367.T",
+              "name": "ダイキン工業",
+              "x": 9.4694,
+              "y": 12.3
+            },
+            {
+              "ticker": "6981.T",
+              "name": "村田製作所",
+              "x": 17.6803,
+              "y": 10.9
+            },
+            {
+              "ticker": "7701.T",
+              "name": "島津製作所",
+              "x": 14.1463,
+              "y": 12.9
+            },
+            {
+              "ticker": "3774.T",
+              "name": "インターネットイニシアティブ",
+              "x": 10.7717,
+              "y": 17.0
+            },
+            {
+              "ticker": "6701.T",
+              "name": "NEC",
+              "x": 5.1448,
+              "y": 7.3
+            }
+          ]
+        },
+        "scale-cash": {
+          "chart": "/charts/stats/fy2023/scatters/scale-cash.svg",
+          "included_count": 19,
+          "excluded_tickers": [],
+          "exclusions": [],
+          "rows": [
+            {
+              "ticker": "3655.T",
+              "name": "BrainPad",
+              "x": 9797.938,
+              "y": 101.572
+            },
+            {
+              "ticker": "4443.T",
+              "name": "Sansan",
+              "x": 25510.0,
+              "y": 5212.0
+            },
+            {
+              "ticker": "2121.T",
+              "name": "MIXI",
+              "x": 146867.0,
+              "y": 8401.0
+            },
+            {
+              "ticker": "4751.T",
+              "name": "サイバーエージェント",
+              "x": 719451.0,
+              "y": -19468.0
+            },
+            {
+              "ticker": "4384.T",
+              "name": "ラクスル",
+              "x": 41018.0,
+              "y": 3199.0
+            },
+            {
+              "ticker": "4418.T",
+              "name": "JDSC",
+              "x": 1939.668,
+              "y": -176.356
+            },
+            {
+              "ticker": "3993.T",
+              "name": "PKSHA Technology",
+              "x": 13908.918,
+              "y": 6012.339
+            },
+            {
+              "ticker": "4165.T",
+              "name": "プレイド",
+              "x": 8633.638,
+              "y": -414.121
+            },
+            {
+              "ticker": "4828.T",
+              "name": "B-EN-G",
+              "x": 18506.41,
+              "y": 2581.976
+            },
+            {
+              "ticker": "2432.T",
+              "name": "DeNA",
+              "x": 134914.0,
+              "y": 23259.0
+            },
+            {
+              "ticker": "3092.T",
+              "name": "ZOZO",
+              "x": 183423.0,
+              "y": 26083.0
+            },
+            {
+              "ticker": "4478.T",
+              "name": "freee",
+              "x": 19219.994,
+              "y": -6689.044
+            },
+            {
+              "ticker": "3626.T",
+              "name": "TISI",
+              "x": 508400.0,
+              "y": 44934.0
+            },
+            {
+              "ticker": "6367.T",
+              "name": "ダイキン工業",
+              "x": 3981578.0,
+              "y": -70897.0
+            },
+            {
+              "ticker": "6645.T",
+              "name": "オムロン",
+              "x": 876082.0,
+              "y": -2077.0
+            },
+            {
+              "ticker": "6981.T",
+              "name": "村田製作所",
+              "x": 1686796.0,
+              "y": 118428.0
+            },
+            {
+              "ticker": "7701.T",
+              "name": "島津製作所",
+              "x": 482240.0,
+              "y": 13794.0
+            },
+            {
+              "ticker": "3774.T",
+              "name": "インターネットイニシアティブ",
+              "x": 252708.0,
+              "y": 20143.0
+            },
+            {
+              "ticker": "6701.T",
+              "name": "NEC",
+              "x": 3313018.0,
+              "y": 102536.0
+            }
+          ]
+        }
+      }
+    },
+    "2024": {
+      "company_count": 19,
+      "descriptive": {
+        "revenue": {
+          "count": 19,
+          "missing": 0,
+          "mean": 691324.0911,
+          "median": 146868.0,
+          "stddev": 1226021.0803,
+          "min": 10561.125,
+          "q1": 22461.9155,
+          "q3": 675120.0,
+          "max": 4395317.0
+        },
+        "revenue_yoy_pct": {
+          "count": 19,
+          "missing": 0,
+          "mean": 49.9837,
+          "median": 7.9866,
+          "stddev": 169.5331,
+          "min": -6.5429,
+          "q1": 5.1445,
+          "q3": 23.0432,
+          "max": 748.4893
+        },
+        "operating_income": {
+          "count": 18,
+          "missing": 1,
+          "mean": 58735.7492,
+          "median": 11531.2015,
+          "stddev": 105783.6103,
+          "min": -28270.0,
+          "q1": 1339.9832,
+          "q3": 63445.75,
+          "max": 392137.0
+        },
+        "operating_margin_pct": {
+          "count": 18,
+          "missing": 1,
+          "mean": 6.7844,
+          "median": 9.7182,
+          "stddev": 14.3716,
+          "min": -32.9785,
+          "q1": 4.1937,
+          "q3": 13.1161,
+          "max": 30.4945
+        },
+        "roe_pct": {
+          "count": 17,
+          "missing": 2,
+          "mean": 12.5353,
+          "median": 10.8,
+          "stddev": 13.7557,
+          "min": -13.3,
+          "q1": 7.1,
+          "q3": 16.0,
+          "max": 55.0
+        },
+        "free_cash_flow": {
+          "count": 19,
+          "missing": 0,
+          "mean": 35728.4174,
+          "median": 2329.0,
+          "stddev": 86273.793,
+          "min": -62221.0,
+          "q1": -1265.3555,
+          "q3": 26307.0,
+          "max": 288066.0
+        }
+      },
+      "rankings": {
+        "revenue": {
+          "chart": "/charts/stats/fy2024/rankings/revenue.svg",
+          "rows": [
+            {
+              "rank": 1,
+              "ticker": "6367.T",
+              "name": "ダイキン工業",
+              "value": 4395317.0
+            },
+            {
+              "rank": 2,
+              "ticker": "6701.T",
+              "name": "NEC",
+              "value": 3477262.0
+            },
+            {
+              "rank": 3,
+              "ticker": "6981.T",
+              "name": "村田製作所",
+              "value": 1640158.0
+            },
+            {
+              "rank": 4,
+              "ticker": "6645.T",
+              "name": "オムロン",
+              "value": 818761.0
+            },
+            {
+              "rank": 5,
+              "ticker": "4751.T",
+              "name": "サイバーエージェント",
+              "value": 801236.0
+            },
+            {
+              "rank": 6,
+              "ticker": "3626.T",
+              "name": "TISI",
+              "value": 549004.0
+            },
+            {
+              "rank": 7,
+              "ticker": "7701.T",
+              "name": "島津製作所",
+              "value": 511895.0
+            },
+            {
+              "rank": 8,
+              "ticker": "3774.T",
+              "name": "インターネットイニシアティブ",
+              "value": 276080.0
+            },
+            {
+              "rank": 9,
+              "ticker": "3092.T",
+              "name": "ZOZO",
+              "value": 197016.0
+            },
+            {
+              "rank": 10,
+              "ticker": "2121.T",
+              "name": "MIXI",
+              "value": 146868.0
+            },
+            {
+              "rank": 11,
+              "ticker": "2432.T",
+              "name": "DeNA",
+              "value": 136733.0
+            },
+            {
+              "rank": 12,
+              "ticker": "4384.T",
+              "name": "ラクスル",
+              "value": 51121.0
+            },
+            {
+              "rank": 13,
+              "ticker": "4443.T",
+              "name": "Sansan",
+              "value": 33878.0
+            },
+            {
+              "rank": 14,
+              "ticker": "4478.T",
+              "name": "freee",
+              "value": 25430.756
+            },
+            {
+              "rank": 15,
+              "ticker": "4828.T",
+              "name": "B-EN-G",
+              "value": 19493.075
+            },
+            {
+              "rank": 16,
+              "ticker": "3993.T",
+              "name": "PKSHA Technology",
+              "value": 16893.185
+            },
+            {
+              "rank": 17,
+              "ticker": "4418.T",
+              "name": "JDSC",
+              "value": 16457.876
+            },
+            {
+              "rank": 18,
+              "ticker": "4165.T",
+              "name": "プレイド",
+              "value": 10992.713
+            },
+            {
+              "rank": 19,
+              "ticker": "3655.T",
+              "name": "BrainPad",
+              "value": 10561.125
+            }
+          ]
+        },
+        "revenue_yoy_pct": {
+          "chart": "/charts/stats/fy2024/rankings/revenue_yoy_pct.svg",
+          "rows": [
+            {
+              "rank": 1,
+              "ticker": "4418.T",
+              "name": "JDSC",
+              "value": 748.4893
+            },
+            {
+              "rank": 2,
+              "ticker": "4443.T",
+              "name": "Sansan",
+              "value": 32.8028
+            },
+            {
+              "rank": 3,
+              "ticker": "4478.T",
+              "name": "freee",
+              "value": 32.3141
+            },
+            {
+              "rank": 4,
+              "ticker": "4165.T",
+              "name": "プレイド",
+              "value": 27.3242
+            },
+            {
+              "rank": 5,
+              "ticker": "4384.T",
+              "name": "ラクスル",
+              "value": 24.6306
+            },
+            {
+              "rank": 6,
+              "ticker": "3993.T",
+              "name": "PKSHA Technology",
+              "value": 21.4558
+            },
+            {
+              "rank": 7,
+              "ticker": "4751.T",
+              "name": "サイバーエージェント",
+              "value": 11.3677
+            },
+            {
+              "rank": 8,
+              "ticker": "6367.T",
+              "name": "ダイキン工業",
+              "value": 10.3913
+            },
+            {
+              "rank": 9,
+              "ticker": "3774.T",
+              "name": "インターネットイニシアティブ",
+              "value": 9.2486
+            },
+            {
+              "rank": 10,
+              "ticker": "3626.T",
+              "name": "TISI",
+              "value": 7.9866
+            },
+            {
+              "rank": 11,
+              "ticker": "3655.T",
+              "name": "BrainPad",
+              "value": 7.7893
+            },
+            {
+              "rank": 12,
+              "ticker": "3092.T",
+              "name": "ZOZO",
+              "value": 7.4107
+            },
+            {
+              "rank": 13,
+              "ticker": "7701.T",
+              "name": "島津製作所",
+              "value": 6.1494
+            },
+            {
+              "rank": 14,
+              "ticker": "4828.T",
+              "name": "B-EN-G",
+              "value": 5.3315
+            },
+            {
+              "rank": 15,
+              "ticker": "6701.T",
+              "name": "NEC",
+              "value": 4.9575
+            },
+            {
+              "rank": 16,
+              "ticker": "2432.T",
+              "name": "DeNA",
+              "value": 1.3483
+            },
+            {
+              "rank": 17,
+              "ticker": "2121.T",
+              "name": "MIXI",
+              "value": 0.0007
+            },
+            {
+              "rank": 18,
+              "ticker": "6981.T",
+              "name": "村田製作所",
+              "value": -2.7649
+            },
+            {
+              "rank": 19,
+              "ticker": "6645.T",
+              "name": "オムロン",
+              "value": -6.5429
+            }
+          ]
+        },
+        "operating_income": {
+          "chart": "/charts/stats/fy2024/rankings/operating_income.svg",
+          "rows": [
+            {
+              "rank": 1,
+              "ticker": "6367.T",
+              "name": "ダイキン工業",
+              "value": 392137.0
+            },
+            {
+              "rank": 2,
+              "ticker": "6981.T",
+              "name": "村田製作所",
+              "value": 215447.0
+            },
+            {
+              "rank": 3,
+              "ticker": "6701.T",
+              "name": "NEC",
+              "value": 188012.0
+            },
+            {
+              "rank": 4,
+              "ticker": "7701.T",
+              "name": "島津製作所",
+              "value": 72753.0
+            },
+            {
+              "rank": 5,
+              "ticker": "3626.T",
+              "name": "TISI",
+              "value": 64568.0
+            },
+            {
+              "rank": 6,
+              "ticker": "3092.T",
+              "name": "ZOZO",
+              "value": 60079.0
+            },
+            {
+              "rank": 7,
+              "ticker": "4751.T",
+              "name": "サイバーエージェント",
+              "value": 40083.0
+            },
+            {
+              "rank": 8,
+              "ticker": "3774.T",
+              "name": "インターネットイニシアティブ",
+              "value": 29029.0
+            },
+            {
+              "rank": 9,
+              "ticker": "2121.T",
+              "name": "MIXI",
+              "value": 19177.0
+            },
+            {
+              "rank": 10,
+              "ticker": "4828.T",
+              "name": "B-EN-G",
+              "value": 3885.403
+            },
+            {
+              "rank": 11,
+              "ticker": "3993.T",
+              "name": "PKSHA Technology",
+              "value": 3209.225
+            },
+            {
+              "rank": 12,
+              "ticker": "4384.T",
+              "name": "ラクスル",
+              "value": 2523.0
+            },
+            {
+              "rank": 13,
+              "ticker": "3655.T",
+              "name": "BrainPad",
+              "value": 1348.933
+            },
+            {
+              "rank": 14,
+              "ticker": "4443.T",
+              "name": "Sansan",
+              "value": 1337.0
+            },
+            {
+              "rank": 15,
+              "ticker": "4165.T",
+              "name": "プレイド",
+              "value": 260.915
+            },
+            {
+              "rank": 16,
+              "ticker": "4418.T",
+              "name": "JDSC",
+              "value": 50.684
+            },
+            {
+              "rank": 17,
+              "ticker": "4478.T",
+              "name": "freee",
+              "value": -8386.675
+            },
+            {
+              "rank": 18,
+              "ticker": "2432.T",
+              "name": "DeNA",
+              "value": -28270.0
+            },
+            {
+              "rank": null,
+              "ticker": "6645.T",
+              "name": "オムロン",
+              "value": null
+            }
+          ]
+        },
+        "operating_margin_pct": {
+          "chart": "/charts/stats/fy2024/rankings/operating_margin_pct.svg",
+          "rows": [
+            {
+              "rank": 1,
+              "ticker": "3092.T",
+              "name": "ZOZO",
+              "value": 30.4945
+            },
+            {
+              "rank": 2,
+              "ticker": "4828.T",
+              "name": "B-EN-G",
+              "value": 19.9322
+            },
+            {
+              "rank": 3,
+              "ticker": "3993.T",
+              "name": "PKSHA Technology",
+              "value": 18.9972
+            },
+            {
+              "rank": 4,
+              "ticker": "7701.T",
+              "name": "島津製作所",
+              "value": 14.2125
+            },
+            {
+              "rank": 5,
+              "ticker": "6981.T",
+              "name": "村田製作所",
+              "value": 13.1357
+            },
+            {
+              "rank": 6,
+              "ticker": "2121.T",
+              "name": "MIXI",
+              "value": 13.0573
+            },
+            {
+              "rank": 7,
+              "ticker": "3655.T",
+              "name": "BrainPad",
+              "value": 12.7726
+            },
+            {
+              "rank": 8,
+              "ticker": "3626.T",
+              "name": "TISI",
+              "value": 11.7609
+            },
+            {
+              "rank": 9,
+              "ticker": "3774.T",
+              "name": "インターネットイニシアティブ",
+              "value": 10.5147
+            },
+            {
+              "rank": 10,
+              "ticker": "6367.T",
+              "name": "ダイキン工業",
+              "value": 8.9217
+            },
+            {
+              "rank": 11,
+              "ticker": "6701.T",
+              "name": "NEC",
+              "value": 5.4069
+            },
+            {
+              "rank": 12,
+              "ticker": "4751.T",
+              "name": "サイバーエージェント",
+              "value": 5.0026
+            },
+            {
+              "rank": 13,
+              "ticker": "4384.T",
+              "name": "ラクスル",
+              "value": 4.9353
+            },
+            {
+              "rank": 14,
+              "ticker": "4443.T",
+              "name": "Sansan",
+              "value": 3.9465
+            },
+            {
+              "rank": 15,
+              "ticker": "4165.T",
+              "name": "プレイド",
+              "value": 2.3735
+            },
+            {
+              "rank": 16,
+              "ticker": "4418.T",
+              "name": "JDSC",
+              "value": 0.308
+            },
+            {
+              "rank": 17,
+              "ticker": "2432.T",
+              "name": "DeNA",
+              "value": -20.6753
+            },
+            {
+              "rank": 18,
+              "ticker": "4478.T",
+              "name": "freee",
+              "value": -32.9785
+            },
+            {
+              "rank": null,
+              "ticker": "6645.T",
+              "name": "オムロン",
+              "value": null
+            }
+          ]
+        },
+        "roe_pct": {
+          "chart": "/charts/stats/fy2024/rankings/roe_pct.svg",
+          "rows": [
+            {
+              "rank": 1,
+              "ticker": "3092.T",
+              "name": "ZOZO",
+              "value": 55.0
+            },
+            {
+              "rank": 2,
+              "ticker": "4828.T",
+              "name": "B-EN-G",
+              "value": 25.9
+            },
+            {
+              "rank": 3,
+              "ticker": "3655.T",
+              "name": "BrainPad",
+              "value": 17.4
+            },
+            {
+              "rank": 4,
+              "ticker": "3774.T",
+              "name": "インターネットイニシアティブ",
+              "value": 16.3
+            },
+            {
+              "rank": 5,
+              "ticker": "3626.T",
+              "name": "TISI",
+              "value": 16.0
+            },
+            {
+              "rank": 6,
+              "ticker": "4384.T",
+              "name": "ラクスル",
+              "value": 15.8
+            },
+            {
+              "rank": 7,
+              "ticker": "7701.T",
+              "name": "島津製作所",
+              "value": 12.5
+            },
+            {
+              "rank": 8,
+              "ticker": "4165.T",
+              "name": "プレイド",
+              "value": 11.2
+            },
+            {
+              "rank": 9,
+              "ticker": "4751.T",
+              "name": "サイバーエージェント",
+              "value": 10.8
+            },
+            {
+              "rank": 10,
+              "ticker": "6367.T",
+              "name": "ダイキン工業",
+              "value": 10.7
+            },
+            {
+              "rank": 11,
+              "ticker": "6701.T",
+              "name": "NEC",
+              "value": 8.4
+            },
+            {
+              "rank": 12,
+              "ticker": "6981.T",
+              "name": "村田製作所",
+              "value": 7.4
+            },
+            {
+              "rank": 13,
+              "ticker": "4443.T",
+              "name": "Sansan",
+              "value": 7.1
+            },
+            {
+              "rank": 14,
+              "ticker": "3993.T",
+              "name": "PKSHA Technology",
+              "value": 6.8
+            },
+            {
+              "rank": 15,
+              "ticker": "2121.T",
+              "name": "MIXI",
+              "value": 4.0
+            },
+            {
+              "rank": 16,
+              "ticker": "6645.T",
+              "name": "オムロン",
+              "value": 1.1
+            },
+            {
+              "rank": 17,
+              "ticker": "2432.T",
+              "name": "DeNA",
+              "value": -13.3
+            },
+            {
+              "rank": null,
+              "ticker": "4418.T",
+              "name": "JDSC",
+              "value": null
+            },
+            {
+              "rank": null,
+              "ticker": "4478.T",
+              "name": "freee",
+              "value": null
+            }
+          ]
+        },
+        "free_cash_flow": {
+          "chart": "/charts/stats/fy2024/rankings/free_cash_flow.svg",
+          "rows": [
+            {
+              "rank": 1,
+              "ticker": "6981.T",
+              "name": "村田製作所",
+              "value": 288066.0
+            },
+            {
+              "rank": 2,
+              "ticker": "6701.T",
+              "name": "NEC",
+              "value": 195213.0
+            },
+            {
+              "rank": 3,
+              "ticker": "6367.T",
+              "name": "ダイキン工業",
+              "value": 172379.0
+            },
+            {
+              "rank": 4,
+              "ticker": "3092.T",
+              "name": "ZOZO",
+              "value": 32710.0
+            },
+            {
+              "rank": 5,
+              "ticker": "3626.T",
+              "name": "TISI",
+              "value": 29761.0
+            },
+            {
+              "rank": 6,
+              "ticker": "3774.T",
+              "name": "インターネットイニシアティブ",
+              "value": 22853.0
+            },
+            {
+              "rank": 7,
+              "ticker": "4751.T",
+              "name": "サイバーエージェント",
+              "value": 14900.0
+            },
+            {
+              "rank": 8,
+              "ticker": "7701.T",
+              "name": "島津製作所",
+              "value": 14129.0
+            },
+            {
+              "rank": 9,
+              "ticker": "4828.T",
+              "name": "B-EN-G",
+              "value": 2425.771
+            },
+            {
+              "rank": 10,
+              "ticker": "2121.T",
+              "name": "MIXI",
+              "value": 2329.0
+            },
+            {
+              "rank": 11,
+              "ticker": "4443.T",
+              "name": "Sansan",
+              "value": 2303.0
+            },
+            {
+              "rank": 12,
+              "ticker": "3655.T",
+              "name": "BrainPad",
+              "value": 1220.666
+            },
+            {
+              "rank": 13,
+              "ticker": "4165.T",
+              "name": "プレイド",
+              "value": 850.792
+            },
+            {
+              "rank": 14,
+              "ticker": "3993.T",
+              "name": "PKSHA Technology",
+              "value": -64.377
+            },
+            {
+              "rank": 15,
+              "ticker": "4418.T",
+              "name": "JDSC",
+              "value": -2466.334
+            },
+            {
+              "rank": 16,
+              "ticker": "4384.T",
+              "name": "ラクスル",
+              "value": -4225.0
+            },
+            {
+              "rank": 17,
+              "ticker": "4478.T",
+              "name": "freee",
+              "value": -7855.587
+            },
+            {
+              "rank": 18,
+              "ticker": "2432.T",
+              "name": "DeNA",
+              "value": -23468.0
+            },
+            {
+              "rank": 19,
+              "ticker": "6645.T",
+              "name": "オムロン",
+              "value": -62221.0
+            }
+          ]
+        }
+      },
+      "scatters": {
+        "growth-profitability": {
+          "chart": "/charts/stats/fy2024/scatters/growth-profitability.svg",
+          "included_count": 18,
+          "excluded_tickers": [
+            "6645.T"
+          ],
+          "exclusions": [
+            {
+              "ticker": "6645.T",
+              "reason": "missing_y"
+            }
+          ],
+          "rows": [
+            {
+              "ticker": "3655.T",
+              "name": "BrainPad",
+              "x": 7.7893,
+              "y": 12.7726
+            },
+            {
+              "ticker": "4443.T",
+              "name": "Sansan",
+              "x": 32.8028,
+              "y": 3.9465
+            },
+            {
+              "ticker": "2121.T",
+              "name": "MIXI",
+              "x": 0.0007,
+              "y": 13.0573
+            },
+            {
+              "ticker": "4751.T",
+              "name": "サイバーエージェント",
+              "x": 11.3677,
+              "y": 5.0026
+            },
+            {
+              "ticker": "4384.T",
+              "name": "ラクスル",
+              "x": 24.6306,
+              "y": 4.9353
+            },
+            {
+              "ticker": "4418.T",
+              "name": "JDSC",
+              "x": 748.4893,
+              "y": 0.308
+            },
+            {
+              "ticker": "3993.T",
+              "name": "PKSHA Technology",
+              "x": 21.4558,
+              "y": 18.9972
+            },
+            {
+              "ticker": "4165.T",
+              "name": "プレイド",
+              "x": 27.3242,
+              "y": 2.3735
+            },
+            {
+              "ticker": "4828.T",
+              "name": "B-EN-G",
+              "x": 5.3315,
+              "y": 19.9322
+            },
+            {
+              "ticker": "2432.T",
+              "name": "DeNA",
+              "x": 1.3483,
+              "y": -20.6753
+            },
+            {
+              "ticker": "3092.T",
+              "name": "ZOZO",
+              "x": 7.4107,
+              "y": 30.4945
+            },
+            {
+              "ticker": "4478.T",
+              "name": "freee",
+              "x": 32.3141,
+              "y": -32.9785
+            },
+            {
+              "ticker": "3626.T",
+              "name": "TISI",
+              "x": 7.9866,
+              "y": 11.7609
+            },
+            {
+              "ticker": "6367.T",
+              "name": "ダイキン工業",
+              "x": 10.3913,
+              "y": 8.9217
+            },
+            {
+              "ticker": "6981.T",
+              "name": "村田製作所",
+              "x": -2.7649,
+              "y": 13.1357
+            },
+            {
+              "ticker": "7701.T",
+              "name": "島津製作所",
+              "x": 6.1494,
+              "y": 14.2125
+            },
+            {
+              "ticker": "3774.T",
+              "name": "インターネットイニシアティブ",
+              "x": 9.2486,
+              "y": 10.5147
+            },
+            {
+              "ticker": "6701.T",
+              "name": "NEC",
+              "x": 4.9575,
+              "y": 5.4069
+            }
+          ]
+        },
+        "margin-return": {
+          "chart": "/charts/stats/fy2024/scatters/margin-return.svg",
+          "included_count": 16,
+          "excluded_tickers": [
+            "4418.T",
+            "4478.T",
+            "6645.T"
+          ],
+          "exclusions": [
+            {
+              "ticker": "4418.T",
+              "reason": "missing_y"
+            },
+            {
+              "ticker": "4478.T",
+              "reason": "missing_y"
+            },
+            {
+              "ticker": "6645.T",
+              "reason": "missing_x"
+            }
+          ],
+          "rows": [
+            {
+              "ticker": "3655.T",
+              "name": "BrainPad",
+              "x": 12.7726,
+              "y": 17.4
+            },
+            {
+              "ticker": "4443.T",
+              "name": "Sansan",
+              "x": 3.9465,
+              "y": 7.1
+            },
+            {
+              "ticker": "2121.T",
+              "name": "MIXI",
+              "x": 13.0573,
+              "y": 4.0
+            },
+            {
+              "ticker": "4751.T",
+              "name": "サイバーエージェント",
+              "x": 5.0026,
+              "y": 10.8
+            },
+            {
+              "ticker": "4384.T",
+              "name": "ラクスル",
+              "x": 4.9353,
+              "y": 15.8
+            },
+            {
+              "ticker": "3993.T",
+              "name": "PKSHA Technology",
+              "x": 18.9972,
+              "y": 6.8
+            },
+            {
+              "ticker": "4165.T",
+              "name": "プレイド",
+              "x": 2.3735,
+              "y": 11.2
+            },
+            {
+              "ticker": "4828.T",
+              "name": "B-EN-G",
+              "x": 19.9322,
+              "y": 25.9
+            },
+            {
+              "ticker": "2432.T",
+              "name": "DeNA",
+              "x": -20.6753,
+              "y": -13.3
+            },
+            {
+              "ticker": "3092.T",
+              "name": "ZOZO",
+              "x": 30.4945,
+              "y": 55.0
+            },
+            {
+              "ticker": "3626.T",
+              "name": "TISI",
+              "x": 11.7609,
+              "y": 16.0
+            },
+            {
+              "ticker": "6367.T",
+              "name": "ダイキン工業",
+              "x": 8.9217,
+              "y": 10.7
+            },
+            {
+              "ticker": "6981.T",
+              "name": "村田製作所",
+              "x": 13.1357,
+              "y": 7.4
+            },
+            {
+              "ticker": "7701.T",
+              "name": "島津製作所",
+              "x": 14.2125,
+              "y": 12.5
+            },
+            {
+              "ticker": "3774.T",
+              "name": "インターネットイニシアティブ",
+              "x": 10.5147,
+              "y": 16.3
+            },
+            {
+              "ticker": "6701.T",
+              "name": "NEC",
+              "x": 5.4069,
+              "y": 8.4
+            }
+          ]
+        },
+        "scale-cash": {
+          "chart": "/charts/stats/fy2024/scatters/scale-cash.svg",
+          "included_count": 19,
+          "excluded_tickers": [],
+          "exclusions": [],
+          "rows": [
+            {
+              "ticker": "3655.T",
+              "name": "BrainPad",
+              "x": 10561.125,
+              "y": 1220.666
+            },
+            {
+              "ticker": "4443.T",
+              "name": "Sansan",
+              "x": 33878.0,
+              "y": 2303.0
+            },
+            {
+              "ticker": "2121.T",
+              "name": "MIXI",
+              "x": 146868.0,
+              "y": 2329.0
+            },
+            {
+              "ticker": "4751.T",
+              "name": "サイバーエージェント",
+              "x": 801236.0,
+              "y": 14900.0
+            },
+            {
+              "ticker": "4384.T",
+              "name": "ラクスル",
+              "x": 51121.0,
+              "y": -4225.0
+            },
+            {
+              "ticker": "4418.T",
+              "name": "JDSC",
+              "x": 16457.876,
+              "y": -2466.334
+            },
+            {
+              "ticker": "3993.T",
+              "name": "PKSHA Technology",
+              "x": 16893.185,
+              "y": -64.377
+            },
+            {
+              "ticker": "4165.T",
+              "name": "プレイド",
+              "x": 10992.713,
+              "y": 850.792
+            },
+            {
+              "ticker": "4828.T",
+              "name": "B-EN-G",
+              "x": 19493.075,
+              "y": 2425.771
+            },
+            {
+              "ticker": "2432.T",
+              "name": "DeNA",
+              "x": 136733.0,
+              "y": -23468.0
+            },
+            {
+              "ticker": "3092.T",
+              "name": "ZOZO",
+              "x": 197016.0,
+              "y": 32710.0
+            },
+            {
+              "ticker": "4478.T",
+              "name": "freee",
+              "x": 25430.756,
+              "y": -7855.587
+            },
+            {
+              "ticker": "3626.T",
+              "name": "TISI",
+              "x": 549004.0,
+              "y": 29761.0
+            },
+            {
+              "ticker": "6367.T",
+              "name": "ダイキン工業",
+              "x": 4395317.0,
+              "y": 172379.0
+            },
+            {
+              "ticker": "6645.T",
+              "name": "オムロン",
+              "x": 818761.0,
+              "y": -62221.0
+            },
+            {
+              "ticker": "6981.T",
+              "name": "村田製作所",
+              "x": 1640158.0,
+              "y": 288066.0
+            },
+            {
+              "ticker": "7701.T",
+              "name": "島津製作所",
+              "x": 511895.0,
+              "y": 14129.0
+            },
+            {
+              "ticker": "3774.T",
+              "name": "インターネットイニシアティブ",
+              "x": 276080.0,
+              "y": 22853.0
+            },
+            {
+              "ticker": "6701.T",
+              "name": "NEC",
+              "x": 3477262.0,
+              "y": 195213.0
+            }
+          ]
+        }
+      }
+    },
+    "2025": {
+      "company_count": 19,
+      "descriptive": {
+        "revenue": {
+          "count": 19,
+          "missing": 0,
+          "mean": 720908.5416,
+          "median": 163997.0,
+          "stddev": 1281659.2886,
+          "min": 11772.254,
+          "q1": 28163.135,
+          "q3": 643533.0,
+          "max": 4752335.0
+        },
+        "revenue_yoy_pct": {
+          "count": 19,
+          "missing": 0,
+          "mean": 13.447,
+          "median": 9.0852,
+          "stddev": 12.741,
+          "min": -12.6266,
+          "q1": 5.8622,
+          "q3": 21.525,
+          "max": 40.089
+        },
+        "operating_income": {
+          "count": 18,
+          "missing": 1,
+          "mean": 73419.6801,
+          "median": 27786.5,
+          "stddev": 116343.8951,
+          "min": 581.552,
+          "q1": 3054.75,
+          "q3": 71038.25,
+          "max": 401669.0
+        },
+        "operating_margin_pct": {
+          "count": 18,
+          "missing": 1,
+          "mean": 12.6768,
+          "median": 11.3831,
+          "stddev": 7.6043,
+          "min": 1.8364,
+          "q1": 7.6702,
+          "q3": 16.8946,
+          "max": 30.3832
+        },
+        "roe_pct": {
+          "count": 19,
+          "missing": 0,
+          "mean": 14.8089,
+          "median": 10.7,
+          "stddev": 10.9218,
+          "min": 2.1,
+          "q1": 9.1,
+          "q3": 18.85,
+          "max": 49.4
+        },
+        "free_cash_flow": {
+          "count": 19,
+          "missing": 0,
+          "mean": 46238.7969,
+          "median": 7895.0,
+          "stddev": 76348.8284,
+          "min": -1021.409,
+          "q1": 1519.332,
+          "q3": 47350.0,
+          "max": 243835.0
+        }
+      },
+      "rankings": {
+        "revenue": {
+          "chart": "/charts/stats/fy2025/rankings/revenue.svg",
+          "rows": [
+            {
+              "rank": 1,
+              "ticker": "6367.T",
+              "name": "ダイキン工業",
+              "value": 4752335.0
+            },
+            {
+              "rank": 2,
+              "ticker": "6701.T",
+              "name": "NEC",
+              "value": 3423431.0
+            },
+            {
+              "rank": 3,
+              "ticker": "6981.T",
+              "name": "村田製作所",
+              "value": 1743352.0
+            },
+            {
+              "rank": 4,
+              "ticker": "4751.T",
+              "name": "サイバーエージェント",
+              "value": 874030.0
+            },
+            {
+              "rank": 5,
+              "ticker": "6645.T",
+              "name": "オムロン",
+              "value": 715379.0
+            },
+            {
+              "rank": 6,
+              "ticker": "3626.T",
+              "name": "TISI",
+              "value": 571687.0
+            },
+            {
+              "rank": 7,
+              "ticker": "7701.T",
+              "name": "島津製作所",
+              "value": 539047.0
+            },
+            {
+              "rank": 8,
+              "ticker": "3774.T",
+              "name": "インターネットイニシアティブ",
+              "value": 316831.0
+            },
+            {
+              "rank": 9,
+              "ticker": "3092.T",
+              "name": "ZOZO",
+              "value": 213131.0
+            },
+            {
+              "rank": 10,
+              "ticker": "2432.T",
+              "name": "DeNA",
+              "value": 163997.0
+            },
+            {
+              "rank": 11,
+              "ticker": "2121.T",
+              "name": "MIXI",
+              "value": 154847.0
+            },
+            {
+              "rank": 12,
+              "ticker": "4384.T",
+              "name": "ラクスル",
+              "value": 61950.0
+            },
+            {
+              "rank": 13,
+              "ticker": "4443.T",
+              "name": "Sansan",
+              "value": 43202.0
+            },
+            {
+              "rank": 14,
+              "ticker": "4478.T",
+              "name": "freee",
+              "value": 33270.601
+            },
+            {
+              "rank": 15,
+              "ticker": "4418.T",
+              "name": "JDSC",
+              "value": 23055.669
+            },
+            {
+              "rank": 16,
+              "ticker": "3993.T",
+              "name": "PKSHA Technology",
+              "value": 21771.392
+            },
+            {
+              "rank": 17,
+              "ticker": "4828.T",
+              "name": "B-EN-G",
+              "value": 20776.9
+            },
+            {
+              "rank": 18,
+              "ticker": "4165.T",
+              "name": "プレイド",
+              "value": 13396.474
+            },
+            {
+              "rank": 19,
+              "ticker": "3655.T",
+              "name": "BrainPad",
+              "value": 11772.254
+            }
+          ]
+        },
+        "revenue_yoy_pct": {
+          "chart": "/charts/stats/fy2025/rankings/revenue_yoy_pct.svg",
+          "rows": [
+            {
+              "rank": 1,
+              "ticker": "4418.T",
+              "name": "JDSC",
+              "value": 40.089
+            },
+            {
+              "rank": 2,
+              "ticker": "4478.T",
+              "name": "freee",
+              "value": 30.8282
+            },
+            {
+              "rank": 3,
+              "ticker": "3993.T",
+              "name": "PKSHA Technology",
+              "value": 28.8768
+            },
+            {
+              "rank": 4,
+              "ticker": "4443.T",
+              "name": "Sansan",
+              "value": 27.5223
+            },
+            {
+              "rank": 5,
+              "ticker": "4165.T",
+              "name": "プレイド",
+              "value": 21.8669
+            },
+            {
+              "rank": 6,
+              "ticker": "4384.T",
+              "name": "ラクスル",
+              "value": 21.1831
+            },
+            {
+              "rank": 7,
+              "ticker": "2432.T",
+              "name": "DeNA",
+              "value": 19.9396
+            },
+            {
+              "rank": 8,
+              "ticker": "3774.T",
+              "name": "インターネットイニシアティブ",
+              "value": 14.7606
+            },
+            {
+              "rank": 9,
+              "ticker": "3655.T",
+              "name": "BrainPad",
+              "value": 11.4678
+            },
+            {
+              "rank": 10,
+              "ticker": "4751.T",
+              "name": "サイバーエージェント",
+              "value": 9.0852
+            },
+            {
+              "rank": 11,
+              "ticker": "3092.T",
+              "name": "ZOZO",
+              "value": 8.1795
+            },
+            {
+              "rank": 12,
+              "ticker": "6367.T",
+              "name": "ダイキン工業",
+              "value": 8.1227
+            },
+            {
+              "rank": 13,
+              "ticker": "4828.T",
+              "name": "B-EN-G",
+              "value": 6.5861
+            },
+            {
+              "rank": 14,
+              "ticker": "6981.T",
+              "name": "村田製作所",
+              "value": 6.2917
+            },
+            {
+              "rank": 15,
+              "ticker": "2121.T",
+              "name": "MIXI",
+              "value": 5.4328
+            },
+            {
+              "rank": 16,
+              "ticker": "7701.T",
+              "name": "島津製作所",
+              "value": 5.3042
+            },
+            {
+              "rank": 17,
+              "ticker": "3626.T",
+              "name": "TISI",
+              "value": 4.1317
+            },
+            {
+              "rank": 18,
+              "ticker": "6701.T",
+              "name": "NEC",
+              "value": -1.5481
+            },
+            {
+              "rank": 19,
+              "ticker": "6645.T",
+              "name": "オムロン",
+              "value": -12.6266
+            }
+          ]
+        },
+        "operating_income": {
+          "chart": "/charts/stats/fy2025/rankings/operating_income.svg",
+          "rows": [
+            {
+              "rank": 1,
+              "ticker": "6367.T",
+              "name": "ダイキン工業",
+              "value": 401669.0
+            },
+            {
+              "rank": 2,
+              "ticker": "6981.T",
+              "name": "村田製作所",
+              "value": 279702.0
+            },
+            {
+              "rank": 3,
+              "ticker": "6701.T",
+              "name": "NEC",
+              "value": 256497.0
+            },
+            {
+              "rank": 4,
+              "ticker": "7701.T",
+              "name": "島津製作所",
+              "value": 71720.0
+            },
+            {
+              "rank": 5,
+              "ticker": "4751.T",
+              "name": "サイバーエージェント",
+              "value": 71702.0
+            },
+            {
+              "rank": 6,
+              "ticker": "3626.T",
+              "name": "TISI",
+              "value": 69047.0
+            },
+            {
+              "rank": 7,
+              "ticker": "3092.T",
+              "name": "ZOZO",
+              "value": 64756.0
+            },
+            {
+              "rank": 8,
+              "ticker": "3774.T",
+              "name": "インターネットイニシアティブ",
+              "value": 30104.0
+            },
+            {
+              "rank": 9,
+              "ticker": "2432.T",
+              "name": "DeNA",
+              "value": 28973.0
+            },
+            {
+              "rank": 10,
+              "ticker": "2121.T",
+              "name": "MIXI",
+              "value": 26600.0
+            },
+            {
+              "rank": 11,
+              "ticker": "3993.T",
+              "name": "PKSHA Technology",
+              "value": 5288.742
+            },
+            {
+              "rank": 12,
+              "ticker": "4828.T",
+              "name": "B-EN-G",
+              "value": 4676.353
+            },
+            {
+              "rank": 13,
+              "ticker": "4384.T",
+              "name": "ラクスル",
+              "value": 3819.0
+            },
+            {
+              "rank": 14,
+              "ticker": "4443.T",
+              "name": "Sansan",
+              "value": 2800.0
+            },
+            {
+              "rank": 15,
+              "ticker": "3655.T",
+              "name": "BrainPad",
+              "value": 1575.749
+            },
+            {
+              "rank": 16,
+              "ticker": "4165.T",
+              "name": "プレイド",
+              "value": 1431.874
+            },
+            {
+              "rank": 17,
+              "ticker": "4478.T",
+              "name": "freee",
+              "value": 610.972
+            },
+            {
+              "rank": 18,
+              "ticker": "4418.T",
+              "name": "JDSC",
+              "value": 581.552
+            },
+            {
+              "rank": null,
+              "ticker": "6645.T",
+              "name": "オムロン",
+              "value": null
+            }
+          ]
+        },
+        "operating_margin_pct": {
+          "chart": "/charts/stats/fy2025/rankings/operating_margin_pct.svg",
+          "rows": [
+            {
+              "rank": 1,
+              "ticker": "3092.T",
+              "name": "ZOZO",
+              "value": 30.3832
+            },
+            {
+              "rank": 2,
+              "ticker": "3993.T",
+              "name": "PKSHA Technology",
+              "value": 24.2922
+            },
+            {
+              "rank": 3,
+              "ticker": "4828.T",
+              "name": "B-EN-G",
+              "value": 22.5075
+            },
+            {
+              "rank": 4,
+              "ticker": "2432.T",
+              "name": "DeNA",
+              "value": 17.6668
+            },
+            {
+              "rank": 5,
+              "ticker": "2121.T",
+              "name": "MIXI",
+              "value": 17.1782
+            },
+            {
+              "rank": 6,
+              "ticker": "6981.T",
+              "name": "村田製作所",
+              "value": 16.0439
+            },
+            {
+              "rank": 7,
+              "ticker": "3655.T",
+              "name": "BrainPad",
+              "value": 13.3853
+            },
+            {
+              "rank": 8,
+              "ticker": "7701.T",
+              "name": "島津製作所",
+              "value": 13.305
+            },
+            {
+              "rank": 9,
+              "ticker": "3626.T",
+              "name": "TISI",
+              "value": 12.0778
+            },
+            {
+              "rank": 10,
+              "ticker": "4165.T",
+              "name": "プレイド",
+              "value": 10.6884
+            },
+            {
+              "rank": 11,
+              "ticker": "3774.T",
+              "name": "インターネットイニシアティブ",
+              "value": 9.5016
+            },
+            {
+              "rank": 12,
+              "ticker": "6367.T",
+              "name": "ダイキン工業",
+              "value": 8.452
+            },
+            {
+              "rank": 13,
+              "ticker": "4751.T",
+              "name": "サイバーエージェント",
+              "value": 8.2036
+            },
+            {
+              "rank": 14,
+              "ticker": "6701.T",
+              "name": "NEC",
+              "value": 7.4924
+            },
+            {
+              "rank": 15,
+              "ticker": "4443.T",
+              "name": "Sansan",
+              "value": 6.4812
+            },
+            {
+              "rank": 16,
+              "ticker": "4384.T",
+              "name": "ラクスル",
+              "value": 6.1646
+            },
+            {
+              "rank": 17,
+              "ticker": "4418.T",
+              "name": "JDSC",
+              "value": 2.5224
+            },
+            {
+              "rank": 18,
+              "ticker": "4478.T",
+              "name": "freee",
+              "value": 1.8364
+            },
+            {
+              "rank": null,
+              "ticker": "6645.T",
+              "name": "オムロン",
+              "value": null
+            }
+          ]
+        },
+        "roe_pct": {
+          "chart": "/charts/stats/fy2025/rankings/roe_pct.svg",
+          "rows": [
+            {
+              "rank": 1,
+              "ticker": "3092.T",
+              "name": "ZOZO",
+              "value": 49.4
+            },
+            {
+              "rank": 2,
+              "ticker": "4165.T",
+              "name": "プレイド",
+              "value": 27.8
+            },
+            {
+              "rank": 3,
+              "ticker": "4828.T",
+              "name": "B-EN-G",
+              "value": 27.4
+            },
+            {
+              "rank": 4,
+              "ticker": "4751.T",
+              "name": "サイバーエージェント",
+              "value": 18.9
+            },
+            {
+              "rank": 4,
+              "ticker": "4384.T",
+              "name": "ラクスル",
+              "value": 18.9
+            },
+            {
+              "rank": 6,
+              "ticker": "3655.T",
+              "name": "BrainPad",
+              "value": 18.8
+            },
+            {
+              "rank": 7,
+              "ticker": "3626.T",
+              "name": "TISI",
+              "value": 15.3
+            },
+            {
+              "rank": 8,
+              "ticker": "3774.T",
+              "name": "インターネットイニシアティブ",
+              "value": 15.0
+            },
+            {
+              "rank": 9,
+              "ticker": "7701.T",
+              "name": "島津製作所",
+              "value": 10.9
+            },
+            {
+              "rank": 10,
+              "ticker": "2432.T",
+              "name": "DeNA",
+              "value": 10.7
+            },
+            {
+              "rank": 11,
+              "ticker": "2121.T",
+              "name": "MIXI",
+              "value": 10.0
+            },
+            {
+              "rank": 12,
+              "ticker": "4418.T",
+              "name": "JDSC",
+              "value": 9.77
+            },
+            {
+              "rank": 13,
+              "ticker": "6367.T",
+              "name": "ダイキン工業",
+              "value": 9.7
+            },
+            {
+              "rank": 14,
+              "ticker": "6981.T",
+              "name": "村田製作所",
+              "value": 9.1
+            },
+            {
+              "rank": 14,
+              "ticker": "6701.T",
+              "name": "NEC",
+              "value": 9.1
+            },
+            {
+              "rank": 16,
+              "ticker": "3993.T",
+              "name": "PKSHA Technology",
+              "value": 8.0
+            },
+            {
+              "rank": 17,
+              "ticker": "4478.T",
+              "name": "freee",
+              "value": 7.6
+            },
+            {
+              "rank": 18,
+              "ticker": "4443.T",
+              "name": "Sansan",
+              "value": 2.9
+            },
+            {
+              "rank": 19,
+              "ticker": "6645.T",
+              "name": "オムロン",
+              "value": 2.1
+            }
+          ]
+        },
+        "free_cash_flow": {
+          "chart": "/charts/stats/fy2025/rankings/free_cash_flow.svg",
+          "rows": [
+            {
+              "rank": 1,
+              "ticker": "6981.T",
+              "name": "村田製作所",
+              "value": 243835.0
+            },
+            {
+              "rank": 2,
+              "ticker": "6701.T",
+              "name": "NEC",
+              "value": 213244.0
+            },
+            {
+              "rank": 3,
+              "ticker": "6367.T",
+              "name": "ダイキン工業",
+              "value": 177044.0
+            },
+            {
+              "rank": 4,
+              "ticker": "3092.T",
+              "name": "ZOZO",
+              "value": 53829.0
+            },
+            {
+              "rank": 5,
+              "ticker": "4751.T",
+              "name": "サイバーエージェント",
+              "value": 48693.0
+            },
+            {
+              "rank": 6,
+              "ticker": "3626.T",
+              "name": "TISI",
+              "value": 46007.0
+            },
+            {
+              "rank": 7,
+              "ticker": "7701.T",
+              "name": "島津製作所",
+              "value": 28829.0
+            },
+            {
+              "rank": 8,
+              "ticker": "2432.T",
+              "name": "DeNA",
+              "value": 26719.0
+            },
+            {
+              "rank": 9,
+              "ticker": "2121.T",
+              "name": "MIXI",
+              "value": 12986.0
+            },
+            {
+              "rank": 10,
+              "ticker": "6645.T",
+              "name": "オムロン",
+              "value": 7895.0
+            },
+            {
+              "rank": 11,
+              "ticker": "4443.T",
+              "name": "Sansan",
+              "value": 7101.0
+            },
+            {
+              "rank": 12,
+              "ticker": "3774.T",
+              "name": "インターネットイニシアティブ",
+              "value": 6779.0
+            },
+            {
+              "rank": 13,
+              "ticker": "4384.T",
+              "name": "ラクスル",
+              "value": 2808.0
+            },
+            {
+              "rank": 14,
+              "ticker": "4828.T",
+              "name": "B-EN-G",
+              "value": 2046.861
+            },
+            {
+              "rank": 15,
+              "ticker": "4165.T",
+              "name": "プレイド",
+              "value": 991.803
+            },
+            {
+              "rank": 16,
+              "ticker": "3655.T",
+              "name": "BrainPad",
+              "value": 911.085
+            },
+            {
+              "rank": 17,
+              "ticker": "4418.T",
+              "name": "JDSC",
+              "value": 779.042
+            },
+            {
+              "rank": 18,
+              "ticker": "4478.T",
+              "name": "freee",
+              "value": -939.241
+            },
+            {
+              "rank": 19,
+              "ticker": "3993.T",
+              "name": "PKSHA Technology",
+              "value": -1021.409
+            }
+          ]
+        }
+      },
+      "scatters": {
+        "growth-profitability": {
+          "chart": "/charts/stats/fy2025/scatters/growth-profitability.svg",
+          "included_count": 18,
+          "excluded_tickers": [
+            "6645.T"
+          ],
+          "exclusions": [
+            {
+              "ticker": "6645.T",
+              "reason": "missing_y"
+            }
+          ],
+          "rows": [
+            {
+              "ticker": "3655.T",
+              "name": "BrainPad",
+              "x": 11.4678,
+              "y": 13.3853
+            },
+            {
+              "ticker": "4443.T",
+              "name": "Sansan",
+              "x": 27.5223,
+              "y": 6.4812
+            },
+            {
+              "ticker": "2121.T",
+              "name": "MIXI",
+              "x": 5.4328,
+              "y": 17.1782
+            },
+            {
+              "ticker": "4751.T",
+              "name": "サイバーエージェント",
+              "x": 9.0852,
+              "y": 8.2036
+            },
+            {
+              "ticker": "4384.T",
+              "name": "ラクスル",
+              "x": 21.1831,
+              "y": 6.1646
+            },
+            {
+              "ticker": "4418.T",
+              "name": "JDSC",
+              "x": 40.089,
+              "y": 2.5224
+            },
+            {
+              "ticker": "3993.T",
+              "name": "PKSHA Technology",
+              "x": 28.8768,
+              "y": 24.2922
+            },
+            {
+              "ticker": "4165.T",
+              "name": "プレイド",
+              "x": 21.8669,
+              "y": 10.6884
+            },
+            {
+              "ticker": "4828.T",
+              "name": "B-EN-G",
+              "x": 6.5861,
+              "y": 22.5075
+            },
+            {
+              "ticker": "2432.T",
+              "name": "DeNA",
+              "x": 19.9396,
+              "y": 17.6668
+            },
+            {
+              "ticker": "3092.T",
+              "name": "ZOZO",
+              "x": 8.1795,
+              "y": 30.3832
+            },
+            {
+              "ticker": "4478.T",
+              "name": "freee",
+              "x": 30.8282,
+              "y": 1.8364
+            },
+            {
+              "ticker": "3626.T",
+              "name": "TISI",
+              "x": 4.1317,
+              "y": 12.0778
+            },
+            {
+              "ticker": "6367.T",
+              "name": "ダイキン工業",
+              "x": 8.1227,
+              "y": 8.452
+            },
+            {
+              "ticker": "6981.T",
+              "name": "村田製作所",
+              "x": 6.2917,
+              "y": 16.0439
+            },
+            {
+              "ticker": "7701.T",
+              "name": "島津製作所",
+              "x": 5.3042,
+              "y": 13.305
+            },
+            {
+              "ticker": "3774.T",
+              "name": "インターネットイニシアティブ",
+              "x": 14.7606,
+              "y": 9.5016
+            },
+            {
+              "ticker": "6701.T",
+              "name": "NEC",
+              "x": -1.5481,
+              "y": 7.4924
+            }
+          ]
+        },
+        "margin-return": {
+          "chart": "/charts/stats/fy2025/scatters/margin-return.svg",
+          "included_count": 18,
+          "excluded_tickers": [
+            "6645.T"
+          ],
+          "exclusions": [
+            {
+              "ticker": "6645.T",
+              "reason": "missing_x"
+            }
+          ],
+          "rows": [
+            {
+              "ticker": "3655.T",
+              "name": "BrainPad",
+              "x": 13.3853,
+              "y": 18.8
+            },
+            {
+              "ticker": "4443.T",
+              "name": "Sansan",
+              "x": 6.4812,
+              "y": 2.9
+            },
+            {
+              "ticker": "2121.T",
+              "name": "MIXI",
+              "x": 17.1782,
+              "y": 10.0
+            },
+            {
+              "ticker": "4751.T",
+              "name": "サイバーエージェント",
+              "x": 8.2036,
+              "y": 18.9
+            },
+            {
+              "ticker": "4384.T",
+              "name": "ラクスル",
+              "x": 6.1646,
+              "y": 18.9
+            },
+            {
+              "ticker": "4418.T",
+              "name": "JDSC",
+              "x": 2.5224,
+              "y": 9.77
+            },
+            {
+              "ticker": "3993.T",
+              "name": "PKSHA Technology",
+              "x": 24.2922,
+              "y": 8.0
+            },
+            {
+              "ticker": "4165.T",
+              "name": "プレイド",
+              "x": 10.6884,
+              "y": 27.8
+            },
+            {
+              "ticker": "4828.T",
+              "name": "B-EN-G",
+              "x": 22.5075,
+              "y": 27.4
+            },
+            {
+              "ticker": "2432.T",
+              "name": "DeNA",
+              "x": 17.6668,
+              "y": 10.7
+            },
+            {
+              "ticker": "3092.T",
+              "name": "ZOZO",
+              "x": 30.3832,
+              "y": 49.4
+            },
+            {
+              "ticker": "4478.T",
+              "name": "freee",
+              "x": 1.8364,
+              "y": 7.6
+            },
+            {
+              "ticker": "3626.T",
+              "name": "TISI",
+              "x": 12.0778,
+              "y": 15.3
+            },
+            {
+              "ticker": "6367.T",
+              "name": "ダイキン工業",
+              "x": 8.452,
+              "y": 9.7
+            },
+            {
+              "ticker": "6981.T",
+              "name": "村田製作所",
+              "x": 16.0439,
+              "y": 9.1
+            },
+            {
+              "ticker": "7701.T",
+              "name": "島津製作所",
+              "x": 13.305,
+              "y": 10.9
+            },
+            {
+              "ticker": "3774.T",
+              "name": "インターネットイニシアティブ",
+              "x": 9.5016,
+              "y": 15.0
+            },
+            {
+              "ticker": "6701.T",
+              "name": "NEC",
+              "x": 7.4924,
+              "y": 9.1
+            }
+          ]
+        },
+        "scale-cash": {
+          "chart": "/charts/stats/fy2025/scatters/scale-cash.svg",
+          "included_count": 19,
+          "excluded_tickers": [],
+          "exclusions": [],
+          "rows": [
+            {
+              "ticker": "3655.T",
+              "name": "BrainPad",
+              "x": 11772.254,
+              "y": 911.085
+            },
+            {
+              "ticker": "4443.T",
+              "name": "Sansan",
+              "x": 43202.0,
+              "y": 7101.0
+            },
+            {
+              "ticker": "2121.T",
+              "name": "MIXI",
+              "x": 154847.0,
+              "y": 12986.0
+            },
+            {
+              "ticker": "4751.T",
+              "name": "サイバーエージェント",
+              "x": 874030.0,
+              "y": 48693.0
+            },
+            {
+              "ticker": "4384.T",
+              "name": "ラクスル",
+              "x": 61950.0,
+              "y": 2808.0
+            },
+            {
+              "ticker": "4418.T",
+              "name": "JDSC",
+              "x": 23055.669,
+              "y": 779.042
+            },
+            {
+              "ticker": "3993.T",
+              "name": "PKSHA Technology",
+              "x": 21771.392,
+              "y": -1021.409
+            },
+            {
+              "ticker": "4165.T",
+              "name": "プレイド",
+              "x": 13396.474,
+              "y": 991.803
+            },
+            {
+              "ticker": "4828.T",
+              "name": "B-EN-G",
+              "x": 20776.9,
+              "y": 2046.861
+            },
+            {
+              "ticker": "2432.T",
+              "name": "DeNA",
+              "x": 163997.0,
+              "y": 26719.0
+            },
+            {
+              "ticker": "3092.T",
+              "name": "ZOZO",
+              "x": 213131.0,
+              "y": 53829.0
+            },
+            {
+              "ticker": "4478.T",
+              "name": "freee",
+              "x": 33270.601,
+              "y": -939.241
+            },
+            {
+              "ticker": "3626.T",
+              "name": "TISI",
+              "x": 571687.0,
+              "y": 46007.0
+            },
+            {
+              "ticker": "6367.T",
+              "name": "ダイキン工業",
+              "x": 4752335.0,
+              "y": 177044.0
+            },
+            {
+              "ticker": "6645.T",
+              "name": "オムロン",
+              "x": 715379.0,
+              "y": 7895.0
+            },
+            {
+              "ticker": "6981.T",
+              "name": "村田製作所",
+              "x": 1743352.0,
+              "y": 243835.0
+            },
+            {
+              "ticker": "7701.T",
+              "name": "島津製作所",
+              "x": 539047.0,
+              "y": 28829.0
+            },
+            {
+              "ticker": "3774.T",
+              "name": "インターネットイニシアティブ",
+              "x": 316831.0,
+              "y": 6779.0
+            },
+            {
+              "ticker": "6701.T",
+              "name": "NEC",
+              "x": 3423431.0,
+              "y": 213244.0
+            }
+          ]
+        }
+      }
+    }
+  }
+}

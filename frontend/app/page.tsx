@@ -27,10 +27,16 @@ export default async function HomePage() {
             財務ダッシュボード
           </h1>
         </div>
-        <div className="flex items-center gap-4 text-xs">
+        <div className="flex flex-wrap items-center gap-4 text-xs">
           <p className="text-zinc-500">
             財務推移：{availableTickers.size}社・各5年度
           </p>
+          <Link
+            href="/stats"
+            className="font-medium text-zinc-950 underline decoration-zinc-300 underline-offset-4 hover:decoration-zinc-950 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-zinc-950"
+          >
+            Stats →
+          </Link>
           <Link
             href="/compare"
             className="font-medium text-zinc-950 underline decoration-zinc-300 underline-offset-4 hover:decoration-zinc-950 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-zinc-950"

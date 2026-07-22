@@ -20,6 +20,8 @@ data/raw/*
 !data/raw/.gitkeep
 *.db
 *.sqlite3
+*.duckdb
+*.parquet
 
 # Next.js / Node.js
 node_modules/

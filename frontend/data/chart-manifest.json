@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-21T23:40:06Z",
+  "companies": {
+    "3655.T": {
+      "profitability": "/charts/companies/3655_t/profitability.svg",
+      "returns": "/charts/companies/3655_t/returns.svg",
+      "cashflow": "/charts/companies/3655_t/cashflow.svg"
+    },
+    "4443.T": {
+      "profitability": "/charts/companies/4443_t/profitability.svg",
+      "returns": "/charts/companies/4443_t/returns.svg",
+      "cashflow": "/charts/companies/4443_t/cashflow.svg"
+    },
+    "2121.T": {
+      "profitability": "/charts/companies/2121_t/profitability.svg",
+      "returns": "/charts/companies/2121_t/returns.svg",
+      "cashflow": "/charts/companies/2121_t/cashflow.svg"
+    },
+    "4751.T": {
+      "profitability": "/charts/companies/4751_t/profitability.svg",
+      "returns": "/charts/companies/4751_t/returns.svg",
+      "cashflow": "/charts/companies/4751_t/cashflow.svg"
+    },
+    "4384.T": {
+      "profitability": "/charts/companies/4384_t/profitability.svg",
+      "returns": "/charts/companies/4384_t/returns.svg",
+      "cashflow": "/charts/companies/4384_t/cashflow.svg"
+    },
+    "4418.T": {
+      "profitability": "/charts/companies/4418_t/profitability.svg",
+      "returns": "/charts/companies/4418_t/returns.svg",
+      "cashflow": "/charts/companies/4418_t/cashflow.svg"
+    },
+    "3993.T": {
+      "profitability": "/charts/companies/3993_t/profitability.svg",
+      "returns": "/charts/companies/3993_t/returns.svg",
+      "cashflow": "/charts/companies/3993_t/cashflow.svg"
+    },
+    "4165.T": {
+      "profitability": "/charts/companies/4165_t/profitability.svg",
+      "returns": "/charts/companies/4165_t/returns.svg",
+      "cashflow": "/charts/companies/4165_t/cashflow.svg"
+    },
+    "4828.T": {
+      "profitability": "/charts/companies/4828_t/profitability.svg",
+      "returns": "/charts/companies/4828_t/returns.svg",
+      "cashflow": "/charts/companies/4828_t/cashflow.svg"
+    },
+    "2432.T": {
+      "profitability": "/charts/companies/2432_t/profitability.svg",
+      "returns": "/charts/companies/2432_t/returns.svg",
+      "cashflow": "/charts/companies/2432_t/cashflow.svg"
+    },
+    "3092.T": {
+      "profitability": "/charts/companies/3092_t/profitability.svg",
+      "returns": "/charts/companies/3092_t/returns.svg",
+      "cashflow": "/charts/companies/3092_t/cashflow.svg"
+    },
+    "4478.T": {
+      "profitability": "/charts/companies/4478_t/profitability.svg",
+      "returns": "/charts/companies/4478_t/returns.svg",
+      "cashflow": "/charts/companies/4478_t/cashflow.svg"
+    },
+    "3626.T": {
+      "profitability": "/charts/companies/3626_t/profitability.svg",
+      "returns": "/charts/companies/3626_t/returns.svg",
+      "cashflow": "/charts/companies/3626_t/cashflow.svg"
+    },
+    "6367.T": {
+      "profitability": "/charts/companies/6367_t/profitability.svg",
+      "returns": "/charts/companies/6367_t/returns.svg",
+      "cashflow": "/charts/companies/6367_t/cashflow.svg"
+    },
+    "6645.T": {
+      "profitability": "/charts/companies/6645_t/profitability.svg",
+      "returns": "/charts/companies/6645_t/returns.svg",
+      "cashflow": "/charts/companies/6645_t/cashflow.svg"
+    },
+    "6981.T": {
+      "profitability": "/charts/companies/6981_t/profitability.svg",
+      "returns": "/charts/companies/6981_t/returns.svg",
+      "cashflow": "/charts/companies/6981_t/cashflow.svg"
+    },
+    "7701.T": {
+      "profitability": "/charts/companies/7701_t/profitability.svg",
+      "returns": "/charts/companies/7701_t/returns.svg",
+      "cashflow": "/charts/companies/7701_t/cashflow.svg"
+    },
+    "3774.T": {
+      "profitability": "/charts/companies/3774_t/profitability.svg",
+      "returns": "/charts/companies/3774_t/returns.svg",
+      "cashflow": "/charts/companies/3774_t/cashflow.svg"
+    },
+    "6701.T": {
+      "profitability": "/charts/companies/6701_t/profitability.svg",
+      "returns": "/charts/companies/6701_t/returns.svg",
+      "cashflow": "/charts/companies/6701_t/cashflow.svg"
+    }
+  },
+  "comparisons": []
+}

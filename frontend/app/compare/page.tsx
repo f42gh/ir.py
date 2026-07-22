@@ -3,6 +3,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { MetricLineChart } from "../../components/metric-line-chart";
+import { StaticMetricChart } from "../../components/static-metric-chart";
+import { getComparisonCharts } from "../../lib/charts";
 import {
   formatMoneyInMillions,
   formatPercent,
@@ -104,6 +106,7 @@ export default async function ComparePage({ searchParams }: ComparePageProps) {
     requestedRight && requestedRight.ticker !== left.ticker
       ? requestedRight
       : companies.find((company) => company.ticker !== left.ticker)!;
+  const staticCharts = getComparisonCharts(left.ticker, right.ticker);
 
   const leftPeriods = periodByYear(left);
   const rightPeriods = periodByYear(right);
@@ -219,77 +222,101 @@ export default async function ComparePage({ searchParams }: ComparePageProps) {
           </p>
         </div>
         <div className="mt-4 grid gap-4 lg:grid-cols-2">
-          <MetricLineChart
-            title="売上高"
-            years={years}
-            valueKind="money"
-            series={[
-              {
-                label: left.name,
-                color: "#18181b",
-                values: years.map((year) =>
-                  toMillions(leftPeriods.get(year)?.metrics.revenue ?? null),
-                ),
-              },
-              {
-                label: right.name,
-                color: "#0f766e",
-                values: years.map((year) =>
-                  toMillions(rightPeriods.get(year)?.metrics.revenue ?? null),
-                ),
-              },
-            ]}
-          />
-          <MetricLineChart
-            title="営業利益率"
-            years={years}
-            valueKind="percent"
-            series={[
-              {
-                label: left.name,
-                color: "#18181b",
-                values: years.map(
-                  (year) =>
-                    leftPeriods.get(year)?.calculated_metrics.operating_margin_pct ?? null,
-                ),
-              },
-              {
-                label: right.name,
-                color: "#0f766e",
-                values: years.map(
-                  (year) =>
-                    rightPeriods.get(year)?.calculated_metrics.operating_margin_pct ?? null,
-                ),
-              },
-            ]}
-          />
-          <div className="lg:col-span-2">
-            <MetricLineChart
-              title="フリーキャッシュフロー"
-              years={years}
-              valueKind="money"
-              series={[
-                {
-                  label: left.name,
-                  color: "#18181b",
-                  values: years.map((year) =>
-                    toMillions(
-                      leftPeriods.get(year)?.calculated_metrics.free_cash_flow ?? null,
+          {staticCharts ? (
+            <>
+              <StaticMetricChart
+                title="売上高"
+                src={staticCharts.charts.revenue}
+                alt={`${left.name}と${right.name}の売上高比較`}
+              />
+              <StaticMetricChart
+                title="営業利益率"
+                src={staticCharts.charts.operating_margin_pct}
+                alt={`${left.name}と${right.name}の営業利益率比較`}
+              />
+              <div className="lg:col-span-2">
+                <StaticMetricChart
+                  title="フリーキャッシュフロー"
+                  src={staticCharts.charts.free_cash_flow}
+                  alt={`${left.name}と${right.name}のフリーキャッシュフロー比較`}
+                />
+              </div>
+            </>
+          ) : (
+            <>
+              <MetricLineChart
+                title="売上高"
+                years={years}
+                valueKind="money"
+                series={[
+                  {
+                    label: left.name,
+                    color: "#18181b",
+                    values: years.map((year) =>
+                      toMillions(leftPeriods.get(year)?.metrics.revenue ?? null),
                     ),
-                  ),
-                },
-                {
-                  label: right.name,
-                  color: "#0f766e",
-                  values: years.map((year) =>
-                    toMillions(
-                      rightPeriods.get(year)?.calculated_metrics.free_cash_flow ?? null,
+                  },
+                  {
+                    label: right.name,
+                    color: "#0f766e",
+                    values: years.map((year) =>
+                      toMillions(rightPeriods.get(year)?.metrics.revenue ?? null),
                     ),
-                  ),
-                },
-              ]}
-            />
-          </div>
+                  },
+                ]}
+              />
+              <MetricLineChart
+                title="営業利益率"
+                years={years}
+                valueKind="percent"
+                series={[
+                  {
+                    label: left.name,
+                    color: "#18181b",
+                    values: years.map(
+                      (year) =>
+                        leftPeriods.get(year)?.calculated_metrics.operating_margin_pct ?? null,
+                    ),
+                  },
+                  {
+                    label: right.name,
+                    color: "#0f766e",
+                    values: years.map(
+                      (year) =>
+                        rightPeriods.get(year)?.calculated_metrics.operating_margin_pct ?? null,
+                    ),
+                  },
+                ]}
+              />
+              <div className="lg:col-span-2">
+                <MetricLineChart
+                  title="フリーキャッシュフロー"
+                  years={years}
+                  valueKind="money"
+                  series={[
+                    {
+                      label: left.name,
+                      color: "#18181b",
+                      values: years.map((year) =>
+                        toMillions(
+                          leftPeriods.get(year)?.calculated_metrics.free_cash_flow ?? null,
+                        ),
+                      ),
+                    },
+                    {
+                      label: right.name,
+                      color: "#0f766e",
+                      values: years.map((year) =>
+                        toMillions(
+                          rightPeriods.get(year)?.calculated_metrics.free_cash_flow ?? null,
+                        ),
+                      ),
+                    },
+                  ]}
+                />
+              </div>
+            </>
+          )}
         </div>
       </section>
 

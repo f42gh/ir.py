@@ -3,6 +3,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { MetricLineChart } from "../../../components/metric-line-chart";
+import { StaticMetricChart } from "../../../components/static-metric-chart";
+import { getCompanyCharts } from "../../../lib/charts";
 import {
   formatDate,
   formatMoneyInMillions,
@@ -81,6 +83,7 @@ export default async function CompanyPage({ params }: CompanyPageProps) {
   }
 
   const periods = [...company.periods].sort((a, b) => a.fiscal_year - b.fiscal_year);
+  const staticCharts = getCompanyCharts(ticker);
   const latestPeriod = periods.at(-1);
   if (!latestPeriod) {
     notFound();
@@ -160,62 +163,86 @@ export default async function CompanyPage({ params }: CompanyPageProps) {
           <p className="text-xs text-zinc-500">金額単位：百万円</p>
         </div>
         <div className="mt-4 grid gap-4 lg:grid-cols-2">
-          <MetricLineChart
-            title="売上高・営業利益"
-            years={periods.map((period) => period.fiscal_year)}
-            valueKind="money"
-            series={[
-              {
-                label: "売上高",
-                color: "#18181b",
-                values: periods.map((period) => toMillions(period.metrics.revenue)),
-              },
-              {
-                label: "営業利益",
-                color: "#0f766e",
-                values: periods.map((period) =>
-                  toMillions(period.metrics.operating_income),
-                ),
-              },
-            ]}
-          />
-          <MetricLineChart
-            title="営業利益率"
-            years={periods.map((period) => period.fiscal_year)}
-            valueKind="percent"
-            series={[
-              {
-                label: "営業利益率",
-                color: "#7c3aed",
-                values: periods.map(
-                  (period) => period.calculated_metrics.operating_margin_pct,
-                ),
-              },
-            ]}
-          />
-          <div className="lg:col-span-2">
-            <MetricLineChart
-              title="営業キャッシュフロー・フリーキャッシュフロー"
-              years={periods.map((period) => period.fiscal_year)}
-              valueKind="money"
-              series={[
-                {
-                  label: "営業CF",
-                  color: "#0369a1",
-                  values: periods.map((period) =>
-                    toMillions(period.metrics.operating_cash_flow),
-                  ),
-                },
-                {
-                  label: "FCF",
-                  color: "#c2410c",
-                  values: periods.map((period) =>
-                    toMillions(period.calculated_metrics.free_cash_flow),
-                  ),
-                },
-              ]}
-            />
-          </div>
+          {staticCharts ? (
+            <>
+              <StaticMetricChart
+                title="売上高・営業利益"
+                src={staticCharts.profitability}
+                alt={`${company.name}の売上高と営業利益の5年度推移`}
+              />
+              <StaticMetricChart
+                title="営業利益率・ROE"
+                src={staticCharts.returns}
+                alt={`${company.name}の営業利益率とROEの5年度推移`}
+              />
+              <div className="lg:col-span-2">
+                <StaticMetricChart
+                  title="営業キャッシュフロー・フリーキャッシュフロー"
+                  src={staticCharts.cashflow}
+                  alt={`${company.name}の営業キャッシュフローとフリーキャッシュフローの5年度推移`}
+                />
+              </div>
+            </>
+          ) : (
+            <>
+              <MetricLineChart
+                title="売上高・営業利益"
+                years={periods.map((period) => period.fiscal_year)}
+                valueKind="money"
+                series={[
+                  {
+                    label: "売上高",
+                    color: "#18181b",
+                    values: periods.map((period) => toMillions(period.metrics.revenue)),
+                  },
+                  {
+                    label: "営業利益",
+                    color: "#0f766e",
+                    values: periods.map((period) =>
+                      toMillions(period.metrics.operating_income),
+                    ),
+                  },
+                ]}
+              />
+              <MetricLineChart
+                title="営業利益率"
+                years={periods.map((period) => period.fiscal_year)}
+                valueKind="percent"
+                series={[
+                  {
+                    label: "営業利益率",
+                    color: "#7c3aed",
+                    values: periods.map(
+                      (period) => period.calculated_metrics.operating_margin_pct,
+                    ),
+                  },
+                ]}
+              />
+              <div className="lg:col-span-2">
+                <MetricLineChart
+                  title="営業キャッシュフロー・フリーキャッシュフロー"
+                  years={periods.map((period) => period.fiscal_year)}
+                  valueKind="money"
+                  series={[
+                    {
+                      label: "営業CF",
+                      color: "#0369a1",
+                      values: periods.map((period) =>
+                        toMillions(period.metrics.operating_cash_flow),
+                      ),
+                    },
+                    {
+                      label: "FCF",
+                      color: "#c2410c",
+                      values: periods.map((period) =>
+                        toMillions(period.calculated_metrics.free_cash_flow),
+                      ),
+                    },
+                  ]}
+                />
+              </div>
+            </>
+          )}
         </div>
       </section>
 
